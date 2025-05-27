@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sizaf.com
+
+# Sitemaps
+Sitemap: https://sizaf.com/sitemap.xml
