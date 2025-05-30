@@ -33,3 +33,49 @@
     background-image: linear-gradient(90deg, #ff156e, #ff4d53);
 }
 
+/* Global Network CSS */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-up-delay-1 {
+  animation-delay: 1s;
+}
+
+.fade-up-delay-2 {
+  animation-delay: 1.2s;
+}
+
+.fade-up-delay-3 {
+  animation-delay: 1.4s;
+}
+
+.fade-up-delay-4 {
+  animation-delay: 1.6s;
+}
+
+.fade-up-delay-5 {
+  animation-delay: 1.8s;
+}
+
+.fade-up-delay-6 {
+  animation-delay: 2s;
+}
+
+.enquiry-btn:hover{
+  background-image: linear-gradient(90deg, #ff156e, #ff4d53);
+}
