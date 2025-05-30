@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirect /slug to blog-details.php
+RewriteRule ^([a-zA-Z0-9-]+)$ blog-details.php?slug=$1 [L]
