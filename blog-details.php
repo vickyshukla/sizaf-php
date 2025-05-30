@@ -1,22 +1,48 @@
 <?php include 'header.php'; include 'functions.php'; ?>
 
-<main class="container mx-auto p-8">
+<link
+  rel="stylesheet"
+  href="https://backendcms.sizaf.com/wp-includes/css/dist/block-library/style.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://backendcms.sizaf.com/wp-content/themes/twentytwentyfour/style.css"
+/>
+
+<main class="max-w-4xl mx-auto p-6">
   <?php
-  if (isset($_GET['id'])) {
-    $id = intval($_GET['id']);
-    $blog = fetchFromWP("posts/$id?_embed=true");
+  $slug = basename($_SERVER['REQUEST_URI']);
+  $blog = fetchFromWP("posts?slug=$slug&_embed=true");
+
+  if (!empty($blog)) {
+    $blog = $blog[0];
     $title = $blog['title']['rendered'];
     $content = $blog['content']['rendered'];
     $img = $blog['_embedded']['wp:featuredmedia'][0]['source_url'] ?? '';
   ?>
-    <h2 class="text-3xl font-bold mb-4"><?= $title ?></h2>
-    <?php if ($img): ?>
-      <img src="<?= $img ?>" alt="<?= $title ?>" class="w-full h-64 object-cover rounded-lg mb-6">
-    <?php endif; ?>
-    <div class="prose max-w-none"><?= $content ?></div>
-  <?php } else { ?>
-    <p>Blog post not found.</p>
-  <?php } ?>
+    <article id="post-<?= $blog['id'] ?>" class="post type-post status-publish format-standard hentry">
+      <header class="entry-header mb-10">
+        <h2 class="entry-title text-4xl font-bold"><?= $title ?></h2>
+      </header>
+
+      <?php if ($img): ?>
+        <div class="post-thumbnail mb-6">
+          <img src="<?= $img ?>" alt="<?= $title ?>" class="wp-post-image w-full !h-[30rem] object-cover rounded-lg" >
+        </div>
+      <?php endif; ?>
+      <div class="entry-content wordpressContent">
+        <?= $content ?>
+      </div>
+    </article>
+  <?php
+  } else {
+    echo "<div class='container mx-auto px-4 py-10 flex flex-col gap-4 items-center justify-center h-screen'>
+              <h1 class='text-4xl font-bold text-red-600'>404 - Page Not Found</h1>
+              <p class='text-lg text-gray-600'>Oops! The page you&apos;re looking for does not exist.</p>
+              <a href='/sizaf-php' class='px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700'>Go back home</a>
+          </div>";
+  }
+  ?>
 </main>
 
 <?php include 'footer.php'; ?>
