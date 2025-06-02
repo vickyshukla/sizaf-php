@@ -148,9 +148,9 @@
             </h2>
 
             <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-                <h1 class="text-4xl lg:text-6xl font-bold fade-up fade-up-delay-2 text-white">
+                <h3 class="text-4xl lg:text-6xl font-bold fade-up fade-up-delay-2 text-white">
                     PAY PER USE
-                </h1>
+                </h3>
                 <span class="text-4xl lg:text-6xl font-bold text-red-500 fade-up fade-up-delay-3">
                     RM 1.99 / MO
                 </span>
@@ -173,60 +173,54 @@
             </div>
 
             <div class="flex justify-center fade-up fade-up-delay-6">
-                <a href="contact.php" class="group relative inline-flex items-center gap-2 px-8 py-4 border border-white hover:border-none transition-colors text-white enquiry-btn">
+                <a href="contact.php" class="group relative inline-flex items-center gap-2 px-8 py-4 border border-white hover:border-none transition-colors text-white bg-gradient-to-r hover:from-pink-600 hover:to-pink-700 rounded-md">
                     <span>Enquiry/Order</span>
                     <span class="group-hover:translate-x-1 transition-transform">→</span>
                 </a>
             </div>
         </div>
     </div>
-    <div id="stats-section" class="max-w-7xl flex flex-col md:flex-row mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div class="space-y-12">
-            <img src="./assest/sizaflogo.png" alt="Sizaf Logo" width="170" height="170" />
-            <p class="text-xl font-semibold max-w-3xl mx-auto">
-            THE POWER OF SIZAF GLOBAL PARTNER NETWORK LOADED WITH ALL THE TECH.
-            </p>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 mt-8">
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <span id="continents-count" class="text-4xl sm:text-5xl font-bold text-pink-500">0</span>
-                    <p class="text-xl mt-2 text-gray-600">Continents</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <span id="countries-count" class="text-4xl sm:text-5xl font-bold text-cyan-400">0</span>
-                    <p class="text-xl mt-2 text-gray-600">Countries</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <span id="locations-count" class="text-4xl sm:text-5xl font-bold text-blue-500">0</span>
-                    <p class="text-xl mt-2 text-gray-600">Locations</p>
-                </div>
+    <div id="stats-section" class="relative bg-gradient-to-br from-white via-gray-100 to-gray-50 py-16 px-6 sm:px-10 lg:px-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-10">
+          <img src="./assest/sizaflogo.png" alt="Sizaf Logo" width="150" height="150" class="mx-auto lg:mx-0" loading="lazy"/>
+          <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight text-center lg:text-left">The Power of  <span class="bg-primary-gradient text-transparent bg-clip-text">SIZAF</span> Global Partner Network Loaded With All The Tech.</h1>
+          <p class="text-gray-600 text-base lg:text-lg max-w-xl text-center lg:text-left mx-auto lg:mx-0">Sizaf Tech Services are customized to fit every business situation, whether for individuals, professional groups, or large organizations.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="backdrop-blur-md bg-white/70 border border-white/40 rounded-2xl shadow-md p-6 text-center hover:scale-105 transition">
+              <div class="text-5xl font-extrabold text-pink-500 drop-shadow-md" id="continents-count">0</div>
+              <p class="text-lg font-medium text-gray-700 mt-2">Continents</p>
             </div>
-            <p class="text-center md:text-start text-gray-600 max-w-2xl text-base">
-                Sizaf Tech Services are customized to fit every business situation, whether for individuals, professional groups, or large organizations.
-            </p>
+            <div class="backdrop-blur-md bg-white/70 border border-white/40 rounded-2xl shadow-md p-6 text-center hover:scale-105 transition">
+              <div class="text-5xl font-extrabold text-cyan-400 drop-shadow-md" id="countries-count">0</div>
+              <p class="text-lg font-medium text-gray-700 mt-2">Countries</p>
+            </div>
+            <div class="backdrop-blur-md bg-white/70 border border-white/40 rounded-2xl shadow-md p-6 text-center hover:scale-105 transition">
+              <div class="text-5xl font-extrabold text-blue-500 drop-shadow-md" id="locations-count">0</div>
+              <p class="text-lg font-medium text-gray-700 mt-2">Locations</p>
+            </div>
+          </div>
         </div>
-        <div>
-            <img src="./assest/global-network-pc.png" alt="World map showing SIZ@F global network" class="rounded-lg hidden lg:block" height="1000" width="1000"/>
+        <div class="flex justify-center lg:justify-end">
+          <img src="./assest/global-network-pc.png" alt="Global Network Map" class="rounded-3xl w-full max-w-xl shadow-xl" loading="lazy" />
         </div>
+      </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div class="space-y-7">
-            <p class="text-3xl sm:text-4xl font-semibold text-center">SIZAF GLOBAL NETWORK PARTNER</p>
-            <p class="text-lg sm:text-base text-center font-semibold">
-                With Sizaf's global partner network, you can reach and serve clients and customers across 7 continents, in 113 countries, and 4,905 locations.
-            </p>
-            <p class="text-gray-600 text-center max-w-8xl mx-auto">
-            Sizaf is a three way allround service provider that thinks & acts like your extended internal team. It provides globally connected network, ready to deploy technology solutions and flexible commercial models based on the customer preferences.
-            </p>
-            <div id="chartdiv" class="w-full h-[300px] sm:h-[600px] bg-white rounded-lg"></div>
+    <section class="bg-gradient-to-b from-white to-gray-50 py-16 px-6 sm:px-10 lg:px-20">
+        <div class="max-w-7xl mx-auto space-y-7 text-center">
+          <h2 class="text-3xl sm:text-4xl font-semibold">SIZAF GLOBAL NETWORK PARTNER</h2>
+          <p class="text-lg sm:text-base text-center font-semibold">With Sizaf's global partner network, you can reach and serve clients and customers across 7 continents, in 113 countries, and 4,905 locations.</p>
+          <p class="text-gray-600 text-center max-w-8xl mx-auto">Sizaf is a three way allround service provider that thinks & acts like your extended internal team. It provides globally connected network, ready to deploy technology solutions and flexible commercial models based on the customer preferences.</p>
+          <div id="chartdiv" class="w-full h-[300px] sm:h-[600px] bg-white rounded-lg"></div>
         </div>
-    </div>
-    <div class="max-w-7xl mx-auto p-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    </section>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <?php foreach ($regions as $region => $countries): ?>
-            <div class="bg-white shadow rounded overflow-hidden">
-                <div class="bg-[#FF156E] text-white px-4 py-2 font-bold">
+            <section class="bg-white rounded-md shadow-md overflow-hidden transition hover:shadow-lg hover:scale-102">
+                <header class="bg-[#FF156E] text-white text-base font-semibold px-4 py-3">
                     <?= htmlspecialchars($region) ?>
-                </div>
+                </header>
                 <div class="p-4">
                     <ul class="space-y-2 text-sm">
                     <?php foreach ($countries as $item): ?>
@@ -236,63 +230,64 @@
                     <?php endforeach; ?>
                     </ul>
                 </div>
-            </div>
+            </section>
         <?php endforeach; ?>
         </div>
     </div>
-    <div class="relative w-full min-h-[600px] bg-white p-8">
+    <div class="relative w-full min-h-[600px] bg-white py-16 px-6 sm:px-10 lg:px-16 overflow-hidden">
         <div class="absolute inset-0 z-0 pointer-events-none bg-[url('./assest/testimonial-map.png')] bg-no-repeat bg-cover"></div>
-            <p class="text-3xl sm:text-4xl font-semibold text-center z-10 relative">Sizaf Net with Tech.</p>
-            <p class="text-base text-center py-5 z-10 relative">
-                Sizaf Tech Services are customized for every business situation either for Individuals, Professional groups or Large organizations.
-            </p>
 
-            <div class="flex flex-col sm:flex-row justify-center items-start sm:max-w-7xl mx-auto gap-0 sm:gap-32 py-7 z-10 px-6 relative">
-                <ul class="w-full md:w-1/2 space-y-10">
-                <?php
-                    $leftFeatures = [
-                    "The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest network technologies.",
-                    "SIZAF NET WITH TECH along with the healthcare and educational organisations is ready to create tailor-made solutions as per customer needs.",
-                    "All SIZAF NET WITH TECH solutions are being constantly reviewed & tested. It is ready for use for all organizations and respected worldwide."
-                    ];
-                    foreach ($leftFeatures as $feature) {
-                    echo '<li class="flex gap-2 items-start">
-                           <i class="fa-solid fa-circle-check text-[#ff156e] text-lg pt-1"></i>
-                            ' . $feature . '
-                            </li>';
-                    }
-                ?>
-                </ul>
-
-                <ul class="w-full md:w-1/2 space-y-10 mt-8 sm:mt-0">
-                <?php
-                    $rightFeatures = [
-                    "At SIZAF NET WITH TECH all the latest innovations and new ICT and IOT trends are provided in budget friendly models.",
-                    "SIZAF NET WITH TECH on demand services will be equipped with all the latest innovations in the transport & logistics industry to meet the present demands and future requirement.",
-                    "SIZAF NET WITH TECH offers custom technology solutions to its clients in finance & banking sector with highly secure connections, reliable platforms & networks & easy to use apps."
-                    ];
-                    foreach ($rightFeatures as $feature) {
-                    echo '<li class="flex gap-2 items-start">
-                            <i class="fa-solid fa-circle-check text-[#ff156e] text-lg pt-1"></i>
-                            ' . $feature . '
-                            </li>';
-                    }
-                ?>
-                </ul>
-            </div>
-
-            <div class="flex items-center justify-center mt-8 z-20 relative">
-                <a href="contact.php">
-                <button
-                    class="bg-primary-gradient px-14 py-3 text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg text-white shadow-pink-400/60 hover:shadow-pink-600/70 focus:outline-none focus:ring-pink-500 focus:ring-offset-2"
-                    aria-label="Place Order or Make an Inquiry">
-                    Place Order / Enquiry
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                </button>
-                </a>
-            </div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-semibold">Sizaf Net with Tech.</h2>
+          <p class="text-base sm:text-lg">
+            Sizaf Tech Services are customized for every business situation either for Individuals, Professional groups or Large organizations.
+          </p>
+        </div>
+        <div class="relative z-10 mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+          <ul class="space-y-8">
+            <?php
+              $leftFeatures = [
+                "The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest network technologies.",
+                "SIZAF NET WITH TECH along with the healthcare and educational organisations is ready to create tailor-made solutions as per customer needs.",
+                "All SIZAF NET WITH TECH solutions are being constantly reviewed & tested. It is ready for use for all organizations and respected worldwide."
+              ];
+              foreach ($leftFeatures as $feature) {
+                echo '<li class="flex gap-3 items-start">
+                        <i class="fa-solid fa-circle-check text-[#ff156e] text-lg mt-1"></i>
+                        <span>' . htmlspecialchars($feature) . '</span>
+                      </li>';
+              }
+            ?>
+          </ul>
+          <ul class="space-y-8">
+            <?php
+              $rightFeatures = [
+                "At SIZAF NET WITH TECH all the latest innovations and new ICT and IOT trends are provided in budget friendly models.",
+                "SIZAF NET WITH TECH on demand services will be equipped with all the latest innovations in the transport & logistics industry to meet the present demands and future requirement.",
+                "SIZAF NET WITH TECH offers custom technology solutions to its clients in finance & banking sector with highly secure connections, reliable platforms & networks & easy to use apps."
+              ];
+              foreach ($rightFeatures as $feature) {
+                echo '<li class="flex gap-3 items-start">
+                        <i class="fa-solid fa-circle-check text-[#ff156e] text-lg mt-1"></i>
+                        <span>' . htmlspecialchars($feature) . '</span>
+                      </li>';
+              }
+            ?>
+          </ul>
+        </div>
+        <div class="relative z-10 mt-12 text-center">
+          <a href="contact.php" aria-label="Place Order or Make an Inquiry">
+            <button
+              class="bg-gradient-to-r from-[#FF156E] to-pink-500 hover:from-pink-600 hover:to-pink-700 text-white px-10 py-3 rounded-full text-sm sm:text-base shadow-lg hover:shadow-xl transition duration-300"
+            >
+              Place Order / Enquiry
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </a>
         </div>
     </div>
 </div>
