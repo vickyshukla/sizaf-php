@@ -1,0 +1,36 @@
+# Composer dependencies
+/vendor/
+
+# Node.js dependencies (if using frontend tooling)
+node_modules/
+
+# IDE/editor settings
+*.swp
+*.swo
+*.bak
+*.tmp
+.idea/
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment config
+.env
+.env.*
+
+# Log files
+*.log
+
+# Cache, sessions, or temporary files
+cache/
+tmp/
+logs/
+sessions/
+
+# PHPUnit
+phpunit.result.cache
+
+# Coverage reports
+coverage/
