@@ -16,8 +16,11 @@
           <svg class="w-4 h-4 mr-1 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4v16h20V4H2zm10 7L4 6h16l-8 5z"/></svg>
           info@sizaf.com
         </a>
-        <a href="speed-test.php" class="hover:text-blue-300 transition">Speed Test</a>
-        <button class="hover:text-blue-300 transition">
+        <span id="openSpeedTest" class="cursor-pointer flex items-center justify-center gap-2 hover:text-blue-300">
+          <i class="fa-solid fa-wifi"></i>
+          Speed Test
+        </span>
+        <button id="searchTrigger" class="hover:text-blue-300 transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
             viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -155,4 +158,150 @@
       </nav>
     </div>
   </div>
+
+  <!-- Speed Test Popup -->
+  <div id="speedTestDialog" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 bg-opacity-60">
+    <div class="w-full max-w-[90vw] h-auto max-h-[90vh] sm:max-w-[700px] sm:max-h-[500px] p-4 bg-white rounded-lg overflow-hidden relative">
+      <!-- Close Button -->
+      <button id="closeSpeedTest" class="absolute top-2 right-2 text-gray-600 hover:text-black text-2xl font-bold">&times;</button>
+
+      <!-- Dialog Header -->
+      <h2 class="text-center text-xl sm:text-3xl font-semibold mt-4">Internet Speed Test</h2>
+
+      <!-- Iframe Area -->
+      <div class="relative w-full h-[70vh] sm:h-[400px] mt-4 rounded-md overflow-hidden">
+        <div id="speedTestLogo" class="hidden absolute bottom-7 left-1/2 -translate-x-1/2 sm:top-1 sm:left-1/2 z-10">
+          <img src="./assest/sizaflogo.png" alt="Sizaf Logo" class="sm:w-16 w-24 h-auto" width="96" height="96">
+        </div>
+        <iframe
+          id="speedTestIframe"
+          src="https://openspeedtest.com/Get-widget.php"
+          width="100%"
+          height="100%"
+          allowfullscreen
+          class="border-none"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Popup -->
+  <div id="searchPopover"
+    class="hidden absolute right-4 top-16 z-50 w-full max-w-md p-5 bg-white rounded-2xl shadow-2xl border border-gray-200 transition-all duration-300 ease-out">
+    <!-- Close Button -->
+    <button
+      class="closePopover absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg font-bold focus:outline-none" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Search Section -->
+    <div class="flex flex-col gap-4 mt-4">
+      <div class="flex gap-2">
+        <input type="text" placeholder="Search..."
+          class="searchInput w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400 shadow-sm transition" />
+
+        <button
+          class="searchBtn px-4 py-2 rounded-lg text-white bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 transition font-semibold shadow-md">
+          Search
+        </button>
+      </div>
+
+      <!-- Results -->
+      <div class="searchResults max-h-60 overflow-y-auto mt-1 text-sm space-y-2"></div>
+    </div>
+  </div>
 </header>
+<script>
+  const openBtn = document.getElementById('openSpeedTest');
+  const dialog = document.getElementById('speedTestDialog');
+  const closeBtn = document.getElementById('closeSpeedTest');
+  const iframe = document.getElementById('speedTestIframe');
+  const logo = document.getElementById('speedTestLogo');
+
+  let iframeTimeout;
+
+  openBtn.addEventListener('click', () => {
+    // Reset iframe
+    iframe.src = "https://openspeedtest.com/Get-widget.php";
+    logo.classList.add('hidden');
+    dialog.classList.remove('hidden');
+    dialog.classList.add('flex');
+
+    // Wait for iframe to load
+    iframe.onload = () => {
+      clearTimeout(iframeTimeout);
+      logo.classList.remove('hidden');
+    };
+
+    // Set fallback timeout (10s)
+    iframeTimeout = setTimeout(() => {
+      if (!logo.classList.contains('hidden')) return;
+      logo.innerHTML = `<p class="text-center text-red-600 font-semibold">Failed to load. Please try again.</p>`;
+      logo.classList.remove('hidden');
+    }, 10000);
+  });
+
+  closeBtn.addEventListener('click', () => {
+    dialog.classList.add('hidden');
+    iframe.src = ""; // Clear iframe
+    logo.classList.add('hidden');
+    clearTimeout(iframeTimeout);
+  });
+  
+</script>
+<script>
+  const trigger = document.getElementById('searchTrigger');
+  const popover = document.getElementById('searchPopover');
+  const close = document.querySelector('.closePopover');
+  const searchBtn = document.querySelector('.searchBtn');
+  const searchInput = document.querySelector('.searchInput');
+  const searchResults = document.querySelector('.searchResults');
+
+  let hasSearched = false;
+
+  trigger.addEventListener('click', () => {
+    popover.classList.toggle('hidden');
+    searchInput.focus();
+  });
+
+  close.addEventListener('click', () => {
+    popover.classList.add('hidden');
+    searchResults.innerHTML = '';
+    hasSearched = false;
+  });
+
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleSearch();
+  });
+
+  searchBtn.addEventListener('click', handleSearch);
+
+  function handleSearch() {
+    const query = searchInput.value.trim();
+    if (query === '') {
+      searchResults.innerHTML = '<div class="text-red-500">Please enter a search term.</div>';
+      return;
+    }
+
+  fetch(`search.php?q=${encodeURIComponent(query)}`)
+    .then(response => response.json())
+    .then(results => {
+      if (results.length === 0) {
+        searchResults.innerHTML = `<div class="text-red-500 font-semibold">No results found for "${query}"</div>`;
+      } else {
+        const list = results.map(r =>
+          `<li><a href="${r.url}" class="text-blue-600 hover:underline">${r.title}</a></li>`
+        ).join('');
+        searchResults.innerHTML = `
+          <h3 class="font-semibold mb-1">Results:</h3>
+          <ul class="list-disc pl-5">${list}</ul>
+        `;
+      }
+    })
+    .catch(error => {
+      searchResults.innerHTML = `<div class="text-red-500">Error loading results</div>`;
+      console.error(error);
+    });
+  }
+</script>
+
