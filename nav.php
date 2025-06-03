@@ -5,7 +5,7 @@
   <div class="bg-[#000322] text-sm font-semibold text-[#9ca3af]">
     <div class="max-w-[1480px] mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex space-x-4">
-        <a href="enquiry.php" class="hover:text-blue-300 transition">Enquiry</a>
+        <a href="http://122.170.111.109:8002/customer-enquiry-form/new" target="_blank" class="hover:text-blue-300 transition">Enquiry</a>
         <a href="ticket.php" class="hover:text-blue-300 transition">Submit a Ticket</a>
         <a href="admin-login.php" class="hover:text-blue-300 transition">Admin Login</a>
         <a href="./jobs.php" class="hover:text-blue-300 transition">Career</a>
