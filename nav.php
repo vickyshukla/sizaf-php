@@ -2,16 +2,16 @@
 
 <header class="bg-white shadow z-50 " x-data="{ mobileMenu: false }" role="banner">
   <!-- Top Bar -->
-  <div class="bg-[#000322] text-sm font-semibold text-[#9ca3af]">
-    <div class="max-w-[1480px] mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex space-x-4">
+  <div class="bg-[#000322] font-semibold text-[#9ca3af]">
+    <div class="max-w-[1480px] mx-auto px-2.5 sm:px-4 text-xs sm:text-sm py-4 flex flex-col gap-2 items-start lg:flex-row lg:justify-between lg:items-center">
+      <div class="flex items-center justify-center gap-3.5 md:gap-6">
         <a href="enquiry.php" class="hover:text-blue-300 transition">Enquiry</a>
         <a href="ticket.php" class="hover:text-blue-300 transition">Submit a Ticket</a>
         <a href="admin-login.php" class="hover:text-blue-300 transition">Admin Login</a>
         <a href="./jobs.php" class="hover:text-blue-300 transition">Career</a>
         <a href="contact.php" class="hover:text-blue-300 transition">Contact Us</a>
       </div>
-      <div class="flex space-x-4 items-center">
+      <div class="flex items-center justify-between md:gap-5 text-gray-400 w-full md:w-80 pt-1.5 md:pt-0">
         <a href="mailto:info@sizaf.com" class="flex items-center hover:text-blue-300 transition">
           <svg class="w-4 h-4 mr-1 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4v16h20V4H2zm10 7L4 6h16l-8 5z"/></svg>
           info@sizaf.com
@@ -35,7 +35,7 @@
     </a>
 
     <!-- Mobile Toggle Button -->
-    <button @click="mobileMenu = !mobileMenu" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+    <button @click="mobileMenu = !mobileMenu" class="lg:hidden focus:outline-none" aria-label="Toggle menu">
       <svg x-show="!mobileMenu" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -49,7 +49,7 @@
     </button>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex space-x-6 items-center" role="navigation" aria-label="Main navigation">
+    <nav class="hidden lg:flex space-x-6 items-center" role="navigation" aria-label="Main navigation">
       <a href="about.php" class="hover:text-[#ff156e] transition">About Us</a>
 
       <!-- Technology Dropdown - Improved Hover Version -->
@@ -123,30 +123,36 @@
   </div>
 
   <!-- Mobile Navigation -->
-  <div x-show="mobileMenu" x-transition class="md:hidden bg-white px-4 pb-4 space-y-2" role="navigation">
-    <a href="about.php" class="block hover:text-[#ff156e]">About Us</a>
+  <div x-show="mobileMenu"  x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-2" class="lg:hidden bg-white px-6 py-4 space-y-5 shadow-md rounded-b-md" role="navigation">
+    <a href="about.php" class="block text-sm font-semibold text-gray-900 hover:text-[#ff156e]">About Us</a>
 
     <div>
-      <p class="font-medium mt-2">Technology</p>
-      <a href="web-media.php" class="block ml-4 hover:text-[#ff156e]">Web Media</a>
-      <a href="tech.php" class="block ml-4 hover:text-[#ff156e]">Tech</a>
-      <a href="network.php" class="block ml-4 hover:text-[#ff156e]">Network</a>
+      <p class="text-sm font-semibold text-gray-900 mb-2">Technology</p>
+      <nav class="space-y-1 pl-4 border-l border-pink-200">
+        <a href="web-media.php" class="block text-gray-600 hover:text-[#ff156e]">Web Media</a>
+        <a href="tech.php" class="block text-gray-600 hover:text-[#ff156e]">Tech</a>
+        <a href="network.php" class="block text-gray-600 hover:text-[#ff156e]">Network</a>
+      </nav>
     </div>
 
     <div>
-      <p class="font-medium mt-2">Industries and Sectors</p>
-      <a href="governance.php" class="block ml-4 hover:text-[#ff156e]">Governance</a>
-      <a href="profit-organisation.php" class="block ml-4 hover:text-[#ff156e]">Profit Organisation</a>
-      <a href="travel.php" class="block ml-4 hover:text-[#ff156e]">Travel</a>
-      <a href="finance.php" class="block ml-4 hover:text-[#ff156e]">Finance</a>
+      <p class="text-sm font-semibold text-gray-900 mb-2">Industries & Sectors</p>
+      <nav class="space-y-1 pl-4 border-l border-pink-200">
+        <a href="governance.php" class="block text-gray-600 hover:text-[#ff156e]">Governance</a>
+        <a href="profit-organisation.php" class="block text-gray-600 hover:text-[#ff156e]">Profit Organisation</a>
+        <a href="travel.php" class="block text-gray-600 hover:text-[#ff156e]">Travel</a>
+        <a href="finance.php" class="block text-gray-600 hover:text-[#ff156e]">Finance</a>
+      </nav>
     </div>
 
-    <a href="global-network.php" class="block hover:text-[#ff156e] mt-2">Global Networks</a>
+    <a href="global-network.php" class="block text-sm font-semibold text-gray-900 hover:text-[#ff156e]">Global Networks</a>
 
     <div>
-      <p class="font-medium mt-2">News & Blogs</p>
-      <a href="news.php" class="block ml-4 hover:text-[#ff156e]">News</a>
-      <a href="blog.php" class="block ml-4 hover:text-[#ff156e]">Blogs</a>
+      <p class="text-sm font-semibold text-gray-900 mb-2">News & Blogs</p>
+      <nav class="space-y-1 pl-4 border-l border-pink-200">
+        <a href="news.php" class="block text-gray-600 hover:text-[#ff156e]">News</a>
+        <a href="blog.php" class="block text-gray-600 hover:text-[#ff156e]">Blogs</a>
+      </nav>
     </div>
   </div>
 </header>
