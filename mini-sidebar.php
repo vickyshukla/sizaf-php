@@ -8,7 +8,7 @@ function isActive($path, $currentPath) {
 }
 ?>
 <!-- Sidebar -->
-<div class="w-70 bg-[#000327] text-white flex flex-col justify-center items-start gap-10 px-10 rounded-r-3xl">
+<div class="w-70 bg-[#000327] text-white hidden lg:flex flex-col justify-center items-start gap-10 px-10 py-5 rounded-r-3xl">
     <div>
         <h2 class="text-2xl font-bold mb-5 tracking-wider">COMPANY</h2>
         <ul class="list-disc pl-4 space-y-6">
