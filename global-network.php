@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+$metaTitle = "Global Network";
+$metaDescription = "This is global network page.";
+$metaKeywords = "IT solutions, software development, consultancy";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+include('header.php');
+?>
 <?php $regions = [
   "North America" => [
     ["country" => "Canada", "count" => 118],
@@ -337,49 +344,6 @@
         </div>
     </div>
 </section>
-    <div class="min-h-[500px] w-full relative overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('./assest/global-network-main.jpeg')]">
-            <div class="absolute inset-0 bg-black/40 bg-[url('./assest/business-internet-main-bg.png')]"></div>
-        </div>
-
-        <div class="relative z-10 container mx-auto px-4 py-20">
-            <h2 class="text-center text-lg md:text-xl mb-6 fade-up fade-up-delay-1 text-white">
-                Build business and grow with SIZAF NET WITH TECH
-            </h2>
-
-            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-                <h3 class="text-4xl lg:text-6xl font-bold fade-up fade-up-delay-2 text-white">
-                    PAY PER USE
-                </h3>
-                <span class="text-4xl lg:text-6xl font-bold text-red-500 fade-up fade-up-delay-3">
-                    RM 1.99 / MO
-                </span>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 fade-up fade-up-delay-4">
-                <div class="flex flex-col items-center gap-2 fade-up fade-up-delay-4">
-                    <img src="./assest/super-fast.svg" height="80" width="80" alt="Super Fast" />
-                    <span class="text-lg text-white">Super Fast</span>
-                </div>
-
-                <div class="flex flex-col text-4xl items-center gap-2 fade-up fade-up-delay-5 text-white">
-                    +
-                </div>
-
-                <div class="flex flex-col items-center gap-2 fade-up fade-up-delay-6">
-                    <img src="./assest/unlimited-data.svg" height="60" width="60" alt="Unlimited Data" />
-                    <span class="text-lg text-white">Unlimited Data</span>
-                </div>
-            </div>
-
-            <div class="flex justify-center fade-up fade-up-delay-6">
-                <a href="contact.php" class="group relative inline-flex items-center gap-2 px-8 py-4 border border-white hover:border-none transition-colors text-white bg-gradient-to-r hover:from-pink-600 hover:to-pink-700 rounded-md">
-                    <span>Enquiry/Order</span>
-                    <span class="group-hover:translate-x-1 transition-transform">→</span>
-                </a>
-            </div>
-        </div>
-    </div>
     <div id="stats-section" class="relative bg-gradient-to-br from-white via-gray-100 to-gray-50 py-16 px-6 sm:px-10 lg:px-20">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="space-y-10">

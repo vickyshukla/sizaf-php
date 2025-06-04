@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Smart Solutions for Travel & Leisure - Sizaf";
+$metaDescription = "Elevate customer experiences in travel and leisure with Sizaf's innovative technology services. Enhance efficiency, engagement, and satisfaction.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -34,7 +34,7 @@ include('header.php');
                             ['icon' => 'banknote', 'name' => "Finance & Banking", 'page' => 'finance-banking.php']
                         ];
                         
-                        $currentPage = basename($_SERVER['PHP_SELF']);// Default selected
+                        $currentPage = basename($_SERVER['PHP_SELF']);
                         
                         foreach ($industries as $industry): $isActive = $industry['page'] === $currentPage; ?>
                             <a 
@@ -98,25 +98,22 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
-                    <!-- Governance & Security Content -->
+                <?php if (basename($_SERVER['PHP_SELF']) === 'travel-leisure.php'): ?>
+                    <!-- Travel & Leisure Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Travel & Leisure</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                            The steady growth of the travel industry has driven strong sales across various service platforms in recent years.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
-                                SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
-                                enables systems to provide its citizens optimum services.
-                            </p>
+                            With SIZAF NET WITH TECH, end users gain the convenience of planning and comparing locations and costs. It provides mapping, security, and protection for users and their families, offering the latest features to ensure an interesting and pleasant experience.
+                            </p>    
                         </div>
                     </div>
 
@@ -128,8 +125,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector4.jpeg" 
+                                    alt="Travel Leisure" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +135,14 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Elevate Your Travel Experience</h3>
+                                        <p class="text-lg">Smart tools for unforgettable leisure.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                            At SIZAF NET WITH TECH all the latest innovations and new ICT and IOT trends are provided in budget friendly models.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +199,7 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                    SIZAF NET WITH TECH offers advanced infrastructure solutions for the digital transformation in hospitality, including secure hosting, cloud platforms, and IoT systems. We provide smart tourism technology and online booking and payment systems to enhance guest experiences and streamline operations.
                                     </p>
                                 </div>
                             </div>
@@ -222,15 +215,13 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                    With reliable and secure services from SIZAF NET WITH TECH, industries can operate worry-free. SIZAF specializes in designing and managing ready-to-use or customized technology solutions with flexible payment structures, offering services at a fraction of the usual cost. These solutions include CRM sales, e-commerce accounts, and command-and-control systems, all delivered with flexible commercial terms.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+    
                     <!-- Services Content -->
                     <div class="text-center mb-12">
                         <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">SIZAF NET WITH TECH</h1>
