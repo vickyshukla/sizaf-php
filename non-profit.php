@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Technology Solutions for Nonprofit Organizations - Sizaf";
+$metaDescription = "Amplify your nonprofit's impact with Sizaf's customized technology services. Streamline operations, enhance outreach, and achieve your mission effectively.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -34,7 +34,7 @@ include('header.php');
                             ['icon' => 'banknote', 'name' => "Finance & Banking", 'page' => 'finance-banking.php']
                         ];
                         
-                        $currentPage = basename($_SERVER['PHP_SELF']);// Default selected
+                        $currentPage = basename($_SERVER['PHP_SELF']);
                         
                         foreach ($industries as $industry): $isActive = $industry['page'] === $currentPage; ?>
                             <a 
@@ -98,25 +98,22 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
-                    <!-- Governance & Security Content -->
+                <?php if (basename($_SERVER['PHP_SELF']) === 'non-profit.php'): ?>
+                    <!-- Non - Profit Organization Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Non Profit Organization</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                            Non-profit organizations often struggle to meet critical needs, such as childcare, poverty alleviation, food distribution, and healthcare for disadvantaged and oppressed communities. Providing these tech services helps bridge gaps in their operational structure.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
-                                SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
-                                enables systems to provide its citizens optimum services.
-                            </p>
+                            At SIZAF NET WITH TECH, we offer ready-to-use systems, state-of-the-art infrastructure, and flexible commercial models to ensure that non-profit organizations can leverage emerging innovations and best business practices to achieve more effective operations and better budgetary outcomes.
+                            </p>    
                         </div>
                     </div>
 
@@ -128,8 +125,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector3.jpeg" 
+                                    alt="Non profit Organization" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +135,14 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Digital Support for Nonprofits</h3>
+                                        <p class="text-lg">Focus on your mission—we'll handle the tech.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                            All SIZAF NET WITH TECH solutions are being constantly reviewed & tested. It is ready for use for all organizations and respected worldwide.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +199,7 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                    SIZAF NET WITH TECH delivers customized apps while highlighting the value of new technology in strategic planning for nonprofit organizations. We support not-for-profit organizations by integrating innovative solutions like AWS for Nonprofits, enhancing administrative and extension services for greater impact.
                                     </p>
                                 </div>
                             </div>
@@ -222,15 +215,13 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                    The technical systems prove equally important as the application of its process to non-profit organizations. To have the benefits of both advancements, SIZAF NET WITH TECH offers customised services for each and every organisation.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+    
                     <!-- Services Content -->
                     <div class="text-center mb-12">
                         <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">SIZAF NET WITH TECH</h1>

@@ -22,12 +22,12 @@
   ?>
     <article id="post-<?= $blog['id'] ?>" class="post type-post status-publish format-standard hentry">
       <header class="entry-header mb-10">
-        <h2 class="entry-title text-4xl font-bold"><?= $title ?></h2>
+        <h1 class="entry-title text-4xl font-bold"><?= $title ?></h1>
       </header>
 
       <?php if ($img): ?>
         <div class="post-thumbnail mb-6">
-          <img src="<?= $img ?>" alt="<?= $title ?>" class="wp-post-image w-full !h-[30rem] object-cover rounded-lg" >
+          <img src="<?= $img ?>" alt="<?= $title ?>" class="wp-post-image w-full !h-[30rem] object-cover rounded-lg" loading="lazy">
         </div>
       <?php endif; ?>
       <div class="entry-content wordpressContent">

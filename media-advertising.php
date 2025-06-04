@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Cutting-Edge Solutions for Media & Advertising - Sizaf";
+$metaDescription = "Transform your media and advertising strategies with Sizaf's innovative technology services. Enhance creativity, engagement, and campaign performance.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -34,7 +34,7 @@ include('header.php');
                             ['icon' => 'banknote', 'name' => "Finance & Banking", 'page' => 'finance-banking.php']
                         ];
                         
-                        $currentPage = basename($_SERVER['PHP_SELF']);// Default selected
+                        $currentPage = basename($_SERVER['PHP_SELF']);
                         
                         foreach ($industries as $industry): $isActive = $industry['page'] === $currentPage; ?>
                             <a 
@@ -98,25 +98,22 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
-                    <!-- Governance & Security Content -->
+                <?php if (basename($_SERVER['PHP_SELF']) === 'media-advertising.php'): ?>
+                    <!-- Media & Advertising Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Media & Advertising</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                            SIZAF NET WITH TECH provides extremely low latency on the fast Internet. Ideal for media providers, television studios, streamers and live shows. Our secure data processing tools, safe storage and fast data transmission services are available for you to use. The Covid-19 pandemic has shown the benefits of high bandwidth and low-latency networks. By using pay-per-use models, lowering the barrier to entry, decreasing Capex, and improving production and business strategy, SIZAF NET WITH TECH offers edge to media and advertising organizations.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
-                                SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
-                                enables systems to provide its citizens optimum services.
-                            </p>
+                            SIZAF significantly improves and accelerates content, reliability, quality and enhances production, content distribution, media and gaming platforms on all devices or OTTs. The most popular in the media and advertising sector were SIZAF Video’s favorite products and immersive technologies such as VR, AR (Augmented Reality) and MR (Mixed Reality).
+                            </p>    
                         </div>
                     </div>
 
@@ -128,8 +125,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector6.jpg" 
+                                    alt="Construction Real estate" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +135,14 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Your Brand, Spotlighted</h3>
+                                        <p class="text-lg">Maximizing reach with smart advertising tech.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                            SIZAF NET WITH TECH is now ready to offer a full range of media and advertising solutions, including high-speed internet, advanced security platforms, and cutting-edge tools for content production and distribution. We specialize in digital billboard companies, internet advertising, and online advertisements, providing support for global advertisers through DSP (Demand-Side Platform) and SSP (Supply-Side Platform) integrations. Our technology is fully prepared to serve the media and advertising industry today.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +199,7 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                    SIZAF NET WITH TECH Software Tools has made it easy for organizations in technology, media, and advertising to create, send, connect, and monetize content, allowing them to focus on producing content that reaches wider audiences in their regions and provides personalized artistic assistance.
                                     </p>
                                 </div>
                             </div>
@@ -222,15 +215,13 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                    SIZAF’S NET WITH TECH technology solutions offer valuable and exciting benefits to the advertising and marketing industry, expand their reach, increase revenue recognition, and create new sources of advertising and content.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+    
                     <!-- Services Content -->
                     <div class="text-center mb-12">
                         <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">SIZAF NET WITH TECH</h1>
