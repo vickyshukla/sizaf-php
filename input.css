@@ -159,3 +159,31 @@
   list-style-type: decimal;
   margin-bottom: 0.5rem;
 }
+/*****Job css*****/
+/* Animation for job cards */
+[itemprop="jobPosting"] {
+  transition: all 0.3s ease;
+}
+
+/* Reduced motion styles */
+@media (prefers-reduced-motion: reduce) {
+  [itemprop="jobPosting"] {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .bg-gradient-to-r {
+    background: #fff !important;
+  }
+  
+  [itemprop="jobPosting"] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  .job-filter {
+    display: none !important;
+  }
+}

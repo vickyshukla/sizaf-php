@@ -16,5 +16,12 @@ function slugify($text) {
     return $text ?: 'n-a';
 }
 
+// Helper function to extract content by keyword
+function extractByKeyword($keyword, $content) {
+    $pattern = '/(?:<[^>]+>)?' . preg_quote($keyword, '/') . '[:：]?\s*(.*?)<\/p>/i';
+    preg_match($pattern, $content, $match);
+    return trim(strip_tags($match[1] ?? 'Not specified'));
+}
+
 
 ?>
