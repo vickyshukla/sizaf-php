@@ -72,7 +72,7 @@ $filteredNews = array_filter($newsData['articles'], function ($article) {
 
         <!-- News Section -->
         <div class="flex-1 lg:max-h-[80vh] lg:overflow-y-auto p-4 sm:p-6">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">NEWS</h2>
+            <h1 class="text-2xl md:text-3xl font-bold mb-6 text-center">NEWS</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php foreach ($filteredNews as $news): ?>
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
