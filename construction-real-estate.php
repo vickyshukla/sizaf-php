@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Advanced Solutions for Construction & Real Estate - Sizaf";
+$metaDescription = "Drive efficiency and innovation in construction and real estate with Sizaf's tailored technology services. Streamline processes and boost project success.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -34,7 +34,7 @@ include('header.php');
                             ['icon' => 'banknote', 'name' => "Finance & Banking", 'page' => 'finance-banking.php']
                         ];
                         
-                        $currentPage = basename($_SERVER['PHP_SELF']);// Default selected
+                        $currentPage = basename($_SERVER['PHP_SELF']);
                         
                         foreach ($industries as $industry): $isActive = $industry['page'] === $currentPage; ?>
                             <a 
@@ -98,25 +98,22 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
-                    <!-- Governance & Security Content -->
+                <?php if (basename($_SERVER['PHP_SELF']) === 'construction-real-estate.php'): ?>
+                    <!-- Construction & Real Estate Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Construction & Real Estate</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                            At SIZAF, we have a team of experts, including analysts, developers, and business scientists, who tailor our products to meet customer needs. Our dedicated team at SIZAF possesses extensive knowledge and expertise in the building and real estate sectors.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
-                                SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
-                                enables systems to provide its citizens optimum services.
-                            </p>
+                            At SIZAF, we offer ERP solutions tailored to the rental and property management industry. Our system includes multi-faceted quality tracking, dynamic order processing, supply analysis, vendor management, and secure, real-time communication networks. Additionally, it provides industry-driven capabilities for warning and recall management.
+                            </p>    
                         </div>
                     </div>
 
@@ -128,8 +125,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector5.jpeg" 
+                                    alt="Construction Real estate" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +135,14 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Bridging Ideas to Reality</h3>
+                                        <p class="text-lg">Digital solutions for construction and property growth.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                            At SIZAF NET WITH TECH, we concentrate on market needs and service, giving it a technological advantage, making it more competitive to develop and supplying its clients and suppliers to grow faster with greater experience.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +199,7 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                    The dynamic SIZAF NET WITH TECH platform enables professionals to collaborate effectively, providing IoT solutions for smart buildings, driving digital in construction industry, and utilizing 5G for real estate and construction for enhanced efficiency.
                                     </p>
                                 </div>
                             </div>
@@ -222,15 +215,13 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                    In collaboration with buildings and real estate corporations, including technology providers, immovable enterprises, architects and land management firms, SIZAF offers an innovative approach and systems for a highly competitive and complex industry.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+    
                     <!-- Services Content -->
                     <div class="text-center mb-12">
                         <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">SIZAF NET WITH TECH</h1>

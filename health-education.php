@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Innovative Solutions for Health & Education - Sizaf";
+$metaDescription = "Transform health and education sectors with Sizaf's tailored technology services. Enhance efficiency, improve outcomes, and drive impactful change.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -34,7 +34,7 @@ include('header.php');
                             ['icon' => 'banknote', 'name' => "Finance & Banking", 'page' => 'finance-banking.php']
                         ];
                         
-                        $currentPage = basename($_SERVER['PHP_SELF']);// Default selected
+                        $currentPage = basename($_SERVER['PHP_SELF']);
                         
                         foreach ($industries as $industry): $isActive = $industry['page'] === $currentPage; ?>
                             <a 
@@ -98,24 +98,18 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
-                    <!-- Governance & Security Content -->
+                <?php if (basename($_SERVER['PHP_SELF']) === 'health-education.php'): ?>
+                    <!-- Health & Education Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Health & Security</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
-                            </p>
-                            <p class="text-slate-600 leading-relaxed mt-4">
-                                SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
-                                enables systems to provide its citizens optimum services.
+                            There is a massive opportunity to promote health and education through the use of SIZAF NET WITH TECH tools. The recent pandemic highlighted the challenges faced by the health and education sectors, and the stable, scalable, and cost-effective solutions offered by SIZAF NET WITH TECH can help address these demands.
                             </p>
                         </div>
                     </div>
@@ -128,8 +122,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector2.jpeg" 
+                                    alt="Health Education" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +132,14 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Future-Ready Health & Education</h3>
+                                        <p class="text-lg">Enhancing access, efficiency, and outcomes.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                            SIZAF NET WIT TECH along with the healthcare and educational organisations is ready to create tailor-made solutions as per customer needs.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +196,7 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                    Whether for health centers or educational institutions, SIZAF leverages Artificial Intelligence in Education and AI in Healthcare to deliver accurate, real-time data with the highest security standards. Our commitment to Data Security in Healthcare ensures safe and reliable access for doctors, patients, children, parents, and teachers.
                                     </p>
                                 </div>
                             </div>
@@ -222,9 +212,7 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                    SIZAF NET WITH TECH offers software solutions leveraging the latest advanced technologies and skills, aimed at fostering a balanced and stable society and empowering individuals.
                                     </p>
                                 </div>
                             </div>
