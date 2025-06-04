@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Agri,Fisheries & Climate| SIZAF NET WITH TECH";
+$metaDescription = "Drive innovation and sustainability in agriculture, fisheries, and climate sectors with Sizaf's technology solutions. Enhance productivity and environmental impact.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -98,20 +98,20 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
+                <?php if (basename($_SERVER['PHP_SELF']) === 'agri-climate.php'): ?>
                     <!-- Governance & Security Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Agri, Fisheries & Climate</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                          SIZAF NET WITH TECH will merge with the software industry to enhance production and manufacturing processes and promote holistic development.
+                           SIZAF NET WITH TECH will create new positions and responsibilities within tech, reduce redundancy and asymmetry, improve process details, streamline procedures, and maximize equipment efficiency.
+                          Its efforts will strengthen relations with more suppliers and future consumers, provide innovative ways to monitor and ensure compliance, accelerate food production, and maintain stability, productivity, and security in food production, aligning with the network's goals to meet both production and consumer needs.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
                                 SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
@@ -128,8 +128,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector10.jpeg" 
+                                    alt="Smart agriculture, fishing boats, and climate monitoring tech integrated in nature" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +138,14 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Smart Sustainability</h3>
+                                        <p class="text-lg">Empowering Eco-Intelligent Agriculture & Marine Innovation</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                           All the stakeholders are helped and benefited from the infrastructure and technology in Agri,Fisheries and Climate. It helps in growth of these organisations.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +202,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                    SIZAF NET WITH TECH software offers solutions for the agriculture, fisheries, and environmental sectors, enhancing performance through advanced internet technology, mobile phones, data storage, and AI. We specialize in
+                                     agriculture websites, provide online agriculture products, and address climate change and fisheries for sustainable growth.
                                     </p>
                                 </div>
                             </div>
@@ -222,9 +219,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                    SIZAF NET WITH TECH will be an application approach to help enhance the use of geospatial science, soil, crop and climate knowledge analysis and management,
+                                     and the overall growth of the technological, environmental and social dimensions of sustainable food production.
                                     </p>
                                 </div>
                             </div>

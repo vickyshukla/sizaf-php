@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Transport & Logistics | SIZAF NET WITH TECH";
+$metaDescription = "Optimize your transport and logistics operations with Sizaf's advanced technology services. Improve efficiency, reduce costs, and enhance supply chain management.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -98,20 +98,20 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
+                <?php if (basename($_SERVER['PHP_SELF']) === 'transport-logistics.php'): ?>
                     <!-- Governance & Security Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Transport & Logistics</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                             The pandemic acknowledged the value of the transport and logistics sectors, demonstrated the need for time and resources to be aligned, and selected potential growth options.
+                             Transport and logistics businesses around the world play an important role today in the growth of their economies, in simplifying dynamic processes and in moving away from old IT systems.
+                             SIZAF NET WITH TECH offers ready-to-use applications to the world’s leading cruise ships, airports, distribution and bus manufacturers, freight organizations and airlines.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
                                 SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
@@ -128,7 +128,7 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
+                                    src="./assest/industry-sector9.jpg" 
                                     alt="Hands holding smartphones with city skyline background representing modern governance technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
@@ -138,15 +138,15 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Connected Mobility</h3>
+                                        <p class="text-lg">Optimizing Supply Chains & Real-Time Logistics</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                             SIZAF NET WITH TECH will be equipped with all the latest
+                              innovations in the transport & logistics market to meet the present demands and requirement.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +203,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                     With SIZAF NET WITH TECH, freight and logistics companies are rapidly optimizing the supply chain. We prioritize the safety of individuals and materials in all our solutions for the industry,
+                                      supporting global transport and logistics and nationwide express trucking to ensure efficiency and security.
                                     </p>
                                 </div>
                             </div>
@@ -222,9 +220,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                      With more advanced machinery, business processes are automated, risks are minimized, and sales efficiency is increased. The gradually interconnected supply chain and the large IoT industry offer numerous advantages, including shortened delivery times, 
+                                      reduced operator failures, better commodity regulation, and improved protection against IT destruction and theft.
                                     </p>
                                 </div>
                             </div>

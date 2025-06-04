@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Finance & Banking| SIZAF NET WITH TECH";
+$metaDescription = "Transform your finance and banking operations with Sizaf's innovative technology services. Enhance security, streamline processes, and improve customer experiences.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -98,20 +98,21 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
+                <?php if (basename($_SERVER['PHP_SELF']) === 'finance-banking.php'): ?>
                     <!-- Governance & Security Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Finance & Banking</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                            SIZAF NET WITH TECH empowers businesses in the finance and banking sectors to leverage state-of-the-art innovations, enhancing resource performance, payment networks, and custom financial systems and platforms within a highly secure environment. The advantages of emerging technology include super-customized platforms,
+                             direct user access, insightful decision-making, and an effective response to client challenges.
+                            SIZAF NET WITH TECH ensures that its customers and their end users stay informed about emerging technologies.
+                             To mitigate the impact of new services and changing technologies, finance and banking suppliers must continually adapt to modern industrial advancements. The sector collaborates rapidly with SIZAF to remain competitive and meet customer demands. SIZAF NET WITH TECH facilitates the migration of banks and financial institutions to superior technology, faster processes, and enhanced customer satisfaction.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
                                 SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
@@ -128,8 +129,8 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    src="./assest/industry-sector11.jpeg" 
+                                    alt="Modern digital banking interface with financial charts and secure technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
@@ -138,15 +139,15 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Digital Trust & Transformation</h3>
+                                        <p class="text-lg">Driving Secure and Scalable Financial Innovation</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                          SIZAF NET WITH TECH offers software solutions to the finance and banking sector, providing highly secure connections, 
+                          reliable club and mobile networks, and easy access from any location or smartphone.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +204,9 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                  SIZAF NET WITH TECH technologies are designed to provide banking and finance institutions with cutting-edge 
+                                  service and customer loyalty. This boosts the sector's competitiveness and enhances communication across all networks with consumers and suppliers. Our solutions also support investment banking and
+                                   streamline processes like public bank housing loan services, ensuring consistent, secure operations for the industry.
                                     </p>
                                 </div>
                             </div>
@@ -222,9 +222,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                   SIZAF NET WITH TECH Innovations has gained considerable experience in the banking sector to help the finance industry meet the needs of consumers, administrators, workers, and technology clients. Their intelligent business model promises extremely 
+                                   low latency and broad geographical reach, providing all customers with a stable and high-speed environment.
                                     </p>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
-$metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
+$metaTitle = "Production,Engg & Pharma | SIZAF NET WITH TECH";
+$metaDescription = "Enhance efficiency and innovation in production, engineering, and pharma with Sizaf's tailored technology services. Drive progress and streamline operations.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
@@ -98,20 +98,20 @@ include('header.php');
 
             <!-- Main Content -->
             <div class="lg:col-span-3 space-y-8">
-                <?php if (basename($_SERVER['PHP_SELF']) === 'governance-security.php'): ?>
+                <?php if (basename($_SERVER['PHP_SELF']) === 'production-pharma.php'): ?>
                     <!-- Governance & Security Content -->
                     <div class="text-center">
                         <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
                             Public Sector Excellence
                         </span>
-                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Governance & Security</h1>
+                        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Production, Engg & Pharma</h1>
 
                         <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 mb-8">
                             <h2 class="text-2xl font-bold text-slate-900 mb-4">AN OVERVIEW</h2>
                             <p class="text-slate-600 leading-relaxed text-lg">
-                                IT technology & networking are the important needs of present situation. Both government and defense systems
-                                continue to enhance and upgrade public sector processes, play an important role in supplying the authority
-                                for mass services and providing tailor-made solutions to both external and internal issues.
+                              The services offered by SIZAF NET WITH TECH ensure stress-free growth and development, meeting consumer demands while enabling real-time market 
+                              analysis to anticipate potential success and enhance profitability. New approaches to manufacturing are being revised and modernized, helping to map and refine traditional, power-intensive techniques as much as possible.
+                              Innovative technology is provided in the area of quality control, standardization of products and effective commodity handling of the supply chain.
                             </p>
                             <p class="text-slate-600 leading-relaxed mt-4">
                                 SIZAF NET WITH TECH Software provides a responsible partnership to public sector management, security and
@@ -128,7 +128,7 @@ include('header.php');
                             <!-- Hero Image -->
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
-                                    src="./assest/industry-sector1.jpg" 
+                                    src="./assest/industry-sector8.jpeg" 
                                     alt="Hands holding smartphones with city skyline background representing modern governance technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
@@ -138,15 +138,15 @@ include('header.php');
                                 <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
                                 <div class="backdrop-blur-xs absolute inset-0 flex items-center justify-center">
                                     <div class="text-center text-white">
-                                        <h3 class="text-2xl font-bold mb-2">Digital Transformation</h3>
-                                        <p class="text-lg">Empowering Public Sector Innovation</p>
+                                        <h3 class="text-2xl font-bold mb-2">Industrial Evolution</h3>
+                                        <p class="text-lg">Accelerating Smart Manufacturing & Design</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="text-slate-600 text-center mb-8 text-lg">
-                                The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest
-                                network technologies.
+                              In order to protect clients IP, SIZAF NET WITH TECH technologies will revise obsolete networking and control systems,
+                               have complete networking security, minimize costs and increase business efficiency.
                             </p>
 
                             <!-- Features Grid -->
@@ -203,10 +203,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, we collaborate together with all stakeholders on operational and regulatory
-                                        concerns. In partnership with clients, in numerous utilities and government departments such as ICT and
-                                        community smart apps, we are continually strengthening and developing our innovative goods and services
-                                        portfolio.
+                                       SIZAF NET WITH TECH systems improve processing efficiency, performance, and quality. Real-time data is distributed to vendors via distribution centers. We specialize in digital marketing for pharmaceutical companies, provide managed 
+                                       IT services for engineering firms, and use edge computing for production industries, driving advancements for all.
                                     </p>
                                 </div>
                             </div>
@@ -222,9 +220,8 @@ include('header.php');
                                 </h3>
                                 <div class="mt-4">
                                     <p class="text-slate-600 leading-relaxed">
-                                        At SIZAF NET WITH TECH, our aim is to address infrastructure needs. We believe that a cooperative practice
-                                        approach is essential, as it aligns with the government's commitment to strengthen cooperation through
-                                        reliable and safe mass services.
+                                      Enterprises can use SIZAF NET WITH TECH solutions to minimize errors and downtime. SIZAF methods facilitate cooperation and provide all partners with valuable information in a secure and comfortable way. 
+                                      The primary aim is to reliably produce and sell high-quality luxury products, reduce downtime and efficiently use electricity.
                                     </p>
                                 </div>
                             </div>
