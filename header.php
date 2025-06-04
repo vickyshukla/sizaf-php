@@ -2,12 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sizaf company website">
-  <meta name="keywords" content="Sizaf, tech, web media, network, IT solutions, digital transformation">
-  <meta name="author" content="Sizaf Techno Venture">
-  <title>Sizaf - Technology Solutions for a Digital Future</title>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Dynamic Title -->
+    <title><?php echo $metaTitle ?? 'Default Page Title'; ?></title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="<?php echo $metaDescription ?? 'Default description for the page.'; ?>">
+   <!-- Meta Keywords -->
+    <meta name="keywords" content="<?php echo $metaKeywords ?? 'default, keywords'; ?>">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?php echo $canonicalURL ?? 'https://yourdomain.com/current-page'; ?>" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="<?php echo $metaTitle ?? 'Default Page Title'; ?>">
+    <meta property="og:description" content="<?php echo $metaDescription ?? 'Default description'; ?>">
+    <meta property="og:url" content="<?php echo $canonicalURL ?? 'https://yourdomain.com'; ?>">
+    <meta property="og:image" content="<?php echo $metaImage ?? 'https://yourdomain.com/default-og-image.jpg'; ?>">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo $metaTitle ?? 'Default Page Title'; ?>">
+    <meta name="twitter:description" content="<?php echo $metaDescription ?? 'Default description'; ?>">
+    <meta name="twitter:image" content="<?php echo $metaImage ?? 'https://yourdomain.com/default-twitter-image.jpg'; ?>">
+
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <!-- TailwindCSS -->

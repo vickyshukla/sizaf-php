@@ -84,7 +84,7 @@
           </svg>
         </button>
         <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
-          <a href="web-media.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Governance & Security</a>
+          <a href="governance-security.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Governance & Security</a>
           <a href="tech.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Health & Education</a>
           <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Non Profit Organization</a>
           <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Travel & Leisure</a>

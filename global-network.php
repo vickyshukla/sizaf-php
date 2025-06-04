@@ -137,6 +137,206 @@
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 </head>
 <div class='container mx-auto'>
+  <?php
+/**
+ * Pricing Hero Section
+ * 
+ * @package YourThemeName
+ */
+?>
+
+<section class="relative py-16 px-4 overflow-hidden h-[650px] flex items-center">
+    <!-- Background with Network Pattern -->
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
+        <div class="absolute inset-0 opacity-20">
+            <img 
+                src="./assest/global-network-main.jpeg" 
+                alt="Network connectivity background showing digital connections" 
+                class="object-cover w-full h-full"
+                loading="lazy"
+                width="1200"
+                height="650"
+            />
+        </div>
+        <!-- Animated Network Lines -->
+        <div class="absolute inset-0">
+            <svg class="w-full h-full" viewBox="0 0 1200 650" fill="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="rgba(59, 130, 246, 0)" />
+                        <stop offset="50%" stop-color="rgba(59, 130, 246, 0.8)" />
+                        <stop offset="100%" stop-color="rgba(59, 130, 246, 0)" />
+                    </linearGradient>
+                </defs>
+                <path
+                    d="M0,325 Q300,125 600,325 T1200,325"
+                    stroke="url(#lineGradient)"
+                    stroke-width="2"
+                    class="animate-pulse"
+                />
+                <path
+                    d="M0,225 Q400,425 800,225 T1200,225"
+                    stroke="url(#lineGradient)"
+                    stroke-width="2"
+                    class="animate-pulse"
+                    style="animation-delay: 1s"
+                />
+                <path
+                    d="M0,425 Q200,225 400,425 T800,425 T1200,425"
+                    stroke="url(#lineGradient)"
+                    stroke-width="2"
+                    class="animate-pulse"
+                    style="animation-delay: 2s"
+                />
+            </svg>
+        </div>
+        <!-- Floating Particles -->
+        <div class="absolute inset-0">
+            <?php for ($i = 0; $i < 15; $i++): ?>
+                <div
+                    class="absolute w-2 h-2 bg-blue-400 rounded-full opacity-30 animate-pulse"
+                    style="
+                        left: <?= rand(0, 100) ?>%;
+                        top: <?= rand(0, 100) ?>%;
+                        animation-delay: <?= rand(0, 3) ?>s;
+                        animation-duration: <?= 2 + rand(0, 2) ?>s;
+                    "
+                    aria-hidden="true"
+                ></div>
+            <?php endfor; ?>
+        </div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto w-full">
+        <div class="text-center">
+            <!-- Top Badge -->
+            <span class="inline-flex items-center mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 px-4 py-1 text-sm font-medium rounded-full">
+                <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                </svg>
+                Limited Time Offer
+            </span>
+
+            <!-- Main Heading -->
+            <h1 class="text-base md:text-lg text-blue-200 mb-3 font-medium">
+                Build business and grow with SIZAF NET WITH TECH
+            </h1>
+
+            <!-- Pricing Display -->
+            <div class="mb-6">
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-2">
+                    PAY PER USE 
+                    <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"> RM 1.99</span>
+                    <span class="text-xl md:text-2xl lg:text-3xl text-orange-400"> / MO</span>
+                </h2>
+                <p class="text-blue-200 text-sm md:text-base">
+                    No contracts, no commitments - pay only for what you use
+                </p>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="grid md:grid-cols-3 gap-4 mb-6 max-w-4xl mx-auto">
+                <?php
+                $features = [
+                    [
+                        'icon' => 'zap',
+                        'title' => 'Super Fast',
+                        'description' => 'Lightning-fast connectivity',
+                        'color' => 'text-yellow-400'
+                    ],
+                    [
+                        'icon' => 'database',
+                        'title' => 'Unlimited Data',
+                        'description' => 'No caps, no limits',
+                        'color' => 'text-blue-400'
+                    ],
+                    [
+                        'icon' => 'wifi',
+                        'title' => '24/7 Uptime',
+                        'description' => 'Reliable service guaranteed',
+                        'color' => 'text-green-400'
+                    ]
+                ];
+                
+                foreach ($features as $feature): ?>
+                    <div class="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 rounded-lg">
+                        <div class="p-4 text-center">
+                            <div class="w-12 h-12 mx-auto mb-3 bg-white/10 rounded-full flex items-center justify-center">
+                                <svg class="h-6 w-6 <?= $feature['color'] ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?= 
+                                        $feature['icon'] === 'zap' ? 'M13 10V3L4 14h7v7l9-11h-7z"' : 
+                                        ($feature['icon'] === 'database' ? 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"' : 
+                                        'M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"')
+                                    ?>"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-1"><?= $feature['title'] ?></h3>
+                            <p class="text-blue-200 text-xs"><?= $feature['description'] ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Benefits List -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-2 mb-6 max-w-3xl mx-auto">
+                <?php
+                $benefits = ["No setup fees", "Cancel anytime", "24/7 support", "Enterprise-grade security"];
+                
+                foreach ($benefits as $benefit): ?>
+                    <div class="flex items-center text-white/90 justify-center md:justify-start">
+                        <svg class="h-4 w-4 text-green-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm"><?= $benefit ?></span>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-4">
+                <a 
+                    href="/enquiry-order" 
+                    class="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center"
+                    aria-label="Enquire or Order our services"
+                >
+                    Enquiry/Order
+                    <svg class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+                <a 
+                    href="/learn-more" 
+                    class="border border-white/30 text-white hover:bg-white/10 px-6 py-3 text-base font-semibold backdrop-blur-sm rounded-md inline-flex items-center"
+                    aria-label="Learn more about our pricing"
+                >
+                    Learn More
+                </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap justify-center items-center gap-6 text-blue-200 text-xs">
+                <div class="flex items-center">
+                    <svg class="h-3 w-3 text-green-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Trusted by 1000+ businesses</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="h-3 w-3 text-green-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>99.9% uptime guarantee</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="h-3 w-3 text-green-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>ISO certified</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <div class="min-h-[500px] w-full relative overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('./assest/global-network-main.jpeg')]">
             <div class="absolute inset-0 bg-black/40 bg-[url('./assest/business-internet-main-bg.png')]"></div>
