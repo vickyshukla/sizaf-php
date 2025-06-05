@@ -1,37 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.job-filter button');
-    // Job filtering functionality
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-        filterButtons.forEach(btn => btn.classList.remove('bg-white', 'shadow-sm'));
-        this.classList.add('bg-white', 'shadow-sm');
-        const filterValue = this.textContent.trim();
-        console.log('Filter by:', filterValue);
+            filterButtons.forEach(btn => btn.classList.remove('bg-white', 'shadow-sm'));
+            this.classList.add('bg-white', 'shadow-sm');
+            const filterValue = this.textContent.trim();
+            console.log('Filter by:', filterValue);
         });
-    });
-
-    // Open modal on job title click
-    document.querySelectorAll('.job-title').forEach(function(element) {
-        element.addEventListener('click', function() {
-        var title = this.getAttribute('data-title');
-        var content = this.getAttribute('data-content');
-        
-        document.getElementById('modalTitle').innerHTML = title;
-        document.getElementById('modalContent').innerHTML = content;
-        document.getElementById('jobModal').classList.remove('hidden');
-        });
-    });
-
-    // Close modal on close button click
-    document.getElementById('closeModal').addEventListener('click', function() {
-        document.getElementById('jobModal').classList.add('hidden');
-    });
-
-    // Close modal if clicked outside the modal content
-    document.getElementById('jobModal').addEventListener('click', function(e) {
-        if (e.target.id === 'jobModal') {
-        this.classList.add('hidden');
-        }
     });
 
     // Open Apply Now Form
@@ -45,13 +20,42 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("apply-now-form").style.display = "none";
     };
 
+    // Display Success Toast Message
+    function showSuccessToast() {
+        const successMessage = document.getElementById("success-message");
+
+        successMessage.classList.remove("hidden");
+        successMessage.classList.add("transition-opacity", "opacity-100", "duration-500", "transform", "translate-y-0");
+
+        setTimeout(() => {
+            successMessage.classList.remove("opacity-100");
+            successMessage.classList.add("opacity-0", "translate-y-10");
+
+            setTimeout(() => {
+            successMessage.classList.add("hidden");
+            }, 500);
+        }, 4000);
+    }
+
+    // Display Error Toast Message
+    function showErrorToast() {
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.classList.remove("hidden");
+    errorMessage.classList.add("transition-opacity", "opacity-100", "duration-500", "transform", "translate-y-0");
+
+    setTimeout(() => {
+        errorMessage.classList.remove("opacity-100");
+        errorMessage.classList.add("opacity-0", "translate-y-10");
+
+        setTimeout(() => {
+        errorMessage.classList.add("hidden");
+        }, 500);
+    }, 4000);
+    }
+
     // Form submission handling
     document.getElementById("application-form").addEventListener("submit", function(event) {
         event.preventDefault();
-
-        // Hide previous messages
-        document.getElementById("error-message").style.display = "none";
-        document.getElementById("success-message").style.display = "none";
 
         // Collect form data
         const fullName = document.getElementById("fullName").value.trim();
@@ -61,12 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Simple validation functions
         function isValidEmail(email) {
-            // Basic email regex
             return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
         }
 
         function isValidPhone(phone) {
-            // Basic phone regex allowing digits, spaces, dashes, plus sign
             return /^[\d\s\-\+]{7,15}$/.test(phone);
         }
 
@@ -132,6 +134,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Replace phone field value with full phone number before sending
         this.phone.value = fullPhoneNumber;
 
+        // Show loader and hide submit button content
+        const submitButtonText = document.getElementById("submitButtonText");
+        const loader = document.getElementById("loader");
+        submitButtonText.classList.add("hidden");
+        loader.classList.remove("hidden");
+        submitButton.disabled = true;
+
         // If all validations pass, proceed with submission
         const formData = new FormData(this);
         formData.append("recaptchaResponse", recaptchaResponse);
@@ -146,20 +155,26 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-            document.getElementById("success-message").innerText = "Your application has been submitted successfully!";
-            document.getElementById("success-message").style.display = "block";
-            document.getElementById("application-form").reset();
-            grecaptcha.reset();  // Reset reCAPTCHA after success
-            setTimeout(closeForm, 5000);
+                showSuccessToast();
+                document.getElementById("application-form").reset();
+                grecaptcha.reset();  // Reset reCAPTCHA after success
+                setTimeout(() => {
+                    closeForm();
+                }, 5000);
             } else {
-            document.getElementById("error-message").innerText = data.error || "An error occurred. Please try again.";
-            document.getElementById("error-message").style.display = "block";
+                document.getElementById("error-message").innerText = data.error || "An error occurred. Please try again.";
+                document.getElementById("error-message").style.display = "block";
             }
         })
         .catch(error => {
             console.error('Error:', error);
-            document.getElementById("error-message").innerText = "An error occurred. Please try again.";
-            document.getElementById("error-message").style.display = "block";
+    showErrorToast();
+        })
+        .finally(() => {
+            // Hide loader and enable submit button again
+            loader.classList.add("hidden");
+            submitButtonText.classList.remove("hidden"); 
+            submitButton.disabled = false; 
         });
     });
 
@@ -168,16 +183,13 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(res => res.json())
         .then(data => {
         const select = document.getElementById('countryCode');
-        // Sort countries by name
         data.sort((a, b) => a.name.common.localeCompare(b.name.common));
         data.forEach(country => {
-            // Some countries have multiple calling codes
             const callingCodes = country.idd?.root && country.idd?.suffixes ? country.idd.suffixes.map(suffix => country.idd.root + suffix) : [];
             callingCodes.forEach(code => {
             const option = document.createElement('option');
             option.value = code;
             option.textContent = `${country.name.common} (${code})`;
-            // Set Malaysia as the default selected option
             if (country.name.common === 'Malaysia') {
             option.selected = true;
             }
@@ -186,4 +198,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     })
     .catch(console.error);
+
 });
