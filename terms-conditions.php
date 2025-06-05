@@ -324,4 +324,9 @@ include('header.php');
                             </div>
                         </div>
                     </section>  
-                                                </div></div>   </div></main></div></html>
+                </div>
+            </div>   
+        </div>
+    </main>
+</div>
+<?php include 'footer.php'; ?>
