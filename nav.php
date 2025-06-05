@@ -51,13 +51,31 @@
       </svg>
     </button>
 
+    <?php
+      $currentPage = basename($_SERVER['PHP_SELF']);
+
+      // Dropdown parent active checks
+      $isTechActive = in_array($currentPage, ['web-media.php', 'tech.php', 'network.php']);
+      $isIndustryActive = in_array($currentPage, [
+        'governance-security.php', 'health-education.php', 'non-profit.php', 'travel-leisure.php',
+        'construction-real-estate.php', 'media-advertising.php', 'retail-ecommerce.php',
+        'production-pharma.php', 'transport-logistics.php', 'agri-climate.php', 'finance-banking.php'
+      ]);
+      $isBlogActive = in_array($currentPage, ['news.php', 'blog.php']);
+    ?>
+
     <!-- Desktop Navigation -->
     <nav class="hidden lg:flex space-x-6 items-center" role="navigation" aria-label="Main navigation">
-      <a href="about.php" class="hover:text-[#ff156e] transition">About Us</a>
+      <div>
+        <a href="about.php" class="hover:text-[#ff156e] transition <?= $currentPage === 'about.php' ? 'text-[#ff156e]' : '' ?>">About Us</a>
+        <?php if ($currentPage === 'about.php'): ?>
+          <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
+        <?php endif; ?>
+      </div>
 
       <!-- Technology Dropdown - Improved Hover Version -->
       <div class="relative group">
-        <button class="flex items-center hover:text-[#ff156e] transition-colors duration-200">
+        <button class="flex items-center transition-colors duration-200 <?= $isTechActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
           Technology Services
           <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" 
               fill="none" 
@@ -67,16 +85,19 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+        <?php if ($isTechActive): ?>
+          <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
+        <?php endif; ?>
         <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
-          <a href="web-media.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Web Media</a>
-          <a href="tech.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Tech</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Network</a>
+          <a href="web-media.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'web-media.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Web Media</a>
+          <a href="tech.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'tech.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Tech</a>
+          <a href="network.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'network.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Network</a>
         </div>
       </div>
 
       <!-- Industry Dropdown -->
       <div class="relative group">
-        <button class="flex items-center hover:text-[#ff156e] transition-colors duration-200">
+        <button class="flex items-center transition-colors duration-200 <?= $isIndustryActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
           Industries and Sectors
           <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" 
               fill="none" 
@@ -86,27 +107,37 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+        <?php if ($isIndustryActive): ?>
+          <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
+        <?php endif; ?>
         <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
-          <a href="governance-security.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Governance & Security</a>
-          <a href="tech.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Health & Education</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Non Profit Organization</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Travel & Leisure</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Construction & Real Estate</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Media & Advertising</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Retail & E-Commerce</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Production, Engg & Pharma</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Transport & Logistics</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Agri, Fisheries & Climate</a>
-          <a href="network.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Finance & Banking</a>     
+          <a href="governance-security.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'governance-security.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Governance & Security</a>
+          <a href="health-education.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'health-education.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Health & Education</a>
+          <a href="non-profit.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'non-profit.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Non Profit Organization</a>
+          <a href="travel-leisure.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'travel-leisure.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Travel & Leisure</a>
+          <a href="construction-real-estate.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'construction-real-estate.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Construction & Real Estate</a>
+          <a href="media-advertising.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'media-advertising.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Media & Advertising</a>
+          <a href="retail-ecommerce.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'retail-ecommerce.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Retail & E-Commerce</a>
+          <a href="production-pharma.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'production-pharma.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Production, Engg & Pharma</a>
+          <a href="transport-logistics.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'transport-logistics.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Transport & Logistics</a>
+          <a href="agri-climate.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'agri-climate.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Agri, Fisheries & Climate</a>
+          <a href="finance-banking.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'finance-banking.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Finance & Banking</a>     
         </div>
       </div>
 
-
-      <a href="global-network.php" class="hover:text-[#ff156e] transition">Global Networks</a>
+        <!-- Global Network -->
+      <div>
+        <a href="global-network.php" class="hover:text-[#ff156e] transition <?= $currentPage === 'global-network.php' ? 'text-[#ff156e]' : '' ?>">
+          Global Networks
+        </a>
+        <?php if ($currentPage === 'global-network.php'): ?>
+          <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
+        <?php endif; ?>
+      </div>
 
       <!-- Blog Dropdown -->
        <div class="relative group">
-        <button class="flex items-center hover:text-[#ff156e] transition-colors duration-200">
+        <button class="flex items-center transition-colors duration-200 <?= $isBlogActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
           News and Blogs
           <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" 
               fill="none" 
@@ -116,9 +147,12 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+        <?php if ($isBlogActive): ?>
+          <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
+        <?php endif; ?>
         <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
-          <a href="./news.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">News</a>
-          <a href="./blog.php" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-[#ff156e] transition-colors duration-150">Blogs</a>
+          <a href="./news.php" class="block px-4 py-2 text-gray-700 <?= $currentPage === 'news.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?> transition-colors duration-150">News</a>
+          <a href="./blog.php" class="block px-4 py-2 text-gray-700 <?= $currentPage === 'blog.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?> transition-colors duration-150">Blogs</a>
         </div>
       </div>
 
@@ -141,10 +175,17 @@
     <div>
       <p class="text-sm font-semibold text-gray-900 mb-2">Industries & Sectors</p>
       <nav class="space-y-1 pl-4 border-l border-pink-200">
-        <a href="governance.php" class="block text-gray-600 hover:text-[#ff156e]">Governance</a>
-        <a href="profit-organisation.php" class="block text-gray-600 hover:text-[#ff156e]">Profit Organisation</a>
-        <a href="travel.php" class="block text-gray-600 hover:text-[#ff156e]">Travel</a>
-        <a href="finance.php" class="block text-gray-600 hover:text-[#ff156e]">Finance</a>
+        <a href="governance-security.php" class="block text-gray-600 hover:text-[#ff156e]">Governance & Security</a>
+        <a href="health-education.php" class="block text-gray-600 hover:text-[#ff156e]">Health & Education</a>
+        <a href="non-profit.php" class="block text-gray-600 hover:text-[#ff156e]">Non Profit Organization</a>
+        <a href="travel-leisure.php" class="block text-gray-600 hover:text-[#ff156e]">Travel & Leisure</a>
+        <a href="construction-real-estate.php" class="block text-gray-600 hover:text-[#ff156e]">Construction & Real Estate</a>
+        <a href="media-advertising.php" class="block text-gray-600 hover:text-[#ff156e]">Media & Advertising</a>
+        <a href="retail-ecommerce.php" class="block text-gray-600 hover:text-[#ff156e]">Retail & E-Commerce</a>
+        <a href="production-pharma.php" class="block text-gray-600 hover:text-[#ff156e]">Production, Engg & Pharma</a>
+        <a href="transport-logistics.php" class="block text-gray-600 hover:text-[#ff156e]">Transport & Logistics</a>
+        <a href="agri-climate.php" class="block text-gray-600 hover:text-[#ff156e]">Agri, Fisheries & Climate</a>
+        <a href="finance-banking.php" class="block text-gray-600 hover:text-[#ff156e]">Finance & Banking</a>
       </nav>
     </div>
 
