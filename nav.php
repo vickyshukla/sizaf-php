@@ -161,41 +161,41 @@
 
   <!-- Mobile Navigation -->
   <div x-show="mobileMenu"  x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-2" class="lg:hidden bg-white px-6 py-4 space-y-5 shadow-md rounded-b-md" role="navigation">
-    <a href="about.php" class="block text-sm font-semibold text-gray-900 hover:text-[#ff156e]">About Us</a>
+    <a href="about.php" class="block text-sm font-semibold hover:text-[#ff156e] <?= $currentPage === 'about.php' ? 'text-[#ff156e]' : 'text-gray-900' ?>">About Us</a>
 
     <div>
-      <p class="text-sm font-semibold text-gray-900 mb-2">Technology</p>
+      <p class="text-sm font-semibold mb-2 <?= $isTechActive ? 'text-[#ff156e]' : 'text-gray-900' ?>">Technology</p>
       <nav class="space-y-1 pl-4 border-l border-pink-200">
-        <a href="web-media.php" class="block text-gray-600 hover:text-[#ff156e]">Web Media</a>
-        <a href="tech.php" class="block text-gray-600 hover:text-[#ff156e]">Tech</a>
-        <a href="network.php" class="block text-gray-600 hover:text-[#ff156e]">Network</a>
+        <a href="web-media.php" class="block <?= $currentPage === 'web-media.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Web Media</a>
+        <a href="tech.php" class="block <?= $currentPage === 'tech.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Tech</a>
+        <a href="network.php" class="block <?= $currentPage === 'network.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Network</a>
       </nav>
     </div>
 
     <div>
-      <p class="text-sm font-semibold text-gray-900 mb-2">Industries & Sectors</p>
+      <p class="text-sm font-semibold mb-2 <?= $isIndustryActive ? 'text-[#ff156e]' : 'text-gray-900' ?>">Industries & Sectors</p>
       <nav class="space-y-1 pl-4 border-l border-pink-200">
-        <a href="governance-security.php" class="block text-gray-600 hover:text-[#ff156e]">Governance & Security</a>
-        <a href="health-education.php" class="block text-gray-600 hover:text-[#ff156e]">Health & Education</a>
-        <a href="non-profit.php" class="block text-gray-600 hover:text-[#ff156e]">Non Profit Organization</a>
-        <a href="travel-leisure.php" class="block text-gray-600 hover:text-[#ff156e]">Travel & Leisure</a>
-        <a href="construction-real-estate.php" class="block text-gray-600 hover:text-[#ff156e]">Construction & Real Estate</a>
-        <a href="media-advertising.php" class="block text-gray-600 hover:text-[#ff156e]">Media & Advertising</a>
-        <a href="retail-ecommerce.php" class="block text-gray-600 hover:text-[#ff156e]">Retail & E-Commerce</a>
-        <a href="production-pharma.php" class="block text-gray-600 hover:text-[#ff156e]">Production, Engg & Pharma</a>
-        <a href="transport-logistics.php" class="block text-gray-600 hover:text-[#ff156e]">Transport & Logistics</a>
-        <a href="agri-climate.php" class="block text-gray-600 hover:text-[#ff156e]">Agri, Fisheries & Climate</a>
-        <a href="finance-banking.php" class="block text-gray-600 hover:text-[#ff156e]">Finance & Banking</a>
+        <a href="governance-security.php" class="block <?= $currentPage === 'governance-security.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Governance & Security</a>
+        <a href="health-education.php" class="block <?= $currentPage === 'health-education.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Health & Education</a>
+        <a href="non-profit.php" class="block <?= $currentPage === 'non-profit.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Non Profit Organization</a>
+        <a href="travel-leisure.php" class="block <?= $currentPage === 'travel-leisure.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Travel & Leisure</a>
+        <a href="construction-real-estate.php" class="block <?= $currentPage === 'construction-real-estate.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Construction & Real Estate</a>
+        <a href="media-advertising.php" class="block <?= $currentPage === 'media-advertising.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Media & Advertising</a>
+        <a href="retail-ecommerce.php" class="block <?= $currentPage === 'retail-ecommerce.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Retail & E-Commerce</a>
+        <a href="production-pharma.php" class="block <?= $currentPage === 'production-pharma.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Production, Engg & Pharma</a>
+        <a href="transport-logistics.php" class="block <?= $currentPage === 'transport-logistics.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Transport & Logistics</a>
+        <a href="agri-climate.php" class="block <?= $currentPage === 'agri-climate.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Agri, Fisheries & Climate</a>
+        <a href="finance-banking.php" class="block <?= $currentPage === 'finance-banking.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Finance & Banking</a>
       </nav>
     </div>
 
-    <a href="global-network.php" class="block text-sm font-semibold text-gray-900 hover:text-[#ff156e]">Global Networks</a>
+    <a href="global-network.php" class="block text-sm font-semibold <?= $currentPage === 'global-network.php' ? 'text-[#ff156e]' : 'text-gray-900' ?>">Global Networks</a>
 
     <div>
-      <p class="text-sm font-semibold text-gray-900 mb-2">News & Blogs</p>
+      <p class="text-sm font-semibold mb-2 <?= $isBlogActive ? 'text-[#ff156e]' : 'text-gray-900' ?>">News & Blogs</p>
       <nav class="space-y-1 pl-4 border-l border-pink-200">
-        <a href="news.php" class="block text-gray-600 hover:text-[#ff156e]">News</a>
-        <a href="blog.php" class="block text-gray-600 hover:text-[#ff156e]">Blogs</a>
+        <a href="news.php" class="block <?= $currentPage === 'news.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">News</a>
+        <a href="blog.php" class="block <?= $currentPage === 'blog.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Blogs</a>
       </nav>
     </div>
   </div>
