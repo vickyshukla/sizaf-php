@@ -1,10 +1,31 @@
 <footer>
   <!-- Products & Partners Section -->
   <section class="bg-white text-center py-12 px-4" data-aos="fade-up">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">PRODUCTS & PARTNERS</h2>
-    <p class="text-gray-600 max-w-3xl mx-auto mb-8 text-base md:text-lg">
-      Sizaf provides IT services designed to add value to your work and life. We deliver these services seamlessly by understanding your needs and offering comprehensive maintenance. Below are some of the major brands we work with.
+    <div class="max-w-7xl mx-auto">
+  <!-- Header -->
+  <div class="text-center mb-12">
+    <span class="inline-block mb-4 text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 px-3 py-1 rounded">
+      Strategic Alliances
+    </span>
+
+    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 flex items-center justify-center gap-3">
+      <!-- Handshake Icon SVG -->
+      <svg class="h-10 w-10 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M18 15l3-3a2.828 2.828 0 00-4-4l-1 1m-2 2l-1 1m-2 2l-2 2m5-5L9 9l-6 6m0 0l3 3m3-3l3 3m3-3l2 2" />
+      </svg>
+      PRODUCTS & PARTNERS
+    </h2>
+
+    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+      Sizaf provides IT services designed to add value to your work and life. We deliver these services seamlessly
+      by understanding your needs and offering comprehensive maintenance. Below are some of the major brands we
+      work with.
     </p>
+  </div>
+</div>
+
     <div class="flex flex-wrap justify-center items-center gap-6">
       <img src="assets/partners/1.png" alt="QHOS Logo" class="h-10 object-contain">
       <img src="assets/partners/2.png" alt="Symantec Logo" class="h-10 object-contain">
@@ -63,9 +84,9 @@
       <nav aria-labelledby="company-links">
         <h3 id="company-links" class="font-bold text-lg mb-3">Company</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="about.php" class="hover:text-white">About Us</a></li>
-          <li><a href="industry.php" class="hover:text-white">Industries & Sectors</a></li>
-          <li><a href="blog.php" class="hover:text-white">News & Blogs</a></li>
+          <li><a href="about.php" class="hover:text-[#ff156e]">About Us</a></li>
+          <li><a href="industry.php" class="hover:text-[#ff156e]">Industries & Sectors</a></li>
+          <li><a href="blog.php" class="hover:text-[#ff156e]">News & Blogs</a></li>
         </ul>
       </nav>
 
@@ -73,9 +94,9 @@
       <nav aria-labelledby="services-links">
         <h3 id="services-links" class="font-bold text-lg mb-3">Services</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="webmedia.php" class="hover:text-white">Technology Services</a></li>
-          <li><a href="global-network.php" class="hover:text-white">Global Networks</a></li>
-          <li><a href="contact.php" class="hover:text-white">Contact Us</a></li>
+          <li><a href="webmedia.php" class="hover:text-[#ff156e]">Technology Services</a></li>
+          <li><a href="global-network.php" class="hover:text-[#ff156e]">Global Networks</a></li>
+          <li><a href="contact.php" class="hover:text-[#ff156e]">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -83,7 +104,7 @@
       <nav aria-labelledby="terms-links">
         <h3 id="terms-links" class="font-bold text-lg mb-3">Terms</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="terms.php" class="hover:text-white">Terms & Conditions</a></li>
+          <li><a href="./terms-conditions.php" class="hover:text-white">Terms & Conditions</a></li>
           <li><a href="privacy.php" class="hover:text-white">Privacy Policy</a></li>
           <li><a href="disclaimer.php" class="hover:text-white">Disclaimer</a></li>
           <li><a href="sitemap.php" class="hover:text-white">Sitemap</a></li>

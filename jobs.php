@@ -173,9 +173,10 @@ $jobs = json_decode($response);
                 We're always looking for talented individuals to join our team. Send us your resume and we'll keep you
                 in mind for future opportunities.
               </p>
-              <a href="about.php" class="inline-flex items-center px-6 py-3 bg-white text-purple-700 hover:bg-white/90 rounded-md text-sm font-medium transition-colors">
-                Submit Your Resume
-              </a>
+              <button onclick="openForm('Jobs')" class="inline-flex items-center px-6 py-3 bg-white text-purple-700 hover:bg-white/90 rounded-md text-sm font-medium transition-colors">
+                       Submit Your Resume
+                    </button>
+              
             </div>
             <div class="hidden md:flex justify-end">
               <div class="w-64 h-64 bg-white/10 rounded-full flex items-center justify-center">
