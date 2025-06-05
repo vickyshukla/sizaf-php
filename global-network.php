@@ -152,7 +152,7 @@ include('header.php');
  */
 ?>
 
-<section class="relative py-16 px-4 overflow-hidden h-[650px] flex items-center">
+<section class="relative py-16 px-4 overflow-hidden flex items-center">
     <!-- Background with Network Pattern -->
     <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
         <div class="absolute inset-0 opacity-20">

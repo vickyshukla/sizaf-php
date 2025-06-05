@@ -84,9 +84,9 @@
       <nav aria-labelledby="company-links">
         <h3 id="company-links" class="font-bold text-lg mb-3">Company</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="about.php" class="hover:text-white">About Us</a></li>
-          <li><a href="industry.php" class="hover:text-white">Industries & Sectors</a></li>
-          <li><a href="blog.php" class="hover:text-white">News & Blogs</a></li>
+          <li><a href="about.php" class="hover:text-[#ff156e]">About Us</a></li>
+          <li><a href="industry.php" class="hover:text-[#ff156e]">Industries & Sectors</a></li>
+          <li><a href="blog.php" class="hover:text-[#ff156e]">News & Blogs</a></li>
         </ul>
       </nav>
 
@@ -94,9 +94,9 @@
       <nav aria-labelledby="services-links">
         <h3 id="services-links" class="font-bold text-lg mb-3">Services</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="webmedia.php" class="hover:text-white">Technology Services</a></li>
-          <li><a href="global-network.php" class="hover:text-white">Global Networks</a></li>
-          <li><a href="contact.php" class="hover:text-white">Contact Us</a></li>
+          <li><a href="webmedia.php" class="hover:text-[#ff156e]">Technology Services</a></li>
+          <li><a href="global-network.php" class="hover:text-[#ff156e]">Global Networks</a></li>
+          <li><a href="contact.php" class="hover:text-[#ff156e]">Contact Us</a></li>
         </ul>
       </nav>
 
