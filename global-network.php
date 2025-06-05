@@ -398,63 +398,239 @@ include('header.php');
         <?php endforeach; ?>
         </div>
     </div>
-    <div class="relative w-full min-h-[600px] bg-white py-16 px-6 sm:px-10 lg:px-16 overflow-hidden">
-        <div class="absolute inset-0 z-0 pointer-events-none bg-[url('./assest/testimonial-map.png')] bg-no-repeat bg-cover"></div>
+<section class="py-20 px-4 bg-gradient-to-br from-slate-50 via-white to-slate-100 relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
+    </div>
 
-        <div class="relative z-10 text-center max-w-4xl mx-auto space-y-4">
-          <h2 class="text-3xl sm:text-4xl font-semibold">Sizaf Net with Tech.</h2>
-          <p class="text-base sm:text-lg">
-            Sizaf Tech Services are customized for every business situation either for Individuals, Professional groups or Large organizations.
-          </p>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+            <span class="inline-flex items-center mb-4 text-sm font-medium bg-gradient-to-r from-pink-500 to-purple-600 text-white border-0 px-4 py-1 rounded-full">
+                <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+                Technology Excellence
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
+                <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    SizaF Net with Tech.
+                </span>
+            </h1>
+            <p class="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+                Sizaf Tech Services are customized for every business situation either for 
+                <span class="font-semibold text-blue-600"> Individuals</span>, 
+                <span class="font-semibold text-purple-600"> Professional groups</span> or 
+                <span class="font-semibold text-pink-600"> Large organizations</span>.
+            </p>
         </div>
-        <div class="relative z-10 mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-          <ul class="space-y-8">
+
+        <!-- Client Types Stats -->
+        <div class="grid md:grid-cols-3 gap-6 mb-16">
             <?php
-              $leftFeatures = [
-                "The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest network technologies.",
-                "SIZAF NET WITH TECH along with the healthcare and educational organisations is ready to create tailor-made solutions as per customer needs.",
-                "All SIZAF NET WITH TECH solutions are being constantly reviewed & tested. It is ready for use for all organizations and respected worldwide."
-              ];
-              foreach ($leftFeatures as $feature) {
-                echo '<li class="flex gap-3 items-start">
-                        <i class="fa-solid fa-circle-check text-[#ff156e] text-lg mt-1"></i>
-                        <span>' . htmlspecialchars($feature) . '</span>
-                      </li>';
-              }
-            ?>
-          </ul>
-          <ul class="space-y-8">
-            <?php
-              $rightFeatures = [
-                "At SIZAF NET WITH TECH all the latest innovations and new ICT and IOT trends are provided in budget friendly models.",
-                "SIZAF NET WITH TECH on demand services will be equipped with all the latest innovations in the transport & logistics industry to meet the present demands and future requirement.",
-                "SIZAF NET WITH TECH offers custom technology solutions to its clients in finance & banking sector with highly secure connections, reliable platforms & networks & easy to use apps."
-              ];
-              foreach ($rightFeatures as $feature) {
-                echo '<li class="flex gap-3 items-start">
-                        <i class="fa-solid fa-circle-check text-[#ff156e] text-lg mt-1"></i>
-                        <span>' . htmlspecialchars($feature) . '</span>
-                      </li>';
-              }
-            ?>
-          </ul>
+            $clientTypes = [
+                ['icon' => 'users', 'name' => "Individuals", 'count' => "1000+"],
+                ['icon' => 'building', 'name' => "Professional Groups", 'count' => "500+"],
+                ['icon' => 'globe', 'name' => "Large Organizations", 'count' => "200+"]
+            ];
+            
+            foreach ($clientTypes as $type): ?>
+                <div class="bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 text-center rounded-lg">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?= 
+                                    $type['icon'] === 'users' ? 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"' : 
+                                    ($type['icon'] === 'building' ? 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"' : 
+                                    'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"')
+                                ?>"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-1"><?= $type['name'] ?></h3>
+                        <div class="text-2xl font-bold text-blue-600"><?= $type['count'] ?></div>
+                        <p class="text-slate-500 text-sm">Satisfied Clients</p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
-        <div class="relative z-10 mt-12 text-center">
-          <a href="contact.php" aria-label="Place Order or Make an Inquiry">
-            <button
-              class="bg-gradient-to-r from-[#FF156E] to-pink-500 hover:from-pink-600 hover:to-pink-700 text-white px-10 py-3 rounded-full text-sm sm:text-base shadow-lg hover:shadow-xl transition duration-300"
-            >
-              Place Order / Enquiry
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-block ml-2" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </button>
-          </a>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <?php
+            $features = [
+                [
+                    'icon' => 'building',
+                    'title' => "Public Sector Solutions",
+                    'description' => "The SIZAF NET WITH TECH provides public sector with direct apps and helps them to take advantage of latest network technologies.",
+                    'category' => "Government",
+                    'color' => "from-blue-500 to-cyan-500",
+                    'iconColor' => "text-blue-600"
+                ],
+                [
+                    'icon' => 'trending-up',
+                    'title' => "Latest ICT Innovations",
+                    'description' => "At SIZAF NET WITH TECH all the latest innovations and new ICT and IOT trends are provided in budget friendly models.",
+                    'category' => "Innovation",
+                    'color' => "from-purple-500 to-pink-500",
+                    'iconColor' => "text-purple-600"
+                ],
+                [
+                    'icon' => 'graduation-cap',
+                    'title' => "Healthcare & Education",
+                    'description' => "SIZAF NET WITH TECH along with the healthcare and educational organisations is ready to create tailor-made solutions as per customer needs.",
+                    'category' => "Healthcare",
+                    'color' => "from-green-500 to-emerald-500",
+                    'iconColor' => "text-green-600"
+                ],
+                [
+                    'icon' => 'truck',
+                    'title' => "Transport & Logistics",
+                    'description' => "SIZAF NET WITH TECH on demand services will be equipped with all the latest innovations in the transport & logistics industry to meet the present demands and future requirement.",
+                    'category' => "Logistics",
+                    'color' => "from-orange-500 to-red-500",
+                    'iconColor' => "text-orange-600"
+                ],
+                [
+                    'icon' => 'shield',
+                    'title' => "Tested & Reliable",
+                    'description' => "All SIZAF NET WITH TECH solutions are being constantly reviewed & tested. It is ready for use for all organizations and respected worldwide.",
+                    'category' => "Quality",
+                    'color' => "from-indigo-500 to-purple-500",
+                    'iconColor' => "text-indigo-600"
+                ],
+                [
+                    'icon' => 'banknote',
+                    'title' => "Finance & Banking",
+                    'description' => "SIZAF NET WITH TECH offers custom technology solutions to its clients in finance & banking sector with highly secure connections, reliable platforms & networks & easy to use to apps that can be used in every location & devises.",
+                    'category' => "Finance",
+                    'color' => "from-amber-500 to-orange-500",
+                    'iconColor' => "text-amber-600"
+                ]
+            ];
+            
+            foreach ($features as $feature): ?>
+                <div class="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 rounded-lg">
+                    <div class="relative">
+                        <!-- Background Gradient -->
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r <?= $feature['color'] ?>"></div>
+
+                        <div class="p-6">
+                            <!-- Category Badge -->
+                            <span class="inline-flex items-center mb-4 bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-full px-3 py-1 text-xs font-medium">
+                                <?= $feature['category'] ?>
+                            </span>
+
+                            <!-- Icon -->
+                            <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="h-6 w-6 <?= $feature['iconColor'] ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?=
+                                $feature['icon'] === 'building' ? 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' :
+                                ($feature['icon'] === 'trending-up' ? 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' :
+                                ($feature['icon'] === 'graduation-cap' ? 'M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222' :
+                                ($feature['icon'] === 'truck' ? 'M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM12 16h4m-9-5h10m2-6H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2z' :
+                                ($feature['icon'] === 'shield' ? 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' :
+                                'M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z'))))
+                                  ?>"></path>
+                                </svg>
+                            </div>
+
+
+                            <!-- Title -->
+                            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                <?= $feature['title'] ?>
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-slate-600 leading-relaxed mb-4"><?= $feature['description'] ?></p>
+
+                            <!-- Check Icon -->
+                            <div class="flex items-center text-green-600">
+                                <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-sm font-medium">Verified Solution</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- Key Benefits Section -->
+        <!-- <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white shadow-xl mb-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg class="h-6 w-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        <span class="bg-pink-500/20 text-pink-300 border border-pink-500/30 rounded-full px-3 py-1 text-xs font-medium">Our Promise</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Why Choose SIZAF NET WITH TECH?</h3>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        We deliver cutting-edge technology solutions that are constantly reviewed, tested, and trusted by
+                        organizations worldwide. Our commitment to excellence ensures your success.
+                    </p>
+                    <div class="space-y-3">
+                        <?php
+                        $benefits = [
+                            "Constantly reviewed & tested solutions",
+                            "Ready for use across all organizations",
+                            "Respected and trusted worldwide",
+                            "Budget-friendly innovative models"
+                        ];
+                        
+                        foreach ($benefits as $benefit): ?>
+                            <div class="flex items-center gap-3">
+                                <svg class="h-5 w-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-slate-200"><?= $benefit ?></span>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <svg class="h-24 w-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-slate-300 text-lg">Serving clients globally with excellence</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Call to Action -->
+        <div class="text-center">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Ready to Transform Your Business?</h3>
+            <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+                Join thousands of satisfied clients who trust SIZAF NET WITH TECH for their technology solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                    href="/get-started" 
+                    class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center justify-center"
+                >
+                    Get Started Today
+                    <svg class="h-5 w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                <a 
+                    href="./web-media.php" 
+                    class="border border-slate-300 text-slate-700 hover:bg-slate-100 px-8 py-4 text-lg font-semibold rounded-md inline-flex items-center justify-center"
+                >
+                    Learn More About Our Services
+                </a>
+            </div>
         </div>
     </div>
+</section>
+
 </div>
+
 <script>
     const observerTarget = document.getElementById("stats-section");
       let started = false;
