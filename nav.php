@@ -55,7 +55,7 @@
       $currentPage = basename($_SERVER['PHP_SELF']);
 
       // Dropdown parent active checks
-      $isTechActive = in_array($currentPage, ['web-media.php', 'tech-infra.php', 'network.php']);
+      $isTechActive = in_array($currentPage, ['web-media.php', 'tech-infra.php', 'network.php','managed-it-services.php']);
       $isIndustryActive = in_array($currentPage, [
         'governance-security.php', 'health-education.php', 'non-profit.php', 'travel-leisure.php',
         'construction-real-estate.php', 'media-advertising.php', 'retail-ecommerce.php',
@@ -92,7 +92,7 @@
           <a href="web-media.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'web-media.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Web & Media Services</a>
           <a href="tech-infra.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'tech-infra.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Tech Infra Services</a>
           <a href="network.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'network.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Network Services</a>
-          <a href="managed.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'managed.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Managed IT Services</a>
+          <a href="managed-it-services.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'managed-it-services.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Managed IT Services</a>
         </div>
       </div>
 
@@ -170,7 +170,7 @@
         <a href="web-media.php" class="block <?= $currentPage === 'web-media.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Web & Media Services</a>
         <a href="tech-infra.php" class="block <?= $currentPage === 'tech-infra.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Tech Infra Services</a>
         <a href="network.php" class="block <?= $currentPage === 'network.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Network Services</a>
-        <a href="managed.php" class="block <?= $currentPage === 'managed.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Managed IT Services</a>
+        <a href="managed-it-services.php" class="block <?= $currentPage === 'managed-it-services.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Managed IT Services</a>
       </nav>
     </div>
 
