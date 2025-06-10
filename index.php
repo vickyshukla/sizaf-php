@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+$metaTitle = "Innovative IT Solutions for Your Business Needs - Sizaf";
+$metaDescription = "Sizaf delivers cutting-edge IT solutions tailored to your business goals. From software development to IT consultancy, we provide reliable and efficient services to drive growth.";
+$metaKeywords = "IT solutions, software development, consultancy";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+include('header.php');
+?>
 <style>
   /* Highlight Styles */
   .highlight-text {
@@ -341,7 +348,7 @@
     </div>
 
     <!-- CTA Button -->
-    <a href="/location-map" class="inline-block bg-[#F64B7B] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#e5406c] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e5406c]" role="button">
+    <a href="/sizaf-php/global-network.php" class="inline-block bg-[#F64B7B] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#e5406c] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e5406c]" role="button">
       See Location Map →
     </a>
   </div>
