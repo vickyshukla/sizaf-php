@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+$metaTitle = "Contact";
+$metaDescription = "This is contact page.";
+$metaKeywords = "IT solutions, software development, consultancy";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+include('header.php');
+?>
 <div class=' mx-auto'>
   <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">
     <h1 class="text-lg md:text-xl lg:text-3xl font-bold uppercase tracking-wide pb-3">Check coverage - contact us</h1>
@@ -45,6 +52,139 @@
             </div>
           </div>
 
+        <!-- Main Testimonials -->
+        <div class="grid lg:grid-cols-3 gap-8 mb-12">
+            <?php
+            $testimonials = [
+                [
+                    'id' => 1,
+                    'quote' => "We were given good options when we discussed the new services that we were looking for. I wish I would have thought of it first. We can't understand how we did not find them earlier. Sizaf, overall a great team!",
+                    'name' => "Cherianne G.",
+                    'title' => "Operations Manager",
+                    'company' => "Technoserve UK Ltd.",
+                    'avatar' => "./assest/user4.jpg",
+                    'rating' => 5,
+                    'industry' => "Technology",
+                    'projectType' => "Infrastructure Setup",
+                ],
+                [
+                    'id' => 2,
+                    'quote' => "We are happy to connect with Sizaf. We suggest that if anyone wants real tech solutions that work and team that gives effective implementation you must check out solutions from Sizaf.",
+                    'name' => "Chandra K.",
+                    'title' => "Product Incharge",
+                    'company' => "Pro & Gin Wholesale Pvt. Ltd.",
+                    'avatar' => "./assest/user1.jpg",
+                    'rating' => 5,
+                    'industry' => "Wholesale",
+                    'projectType' => "Tech Solutions",
+                ],
+                [
+                    'id' => 3,
+                    'quote' => "Thank you for understanding and providing our teams with pleasant and hassle free solutions. Thank you so much for your help. We look forward to doing a lot of business together.",
+                    'name' => "Liz R.",
+                    'title' => "Accounts Manager",
+                    'company' => "I-Help Cosmic Foundation",
+                    'avatar' => "./assest/user2.jpg",
+                    'rating' => 5,
+                    'industry' => "Non-Profit",
+                    'projectType' => "Business Solutions",
+                ],
+                [
+                    'id' => 4,
+                    'quote' => "Thank you for understanding and providing our teams with pleasant and hassle free solutions. Thank you so much for your help. We look forward to doing a lot of business together.",
+                    'name' => "Liz R.",
+                    'title' => "Accounts Manager",
+                    'company' => "I-Help Cosmic Foundation",
+                    'avatar' => "./assest/user4.jpg",
+                    'rating' => 5,
+                    'industry' => "Non-Profit",
+                    'projectType' => "Business Solutions",
+                ],
+                [
+                    'id' => 5,
+                    'quote' => "Thank you for understanding and providing our teams with pleasant and hassle free solutions. Thank you so much for your help. We look forward to doing a lot of business together.",
+                    'name' => "Liz R.",
+                    'title' => "Accounts Manager",
+                    'company' => "I-Help Cosmic Foundation",
+                    'avatar' => "./assest/user3.jpg",
+                    'rating' => 5,
+                    'industry' => "Non-Profit",
+                    'projectType' => "Business Solutions",
+                ]
+            ];
+            
+            foreach ($testimonials as $index => $testimonial): ?>
+                <div class="group relative overflow-hidden transition-all duration-500 hover:-translate-y-2 rounded-lg shadow-lg hover:shadow-xl">
+                    <!-- Background Gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-slate-100 opacity-90"></div>
+
+                    <!-- Quote Icon -->
+                    <div class="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="h-16 w-16 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+
+                    <div class=" relative p-8">
+                        <!-- Industry Badge -->
+                        <span class="inline-flex items-center mb-4 bg-pink-100 text-pink-700 hover:bg-pink-200 rounded-full px-3 py-1 text-xs font-medium">
+                            <?= $testimonial['industry'] ?>
+                        </span>
+
+                        <!-- Rating -->
+                        <div class="flex items-center gap-1 mb-4">
+                            <?php for ($i = 0; $i < $testimonial['rating']; $i++): ?>
+                                <svg class="h-4 w-4 fill-yellow-400 text-yellow-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                                </svg>
+                            <?php endfor; ?>
+                        </div>
+
+                        <!-- Quote -->
+                        <blockquote class="text-slate-700 leading-relaxed mb-6 italic text-lg">
+                            "<?= $testimonial['quote'] ?>"
+                        </blockquote>
+
+                        <!-- Project Type -->
+                        <div class="mb-6">
+                            <span class="inline-flex items-center bg-purple-50 text-purple-700 border border-purple-200 rounded-full px-3 py-1 text-xs font-medium">
+                                <?= $testimonial['projectType'] ?>
+                            </span>
+                        </div>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4">
+                            <div class="relative">
+                                <img 
+                                    src="<?= $testimonial['avatar'] ?>" 
+                                    alt="Portrait of  ?>"
+                                    width="60"
+                                    height="60"
+                                    class="rounded-full object-cover ring-2 ring-white shadow-md"
+                                    loading="lazy"
+                                />
+                                <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-lg"><?= $testimonial['name'] ?></h3>
+                                <p class="text-slate-600 font-medium"><?= $testimonial['title'] ?></p>
+                                <p class="text-slate-500 text-sm"><?= $testimonial['company'] ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- Video Testimonial CTA -->
+        <div class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 text-white text-center shadow-xl">
+            <div class="max-w-3xl mx-auto">
+                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="h-8 w-8 text-white ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           <!-- Contact Cards with schema.org markup -->
           <div class="grid sm:grid-cols-2 gap-4">
             <!-- KL Location -->
