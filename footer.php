@@ -32,76 +32,76 @@
   <!-- Products & Partners Section -->
   <section class="bg-white text-center py-12 px-4" data-aos="fade-up">
     <div class="max-w-7xl mx-auto">
-  <!-- Header -->
-  <div class="text-center mb-12">
-    <span class="inline-block mb-4 text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 px-3 py-1 rounded">
-      Strategic Alliances
-    </span>
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <span class="inline-block mb-4 text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 px-3 py-1 rounded">
+          Strategic Alliances
+        </span>
 
-    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 flex items-center justify-center gap-3">
-      <!-- Handshake Icon SVG -->
-      <svg class="h-10 w-10 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M18 15l3-3a2.828 2.828 0 00-4-4l-1 1m-2 2l-1 1m-2 2l-2 2m5-5L9 9l-6 6m0 0l3 3m3-3l3 3m3-3l2 2" />
-      </svg>
-      PRODUCTS & PARTNERS
-    </h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 flex items-center justify-center gap-3">
+          <!-- Handshake Icon SVG -->
+          <svg class="h-10 w-10 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M18 15l3-3a2.828 2.828 0 00-4-4l-1 1m-2 2l-1 1m-2 2l-2 2m5-5L9 9l-6 6m0 0l3 3m3-3l3 3m3-3l2 2" />
+          </svg>
+          PRODUCTS & PARTNERS
+        </h2>
 
-    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-      Sizaf provides IT services designed to add value to your work and life. We deliver these services seamlessly
-      by understanding your needs and offering comprehensive maintenance. Below are some of the major brands we
-      work with.
-    </p>
-  </div>
-</div>
-
-<div class="w-full overflow-hidden px-4 md:px-10 py-8 bg-white">
-  <div class="marquee-container">
-    <div class="marquee-track gap-12">
-      <div class="logo-strip flex items-center gap-12">
-        <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
-        <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
-        <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
-        <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
-        <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
-        <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
-        <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
-        <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
-        <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
-        <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
-        <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
-        <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
-        <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
-        <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
-        <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
-        <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
-        <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
-        <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
-      </div>
-      <div class="logo-strip flex items-center gap-12">
-        <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
-        <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
-        <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
-        <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
-        <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
-        <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
-        <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
-        <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
-        <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
-        <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
-        <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
-        <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
-        <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
-        <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
-        <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
-        <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
-        <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
-        <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+          Sizaf provides IT services designed to add value to your work and life. We deliver these services seamlessly
+          by understanding your needs and offering comprehensive maintenance. Below are some of the major brands we
+          work with.
+        </p>
       </div>
     </div>
-  </div>
-</div>
+
+    <div class="w-full overflow-hidden px-4 md:px-24 py-8 bg-white">
+      <div class="marquee-container">
+        <div class="marquee-track gap-12">
+            <div class="logo-strip flex items-center gap-12">
+              <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
+              <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
+              <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
+              <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
+              <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
+              <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
+              <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
+              <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
+              <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
+              <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
+              <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
+              <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
+              <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
+              <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
+              <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
+              <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
+              <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
+              <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+            </div>
+            <div class="logo-strip flex items-center gap-12">
+              <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
+              <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
+              <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
+              <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
+              <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
+              <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
+              <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
+              <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
+              <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
+              <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
+              <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
+              <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
+              <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
+              <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
+              <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
+              <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
+              <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
+              <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+            </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 

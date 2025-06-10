@@ -9,7 +9,7 @@
         <a href="ticket.php" class="hover:text-blue-300 transition">Submit a Ticket</a>
         <a href="admin-login.php" class="hover:text-blue-300 transition">Admin Login</a>
         <a href="./jobs.php" class="hover:text-blue-300 transition">Career</a>
-        <a href="./about.php" class="hover:text-blue-300 transition">Contact Us</a>
+        <a href="/sizaf-php/about.php" class="hover:text-blue-300 transition">Contact Us</a>
       </div>
       <div class="flex items-center justify-between md:gap-5 text-gray-400 w-full md:w-80 pt-1.5 md:pt-0">
         <a href="mailto:info@sizaf.com" class="flex items-center hover:text-blue-300 transition">
@@ -55,7 +55,7 @@
       $currentPage = basename($_SERVER['PHP_SELF']);
 
       // Dropdown parent active checks
-      $isTechActive = in_array($currentPage, ['web-media.php', 'tech.php', 'network.php','managed-it-services.php']);
+      $isTechActive = in_array($currentPage, ['web-media.php', 'tech-infra.php', 'network.php','managed-it-services.php']);
       $isIndustryActive = in_array($currentPage, [
         'governance-security.php', 'health-education.php', 'non-profit.php', 'travel-leisure.php',
         'construction-real-estate.php', 'media-advertising.php', 'retail-ecommerce.php',
@@ -88,11 +88,11 @@
         <?php if ($isTechActive): ?>
           <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
         <?php endif; ?>
-        <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
-          <a href="web-media.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'web-media.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Web Media</a>
-          <a href="tech.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'tech.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Tech</a>
-          <a href="network.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'network.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Network Services</a>
-          <a href="managed-it-services.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'managed-it-services.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Managed IT Services</a>
+        <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100 text-sm">
+          <a href="web-media.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'web-media.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Web & Media Services</a>
+          <a href="tech-infra.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'tech-infra.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Tech Infra Services</a>
+          <a href="network.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'network.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Network Services</a>
+          <a href="managed-it-services.php" class="block px-2.5 py-2.5 transition-colors duration-150 <?= $currentPage === 'managed-it-services.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Managed IT Services</a>
         </div>
       </div>
 
@@ -167,9 +167,10 @@
     <div>
       <p class="text-sm font-semibold mb-2 <?= $isTechActive ? 'text-[#ff156e]' : 'text-gray-900' ?>">Technology</p>
       <nav class="space-y-1 pl-4 border-l border-pink-200">
-        <a href="web-media.php" class="block <?= $currentPage === 'web-media.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Web Media</a>
-        <a href="tech.php" class="block <?= $currentPage === 'tech.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Tech</a>
-        <a href="network.php" class="block <?= $currentPage === 'network.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Network</a>
+        <a href="web-media.php" class="block <?= $currentPage === 'web-media.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Web & Media Services</a>
+        <a href="tech-infra.php" class="block <?= $currentPage === 'tech-infra.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Tech Infra Services</a>
+        <a href="network.php" class="block <?= $currentPage === 'network.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Network Services</a>
+        <a href="managed-it-services.php" class="block <?= $currentPage === 'managed-it-services.php' ? 'text-[#ff156e]' : 'text-gray-600' ?>">Managed IT Services</a>
       </nav>
     </div>
 
