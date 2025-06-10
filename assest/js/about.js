@@ -80,7 +80,7 @@ window.clearFilters= function() {
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     const submitButton = document.getElementById("submitButton");
-    const submitButtonText = document.getElementById("submitButtonText");
+    const submitButtonText = document.querySelectorAll(".submitButtonText");
     const loader = document.getElementById("loader");
     const errorToast = document.getElementById("error-message");
     const successToast = document.getElementById("success-message");
@@ -154,7 +154,9 @@ window.clearFilters= function() {
       }
 
       // Show loader
-      submitButtonText.classList.add("hidden");
+      submitButtonText.forEach(element => {
+        element.classList.add("hidden");
+      });      
       loader.classList.remove("hidden");
       submitButton.disabled = true;
 
@@ -175,7 +177,9 @@ window.clearFilters= function() {
         })
         .finally(() => {
           loader.classList.add("hidden");
-          submitButtonText.classList.remove("hidden");
+          submitButtonText.forEach(element => {
+            element.classList.remove("hidden");
+          });
           submitButton.disabled = false;
         });
     });

@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Combine full phone number
-        const fullPhoneNumber = `+${countryCode}${phone.replace(/\D/g, '')}`;
+        const fullPhoneNumber = `${countryCode} ${phone.replace(/\D/g, '')}`;
 
         // Validate full phone number format (optional)
         if (fullPhoneNumber.length < 8 || fullPhoneNumber.length > 15) {
@@ -179,24 +179,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Fetch country data
-    fetch('https://restcountries.com/v3.1/all')
-        .then(res => res.json())
-        .then(data => {
-        const select = document.getElementById('countryCode');
-        data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-        data.forEach(country => {
-            const callingCodes = country.idd?.root && country.idd?.suffixes ? country.idd.suffixes.map(suffix => country.idd.root + suffix) : [];
-            callingCodes.forEach(code => {
-            const option = document.createElement('option');
-            option.value = code;
-            option.textContent = `${country.name.common} (${code})`;
-            if (country.name.common === 'Malaysia') {
-            option.selected = true;
-            }
-            select.appendChild(option);
-        });
-      });
+    fetch('https://restcountries.com/v3.1/all?fields=name,idd')
+    .then(res => res.json())
+    .then(data => {
+        if (Array.isArray(data)) {
+            data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+            document.querySelectorAll('.countryCode').forEach(select => {
+                data.forEach(country => {
+                    const callingCodes = country.idd?.root && country.idd?.suffixes 
+                        ? country.idd.suffixes.map(suffix => country.idd.root + suffix) 
+                        : [];
+
+                    callingCodes.forEach(code => {
+                        const option = document.createElement('option');
+                        option.value = code;
+                        option.textContent = `${country.name.common} (${code})`;
+                        if (country.name.common === 'Malaysia') {
+                            option.selected = true;
+                        }
+                        select.appendChild(option);
+                    });
+                });
+            });
+        } else {
+            console.error('Data is not an array:', data);
+        }
     })
     .catch(console.error);
-
 });
