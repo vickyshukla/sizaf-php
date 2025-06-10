@@ -1,20 +1,20 @@
 <?php
-$metaTitle = "Web & Media Services for Enhanced Digital Presence - Sizaf";
-$metaDescription = "Boost your online presence with Sizaf's web and media services. From website development to digital marketing, we provide tailored solutions to elevate your brand.";
+$metaTitle = "Advanced Tech Infrastructure Services - Sizaf";
+$metaDescription = "Strengthen your business foundation with Sizaf's tech infrastructure services. Enhance system performance, scalability, and security for seamless operations.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
 include('header.php');
 ?>
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">
-            <h1 class="text-lg md:text-xl lg:text-3xl font-bold uppercase tracking-wide pb-3">Web & Media Services</h1>
+            <h1 class="text-lg md:text-xl lg:text-3xl font-bold uppercase tracking-wide pb-3">Tech Infrastructure Services</h1>
             <h3 class="flex items-center justify-center gap-4 text-base font-medium">
                 <a href="/sizaf-php/index.php"> <span class="hover:text-[#ff156e]">Sizaf</span> </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
                 <a href="/sizaf-php/"><span class="hover:text-[#ff156e]">Technology Services</span>
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                <a href="/sizaf-php/web-media.php"><span class="hover:text-[#ff156e]">Web & Media Services</span>
+                <a href="/sizaf-php/tech-infra.php"><span class="hover:text-[#ff156e]">Tech Infrastructure Services</span>
                 </a>
             </h3>
 </div>
@@ -26,9 +26,10 @@ include('header.php');
       <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium mb-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
         Infrastructure Excellence
       </span>
-      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Web & Media Services</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Tech Infrastructure Services</h1>
       <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-      We at Sizaf infocomm realize the importance of the web & media services required by you. We deliver interactive communication and draw creative solutions. Our services will begin to boost your selling efforts, reaching more prospective customers and convert into profitable numbers.
+        We at Sizaf Infocomm tech infrastructure services understand that in today's fast-evolving digital tech
+        environment, one can do just as good as its IT technology.
       </p>
     </div>
 
@@ -54,11 +55,15 @@ include('header.php');
         </h2>
 
         <p class="text-slate-600 leading-relaxed text-lg">
-        With Sizaf Web & Media Services, you can share your message with the world-whether you’re a freelancer or a large corporation. Regardless of your business size or budget, we provide customized services on a fixed or monthly cost basis to suit your needs and convenience. 
+          Sizaf Infocomm Tech Infrastructure services are ready to work with your company on system design,
+          planning, and deployment. Our ready-to-go technologies help small and large businesses automate their
+          processes, significantly reducing overall IT costs.
         </p>
 
         <p class="text-slate-600 leading-relaxed">
-        Our services open up tremendous possibilities to reach millions of internet users daily, bringing your product or service to those who want or need it.
+          Our team achieves measurable results across IT services, adding value to a rapidly changing world. With
+          responsive, professional support, we foster creativity and innovative business models to their fullest
+          potential.
         </p>
 
         <button class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2 transition-colors duration-300">
@@ -74,8 +79,8 @@ include('header.php');
       <div class="relative">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl transform rotate-3"></div>
         <img 
-          src="./assest/web-media.jpg" 
-          alt="Web media" 
+          src="./assest/tech-infra1.jpeg" 
+          alt="Tech professional working with network infrastructure" 
           width="600" 
           height="400" 
           class="relative rounded-2xl shadow-2xl object-cover w-full h-[400px]"
@@ -90,37 +95,46 @@ include('header.php');
       $services = [
         [
           'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>',
-          'title' => 'Websites, Domains & Emails',
+          'title' => 'IT Hardware Services',
           'color' => 'bg-blue-500',
           'items' => [
-            'Website Domain Registration',
-            'Website Domain Transfer Domains - .MY / ICANN / Country',
-            'Virtualization - across multiple Technologies such as Windows & Linux',
-            'Email hosting and management',
+            'IT Hardware Services',
+            'IT Security & Infrastructure Setup',
+            'Design layout for Data center, Storage, Servers, Structured cabling, LAN/WAN setup & maintenance',
+            'Hardware & Software Procurement',
+            'IT & Network Health Checks (active & passive network devices)',
           ],
         ],
         [
           'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>',
-          'title' => 'Digital Marketing',
+          'title' => 'Server and Virtualization Services',
           'color' => 'bg-green-500',
           'items' => [
-            'SEO & Digital Marketing', 
+            'Server Integration & Installation', 
+            'Virtualization Services (HyperV, VMware)'
           ],
         ],
         [
           'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>',
-          'title' => 'Data Scraping Services',
+          'title' => 'IT Security Solutions',
           'color' => 'bg-red-500',
           'items' => [
-            'Get Any Custom Information from Web',
+            'UTM & XG Security',
+            'Appliance Management',
+            'Endpoint Security',
+            'Data Loss Prevention',
+            'Data Center Security',
           ],
         ],
         [
           'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>',
-          'title' => 'Creative Content, Animation, VFX, Adverts',
+          'title' => 'IT Storage Solutions',
           'color' => 'bg-purple-500',
           'items' => [
-            'Creative Media Designs, Animation / VFX Videos & Content Development, Production and Publishing across all Platforms', 
+            'Archiving', 
+            'Backup-Recovery', 
+            'Replication',
+            'Security - (DAS / NAS / SAN)'
           ],
         ],
       ];
