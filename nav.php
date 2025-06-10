@@ -55,7 +55,7 @@
       $currentPage = basename($_SERVER['PHP_SELF']);
 
       // Dropdown parent active checks
-      $isTechActive = in_array($currentPage, ['web-media.php', 'tech.php', 'network.php']);
+      $isTechActive = in_array($currentPage, ['web-media.php', 'tech.php', 'network.php','managed-it-services.php']);
       $isIndustryActive = in_array($currentPage, [
         'governance-security.php', 'health-education.php', 'non-profit.php', 'travel-leisure.php',
         'construction-real-estate.php', 'media-advertising.php', 'retail-ecommerce.php',
@@ -91,7 +91,8 @@
         <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
           <a href="web-media.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'web-media.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Web Media</a>
           <a href="tech.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'tech.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Tech</a>
-          <a href="network.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'network.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Network</a>
+          <a href="network.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'network.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Network Services</a>
+          <a href="managed-it-services.php" class="block px-4 py-2 transition-colors duration-150 <?= $currentPage === 'managed-it-services.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?>">Managed IT Services</a>
         </div>
       </div>
 
