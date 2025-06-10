@@ -234,7 +234,7 @@ $jobs = json_decode($response);
             <div class="w-1/3">
               <label for="countryCode" class="block text-sm font-medium text-gray-700">Country Code</label>
               <select id="countryCode" name="countryCode" required
-                class="mt-1 block w-full px-2 py-2 border border-gray-300 border-r-none rounded-l-md shadow-sm text-sm focus:outline-none focus:ring-0 bg-gray-200">
+                class="countryCode mt-1 block w-full px-2 py-2 border border-gray-300 border-r-none rounded-l-md shadow-sm text-sm focus:outline-none focus:ring-0 bg-gray-200">
                 <option value="">Select</option>
                 <!-- options dynamically added -->
               </select>

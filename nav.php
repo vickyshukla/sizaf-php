@@ -9,7 +9,7 @@
         <a href="ticket.php" class="hover:text-blue-300 transition">Submit a Ticket</a>
         <a href="admin-login.php" class="hover:text-blue-300 transition">Admin Login</a>
         <a href="./jobs.php" class="hover:text-blue-300 transition">Career</a>
-        <a href="contact.php" class="hover:text-blue-300 transition">Contact Us</a>
+        <a href="./about.php" class="hover:text-blue-300 transition">Contact Us</a>
       </div>
       <div class="flex items-center justify-between md:gap-5 text-gray-400 w-full md:w-80 pt-1.5 md:pt-0">
         <a href="mailto:info@sizaf.com" class="flex items-center hover:text-blue-300 transition">
