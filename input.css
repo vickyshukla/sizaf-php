@@ -187,3 +187,93 @@
     display: none !important;
   }
 }
+
+/*** About page css ***/
+
+/* Animation for FAQ items */
+[data-category] {
+  transition: all 0.3s ease;
+}
+
+/* Reduced motion styles */
+@media (prefers-reduced-motion: reduce) {
+  [data-category], svg {
+    transition: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .bg-gradient-to-r {
+    background: #fff !important;
+  }
+  
+  [data-category] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  [id$="-content"] {
+    display: block !important;
+  }
+  
+  button svg {
+    display: none !important;
+  }
+}
+
+/* Animation Styles */
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-fadeInUp {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .bg-gradient-to-br {
+    background: #fff !important;
+  }
+  
+  .bg-slate-800\/50, .bg-slate-900, .bg-pink-500 {
+    background: #f8f8f8 !important;
+  }
+  
+  .text-white, .text-slate-300, .text-pink-400 {
+    color: #000 !important;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+  
+  button, [type="submit"] {
+    display: none !important;
+  }
+}

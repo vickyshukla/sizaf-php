@@ -258,16 +258,39 @@ $jobs = json_decode($response);
 
           <!-- Submit Button -->
           <div class="flex items-center justify-between">
-            <button type="submit" 
-              class="w-full py-3 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-md shadow-md hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 cursor-pointer">
-              Submit Application
-            </button>
+              <button type="submit" 
+                  id="submitButton"
+                  class="w-full py-3 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-md shadow-md hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 cursor-pointer relative"
+                  >
+                  <span id="submitButtonText">Submit Application</span>
+                  <!-- Loader Spinner-->
+                  <div id="loader" class="flex gap-1 hidden justify-center m-2">
+                    <div class="w-2.5 h-2.5 bg-white rounded-full animate-bounce delay-100"></div>
+                    <div class="w-2.5 h-2.5 bg-white rounded-full animate-bounce delay-200"></div>
+                    <div class="w-2.5 h-2.5 bg-white rounded-full animate-bounce delay-300"></div>
+                  </div>
+              </button>
           </div>
+
         </form>
 
-        <!-- Success & Error Messages -->
-        <p id="success-message" style="display:none;color:green;" class="mt-4 text-center text-sm font-medium text-green-500"></p>
-        <p id="error-message" style="display:none;color:red;" class="mt-4 text-center text-sm font-medium text-red-500"></p>
+        <!-- Toast Messages (Success & Error) -->
+        <div id="toast-container" class="absolute top-10 left-1/2 transform -translate-x-1/2 z-50 space-y-3 w-full max-w-sm">
+          <div id="success-message" class="toast-message hidden bg-green-500 text-white p-4 rounded-md shadow-md w-full flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Your application was successfully submitted!</span>
+          </div>
+          
+          <div id="error-message" class="toast-message hidden bg-red-500 text-white p-4 rounded-md shadow-md w-full flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            <span>Something went wrong. Please try again!</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
