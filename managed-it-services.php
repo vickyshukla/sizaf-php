@@ -7,7 +7,7 @@
                 <a href="/contact"><span class="hover:text-pinktext">Technology Services</span>
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                <a href="/contact"><span class="hover:text-pinktext">Network Services</span>
+                <a href="/contact"><span class="hover:text-pinktext">Managed IT Services</span>
                 </a>
             </h3>
 </div>
@@ -19,9 +19,9 @@
       <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium mb-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
         Infrastructure Excellence
       </span>
-      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Network Services</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Managed IT Services</h1>
       <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-     The Sizaf network services provider enables secure connections, tracking, monitoring, and control of the network for all customers.
+     The Siz@f Managed IT service solutions offer enterprises a powerful way to improve their IT expertise comprehensively.
       </p>
     </div>
 
@@ -47,13 +47,10 @@
         </h2>
 
         <p class="text-slate-600 leading-relaxed text-lg">
-        In a new world, businesses run their cloud-enabled companies across global networks. 
-        Allow Sizaf Network Services to provide you with the best WiFi deals, Fiber Optic Cable Internet, 
-        and 5G Broadband through our on-demand network services to maximize customer satisfaction and revenues. 
-        Reduce OPEX and improve competitiveness by helping companies optimize application performance and address
-        multiple service challenges. Our service portfolio offers new connections that can be enabled, modified in capacity, 
-        and upgraded on demand. For effective cloud deployment, the network used in these cloud-based applications is crucial,
-        and we are happy to partner with you in delivering these services.
+          Siz@f Managed IT Services empowers customers to maximize their profits and streamline operations through Managed IT Services for Small Businesses, 
+          delivering cutting-edge solutions such as online and smartphone apps, portals, and web resources.
+          As one of the Best IT Managed Service Companies, we are a qualified and approved team providing Managed IT Services Offerings based on industry best practices, 
+          operating seamlessly across platforms and networks. Our advanced IT systems are designed to help your company expand. For end-to-end IT solutions that meet the highest standards, our remote IT department builds and adds significant value to your business.
         </p>
 
         <p class="text-slate-600 leading-relaxed">
@@ -75,8 +72,8 @@
       <div class="relative">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl transform rotate-3"></div>
         <img 
-          src="./assest/network1.jpeg" 
-          alt=" network infrastructure" 
+          src="./assest/managed-it1.jpeg" 
+          alt="Tech professional working with network infrastructure" 
           width="600" 
           height="400" 
           class="relative rounded-2xl shadow-2xl object-cover w-full h-[400px]"
@@ -90,47 +87,58 @@
       <?php
       $services = [
         [
-          'icon' => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 10C20.21 10 22 8.21 22 6C22 3.79 20.21 2 18 2C16.63 2 15.42 2.7 14.71 3.8C14.07 2.79 12.87 2 11.5 2C9.01 2 7 4.01 7 6.5C7 7.03 7.09 7.54 7.27 8.01C5.61 8.5 4.3 9.71 4.3 11.5C4.3 13.43 5.87 15 7.8 15H18C20.21 15 22 13.21 22 11C22 10.45 21.9 9.92 21.69 9.42L20.8 10.4C20.44 10.15 20.02 10 19.5 10H18ZM18 13H7.8C6.7 13 5.8 12.1 5.8 11C5.8 9.9 6.7 9 7.8 9C8.36 9 8.87 9.25 9.21 9.68L9.5 10.12C10.02 10.74 10.74 11.12 11.55 11.12C12.37 11.12 13.09 10.74 13.61 10.12L13.91 9.68C14.25 9.25 14.76 9 15.32 9H18V13Z" fill="currentColor"/>
-                        <path d="M2 19L5 22L8 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5 22V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M22 19L19 22L16 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M19 22V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>',
-          'title' => 'SD-Wan',
+          'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-8 w-8"><path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" /></svg>',
+          'title' => 'IT Software  Services',
           'color' => 'bg-blue-500',
           'items' => [
-            'ISDWAN- S/w defined, Wide Area Network.',
+            'IT Software Services',
+            'IOT & Smart Condo & City Solutions',
+            'Website Development with Creative Designs',
+            'School or Any Asset Management / ERP Solutions',
+            'Customized Application Solutions - Desktop, Enterprise & Cloud',
           ],
         ],
         [
-          'icon' => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 2V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M22 12H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M4 8C6 10 10 10 12 12C14 14 18 14 20 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/><path d="M4 16C6 14 10 14 12 12C14 10 18 10 20 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
-                    <circle cx="4" cy="8" r="1" fill="currentColor"/>
-                    <circle cx="20" cy="16" r="1" fill="currentColor"/>
-                    <circle cx="4" cy="16" r="1" fill="currentColor"/>
-                    <circle cx="20" cy="8" r="1" fill="currentColor"/>
-                    </svg>',
-          'title' => 'Intercontinental Network.',
+          'icon' =>   '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-8 w-8"><rect x="6" y="2" width="12" height="20" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="18" r="1" /></svg>',
+          'title' => 'Mobile Application Development',
           'color' => 'bg-green-500',
           'items' => [
-            'IPLC.',
-            'IP Transit at DC.'
+            'iOS / Android Application Development'
           ],
         ],
         [
-          'icon' => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="18" r="2" fill="currentColor"/>
-                        <path d="M22 8C19.2319 5.37898 15.7924 3.65997 12 3C8.20756 3.65997 4.76813 5.37898 2 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M19 11C17.1534 9.48979 14.6534 8.66997 12 8.66997C9.34657 8.66997 6.84657 9.48979 5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M16 14C15.0767 13.2449 13.6767 12.8349 12 12.8349C10.3233 12.8349 8.92331 13.2449 8 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>',
-          'title' => 'Wireless Solutions.',
+          'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-8 w-8"><path d="M7 20h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 10v4M12 8v6M15 12v2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+          'title' => 'Custom BI and AI Solutions',
           'color' => 'bg-red-500',
           'items' => [
-            'Indoor WLAN Solution.',
-            'Outdoor Wireless LAN.',
-            'Long Distance Point to Point Wireless.',
-            'Short Distance Point to Point & Point to Multi Point Wireless Network.'
+            'Custom BI and AI Tools Development & Integration',
+          ],
+        ],
+        [
+          'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>',
+          'title' => 'Security and Patch Management',
+          'color' => 'bg-purple-500',
+          'items' => [
+            'Antivirus & Patch Management Across Any Size Network'
+          ],
+        ],
+        [
+          'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M12 2a10 10 0 0 0-7 17"></path><path d="M12 2a10 10 0 0 1 7 17"></path><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="12" r="1"></circle><path d="M7 12h10"></path></svg>',
+          'title' => 'Managed IT Support Services',
+          'color' => 'bg-red-500',
+          'items' => [
+            'Managed Services',
+            'Unlimited Onsite & Remote Support',
+            'Substantial Cost-Saving Managed Services',
+            'Specialized Support - 24/7/365 Service Desk (Human Support)',
+          ],
+        ],
+        [
+          'icon' => '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5V11C3 16.55 6.84 21.78 12 23C17.16 21.78 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z" fill="currentColor"/></svg>',
+          'title' => 'Facility Management Services (FMS)',
+          'color' => 'bg-indigo-500',
+          'items' => [
+            'FMS (Facility Management Services)'
           ],
         ],
       ];
@@ -163,95 +171,7 @@
       <?php } ?>
     </div>
 
-    <!--Services Details-->
-    <p class="text-center pt-20 font-bold text-3xl uppercase">Service Details</p>
-<div class="w-full max-w-5xl mx-auto p-4 md:p-6">
-  
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-
-        <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
-            <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail1.webp" class="rounded-md ">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Wan (SD-Wan)</h3>
-                <p class="text-gray-600 text-sm ">
-                   Sizaf SD-Wan solution is a very managed, flexible and easy to operate solution. Using this the software defined Wan network we will deliver a complete network access across software networks. Software defined Wide Area Network (SD-WAN) offers high-performance protected data channels that connect diverse internet access providers - such as DSL, cable, mobile phones, etc.
-                   Sizaf SD-Wan will address a major business problem of safe Internet connectivity. Without a reliable connectivity, companies can encounter disruptions because of link failures, network congestion, or WAN blackouts. That can be costly disruptions. It is a WAN-based computing platform for the more powerful transmission of all networks between the offices and data centres, the remote offices and branches and the cloud.
-                </p>
-            </div>           
-        </div>
-
-        <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
-            <div class="p-4">
-                <img alt="SizaF Etherconnect illustration" src="./assest/service-detail2.webp" class="rounded-md">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Etherconnect (Metro-E / LL)</h3>
-                <p class="text-gray-600 text-sm">
-                   Sizaf Etherconnect (Metro-E) service is a domestic leased line service. Its powered by high frequency network link and ultraspace access which assures using the new Ethernet technology of Dense Wave (EoDWDM) technology.
-                   Sizaf Etherconnect service provides superior & high-end efficiency with safe networks enabling its customers to build and run a wide-ranging commercial network, along with much of the legacy network equipment with multiple bandwidth solutions. New EoDWDM technology enhances allocation and automatic distribution by using latest equipments, providing stability and capability across the entire network.
-                </p>
-            </div>           
-        </div>
-
-         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
-            <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail3.webp" class="rounded-md ">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Globeconnect (IPLC)</h3>
-                <p class="text-gray-600 text-sm ">
-                  Sizaf Globeconnect service is designed for firms that are becoming more global, they are in stronger need for prompt and efficient contact with their international offices. International communication must be extremely secure, precise, and fruitful. We have strong global teams serving in all major cities of the world. We work 24x7 all 365 days of year to deliver on SLA's and make your life & business simpler.
-                  Sizaf Globeconnect connecting two fixed line stations worldwide with an IPLC which provides the best bandwidth guaranteed and trusted & dedicated communications. Corporate IT networks that can effectively and accurately share information non stop & securely, have long been a critical component of corporate planning and processes.
-                </p>
-            </div>           
-        </div>
-
-        <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
-            <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail4.webp" class="rounded-md ">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Routeconnect (IP Transit)</h3>
-                <p class="text-gray-600 text-sm ">
-                 Sizaf Routeconnect service is among the best in the market. Its connected with the world's most wired networks with high capacity and efficiency of bandwidth at a low cost. We urge you to review our services, and experience our quick deliveries. Many Tier 1 networks are connected & accessed by our global coverage network. A global IPv6-enabled Optical partner coverage network is our biggest strength supported by a vast partner coverage across the globe. These jointly serve as a reliable backbone of our IP transit business.
-                 We will speed up the fulfilment of your orders & operations by simplifying our quick onboarding procedures and provide smooth safe service deliveries that will build your trust in our abilities.You will approve Sizaf's teams on all major parameters, including consistent delivery, technical assistance, and efficiency, thanks to our extensive service venues and excellent connectivity to critical international access and knowledge networks.
-                </p>
-            </div>           
-        </div>
-
-        <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
-            <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail5.webp" class="rounded-md ">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Dconnect (Data Centre)</h3>
-                <p class="text-gray-600 text-sm ">
-                 In reality, today all companies rely heavily on Data Centres. Hence Sizaf DCconnect service allows companies to have a trusted partner that will provide them all the support for them to operate and grow big. Our DC services provide a highly reliable and effective data backup method that guarantees simultaneous access to all important information. We provide organisations efficient ways in which key information can be saved, shared and protected. With trusted data centre services companies are able to grow and run business smoothly in more than many ways.
-                 At Sizaf DCconnect we provide secure and safe DC services no matter wherever you are. Thanks to our broad partner coverage, experience, customer-oriented model and the help of network partners around the globe. We give consumers of all sizes a high level of service options in the best cost model. Our coverage data centres provide our customers with shared or exclusive space, which most certainly prove our role as a reliable technology partner.
-                </p>
-            </div>           
-        </div>
-
-        <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
-            <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail6.webp" class="rounded-md ">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF IPconnect (DIA)</h3>
-                <p class="text-gray-600 text-sm ">
-                Sizaf IPConnect service offers internet capacity with maximum scalability and cost-effectiveness. We provide 24x7 support and upgrades to the customers at any point in-time. At Sizaf, you not only get internet access above reasonable standards but also a service provider that provides full solutions to all of your company requirements.
-                We designed Sizaf IPconnect service as we understand that connectivity is becoming more and more common, and the Internet must improve business success and not prevent it. More rapid encounters can affect and discriminate between preferences of consumers.
-                Sizaf IPconnect provides its customers safe routing to the world's destination to further improve on demand basis. Customers are empowered with regular reporting. All transactions are delivered in safe, accurate, and real-time manner at any location.
-                </p>
-            </div>           
-        </div>
-
-        <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
-            <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail7.webp" class="rounded-md ">
-                <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF BBconnect (Broadband)</h3>
-                <p class="text-gray-600 text-sm ">
-                Businesses aim for inexpensive and secure Internet connections instead of conventional cable to run efficiently. Sizaf BBconnect service is a special value proposition curated for all types of organizations. It offers business-grade connections at decent prices in comparison to a leased Internet service.
-                With the aim of delivering a much more effective, trustworthy and flexible Internet connection, we provide our Sizaf BBconnect service to increase business productivity and increase the competitiveness of our clients. Enjoy the network at extremely fast speeds with our connections. In all the major cities of the world, our cost effective multi-gbps speeds makes Sizaf BBconnect a perfect way to connect to the Internet at your office.
-                </p>
-            </div>           
-        </div>
-       
-
-</div>         
-
   </div>
-  
 </section>
 
 <section class="py-20 px-4 bg-white">
