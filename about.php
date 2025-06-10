@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+$metaTitle = "Contact";
+$metaDescription = "This is contact page.";
+$metaKeywords = "IT solutions, software development, consultancy";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+include('header.php');
+?>
 <div class=' mx-auto'>
     <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">
             <h1 class="text-lg md:text-xl lg:text-3xl font-bold uppercase tracking-wide pb-3">Check coverage - contact us</h1>
@@ -614,7 +621,7 @@
                     'name' => "Cherianne G.",
                     'title' => "Operations Manager",
                     'company' => "Technoserve UK Ltd.",
-                    'avatar' => "/placeholder.svg?height=80&width=80",
+                    'avatar' => "./assest/user4.jpg",
                     'rating' => 5,
                     'industry' => "Technology",
                     'projectType' => "Infrastructure Setup",
@@ -625,7 +632,7 @@
                     'name' => "Chandra K.",
                     'title' => "Product Incharge",
                     'company' => "Pro & Gin Wholesale Pvt. Ltd.",
-                    'avatar' => "/placeholder.svg?height=80&width=80",
+                    'avatar' => "./assest/user1.jpg",
                     'rating' => 5,
                     'industry' => "Wholesale",
                     'projectType' => "Tech Solutions",
@@ -636,7 +643,7 @@
                     'name' => "Liz R.",
                     'title' => "Accounts Manager",
                     'company' => "I-Help Cosmic Foundation",
-                    'avatar' => "/placeholder.svg?height=80&width=80",
+                    'avatar' => "./assest/user2.jpg",
                     'rating' => 5,
                     'industry' => "Non-Profit",
                     'projectType' => "Business Solutions",
@@ -647,7 +654,7 @@
                     'name' => "Liz R.",
                     'title' => "Accounts Manager",
                     'company' => "I-Help Cosmic Foundation",
-                    'avatar' => "/placeholder.svg?height=80&width=80",
+                    'avatar' => "./assest/user4.jpg",
                     'rating' => 5,
                     'industry' => "Non-Profit",
                     'projectType' => "Business Solutions",
@@ -658,7 +665,7 @@
                     'name' => "Liz R.",
                     'title' => "Accounts Manager",
                     'company' => "I-Help Cosmic Foundation",
-                    'avatar' => "/placeholder.svg?height=80&width=80",
+                    'avatar' => "./assest/user3.jpg",
                     'rating' => 5,
                     'industry' => "Non-Profit",
                     'projectType' => "Business Solutions",

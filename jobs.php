@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+$metaTitle = "Career";
+$metaDescription = "This is career page.";
+$metaKeywords = "IT solutions, software development, consultancy";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+include('header.php');
+?>
 <?php include 'functions.php'; ?>
 <?php
 $api_url = "https://backendcms.sizaf.com/wp-json/wp/v2/jobpost";

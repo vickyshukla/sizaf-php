@@ -1,3 +1,33 @@
+<style>
+  .marquee-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+  }
+
+  .logo-strip {
+    display: flex;
+  }
+  .logo-strip img {
+    flex-shrink: 0;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+</style>
 <footer>
   <!-- Products & Partners Section -->
   <section class="bg-white text-center py-12 px-4" data-aos="fade-up">
@@ -26,15 +56,53 @@
   </div>
 </div>
 
-    <div class="flex flex-wrap justify-center items-center gap-6">
-      <img src="assets/partners/1.png" alt="QHOS Logo" class="h-10 object-contain">
-      <img src="assets/partners/2.png" alt="Symantec Logo" class="h-10 object-contain">
-      <img src="assets/partners/3.png" alt="Trend Micro Logo" class="h-10 object-contain">
-      <img src="assets/partners/4.png" alt="Veeam Logo" class="h-10 object-contain">
-      <img src="assets/partners/5.png" alt="WatchGuard Logo" class="h-10 object-contain">
-      <img src="assets/partners/6.png" alt="Acronis Logo" class="h-10 object-contain">
-      <img src="assets/partners/7.png" alt="Kaspersky Logo" class="h-10 object-contain">
+<div class="w-full overflow-hidden px-4 md:px-10 py-8 bg-white">
+  <div class="marquee-container">
+    <div class="marquee-track gap-12">
+      <div class="logo-strip flex items-center gap-12">
+        <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
+        <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
+        <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
+        <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
+        <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
+        <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
+        <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
+        <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
+        <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
+        <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
+        <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
+        <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
+        <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
+        <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
+        <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
+        <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
+        <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
+        <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+      </div>
+      <div class="logo-strip flex items-center gap-12">
+        <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
+        <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
+        <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
+        <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
+        <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
+        <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
+        <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
+        <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
+        <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
+        <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
+        <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
+        <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
+        <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
+        <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
+        <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
+        <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
+        <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
+        <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+      </div>
     </div>
+  </div>
+</div>
+
   </section>
 
   <!-- Offer Section -->
