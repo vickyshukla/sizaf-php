@@ -1,49 +1,8 @@
 <?php
 session_start();
-require_once __DIR__ . '/vendor/autoload.php';
 include 'header.php';
 include 'functions.php';
-
-// Load .env variables
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-// Define sensitive keywords
-const SENSITIVE_KEYWORDS = [
-    "violence", "explicit", "vulgar", "controversy", "terror", "drugs",
-    "abuse", "offensive", "porn", "adult", "crime", "scandal", "murder", "death"
-];
-
-// GNews API Key from .env
-$apiKey = $_ENV['GNEWS_API_KEY'] ?? null;
-if (!$apiKey) {
-    die("API key not found. Please set GNEWS_API_KEY in your .env file.");
-}
-
-// GNews API URL (fetch 10 results)
-$apiUrl = "https://gnews.io/api/v4/search?q=IPT%20OR%20ICT%20OR%20ISP%20OR%20Broadband&in=title&lang=en&category=technology&apikey={$apiKey}&max=10";
-
-// Fetch news data
-$response = file_get_contents($apiUrl);
-if ($response === false) {
-    die("Error fetching news.");
-}
-
-$newsData = json_decode($response, true);
-$_SESSION['news_articles'] = $newsData['articles'];
-
-// Filter out articles containing sensitive keywords
-$filteredNews = array_filter($newsData['articles'], function ($article) {
-    foreach (SENSITIVE_KEYWORDS as $keyword) {
-        if (
-            stripos($article['title'], $keyword) !== false ||
-            stripos($article['description'], $keyword) !== false
-        ) {
-            return false;
-        }
-    }
-    return true;
-});
+$filteredNews = fetchFilteredNews();
 ?>
 
 <main class="container mx-auto">
