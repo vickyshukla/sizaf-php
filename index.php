@@ -5,6 +5,9 @@ $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
 include('header.php');
+include 'functions.php';
+$filteredNews = fetchFilteredNews();
+$filteredNews = array_slice($filteredNews, 0, 3);
 ?>
 <style>
   /* Highlight Styles */
@@ -243,79 +246,121 @@ include('header.php');
     Industries & Sectors
   </h2>
 
-  <!-- Slider Wrapper -->
-  <div class="relative">
-    <!-- Left Arrow -->
-    <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 z-10 rounded-full hover:bg-gray-100">
-      &#8592;
+  <div class="relative w-full max-w-7xl mx-auto overflow-hidden py-10">
+    <!-- Left Button -->
+    <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 z-50 bg-white p-2 rounded-full shadow hover:bg-gray-100">
+    <i class="fa-solid fa-arrow-left"></i>
     </button>
 
-    <!-- Cards Container -->
-    <div id="slider" class="flex transition-transform duration-500 ease-in-out overflow-hidden scroll-smooth">
-      <?php
-      $industries = [
-        [
-          'title' => 'Governance & Security',
-          'description' => 'Using technology to improve governance and security capabilities.',
-          'image' => '/images/governance.jpg',
-          'hoverImage' => '/images/governance-bg.jpg',
-          'link' => '/industries/governance-security',
-        ],
-        [
-          'title' => 'Health & Education',
-          'description' => 'Smart solutions in healthcare and education.',
-          'image' => '/images/health.jpg',
-          'hoverImage' => '/images/health-bg.jpg',
-          'link' => '/industries/health-education',
-        ],
-        [
-          'title' => 'Non Profit Organizations',
-          'description' => 'Tech for low-budget, high-impact NGOs.',
-          'image' => '/images/nonprofit.jpg',
-          'hoverImage' => '/images/nonprofit-bg.jpg',
-          'link' => '/industries/nonprofit',
-        ],
-        [
-          'title' => 'Travel & Leisure',
-          'description' => 'Digital transformation in travel and leisure.',
-          'image' => '/images/travel.jpg',
-          'hoverImage' => '/images/travel-bg.jpg',
-          'link' => '/industries/travel-leisure',
-        ],
-        [
-          'title' => 'Finance & Banking',
-          'description' => 'Secure solutions for financial services.',
-          'image' => '/images/finance.jpg',
-          'hoverImage' => '/images/finance-bg.jpg',
-          'link' => '/industries/finance-banking',
-        ]
-      ];
+    <!-- Scrollable Cards Wrapper -->
+    <div class="overflow-hidden w-full">
+      <div id="slider" class="flex gap-4 transition-all duration-500 ease-in-out overflow-x-auto scroll-smooth no-scrollbar py-4">
+        <?php
+        $industrycarousel = [
+          [
+            'title' => 'Governance & Security',
+            'description' => 'It is now important to use this technology and improve governance and security capabilities.',
+            'backgroundImageUrl' => './assest/governance&security.jpg',
+            'linkHref' => '/sizaf-php/governance-security.php',
+          ],
+          [
+            'title' => 'Health & Education',
+            'description' => 'Healthcare & Education satisfies a variety of standards, including changing technology, to adapt to clients needs.',
+            'backgroundImageUrl' => './assest/health&education.jpeg',
+            'linkHref' => '/sizaf-php/health-education.php',
+          ],
+          [
+            'title' => 'Non Profit Organizations',
+            'description' => 'Non-profit enterprises with low budget but with best of technology strives for optimization and delivers best results.',
+            'backgroundImageUrl' => './assest/nonprofitorganization.jpeg',
+            'linkHref' => '/sizaf-php/non-profit.php',
+          ],
+          [
+            'title' => 'Travel & Leisure',
+            'description' => 'With the Covid-19 turnaround, there will be rise in travel and leisure industries, for which there will be requirement of advanced and specialized set of tech services.',
+            'backgroundImageUrl' => './assest/travel&leisure.jpeg',
+            'linkHref' => '/sizaf-php/travel-leisure.php',
+          ],
+          [
+            'title' => 'Construction & Real Estate',
+            'description' => 'Construction & real estate is a diverse field having its own management and technological issues.',
+            'backgroundImageUrl' => './assest/construction&realestate.jpeg',
+            'linkHref' => '/sizaf-php/non-profit.php',
+          ],
+          [
+            'title' => 'Media & Advertising',
+            'description' => 'Media & advertising companies are always welcome to use new technologies to improve the production, distribution and monetization of content.',
+            'backgroundImageUrl' => './assest/media&advertising.jpeg',
+            'linkHref' => '/sizaf-php/media-advertising.php',
+          ],
+          [
+            'title' => 'Retail & E-Commerce',
+            'description' => 'Advanced technology transforms customer performance by efficiency and cost savings by selling premium goods and services by retailers.',
+            'backgroundImageUrl' => './assest/retail&ecommerce.jpg',
+            'linkHref' => '/sizaf-php/retail-ecommerce.php',
+          ],
+          [
+            'title' => 'Production, Engg & Pharma',
+            'description' => 'With advancement Net with Tech, All production, engineering and pharmaceutical industries have been improved with smart and strongest network units.',
+            'backgroundImageUrl' => './assest/protection&pharma.jpeg',
+            'linkHref' => '/sizaf-php/production-pharma.php',
+          ],
+          [
+            'title' => 'Transport & Logistics',
+            'description' => 'The productivity of the supply chain & transportation industry is continuously being strengthened by  networking,  communications & digital solutions.',
+            'backgroundImageUrl' => './assest/transport&logistics.jpeg',
+            'linkHref' => '/sizaf-php/transport-logistics.php',
+          ],
+          [
+            'title' => 'Agri, Fisheries & Climate',
+            'description' => 'Agriculture and the food system as a whole are changing dramatically through digital technologies. They also play an important role in climate improvement.',
+            'backgroundImageUrl' => './assest/agri&climate.jpeg',
+            'linkHref' => '/sizaf-php/agri-climate.php',
+          ],
+          [
+            'title' => 'Finance & Banking',
+            'description' => 'Finance & Banking is one of the early recipients of the internet and smart technology platforms.',
+            'backgroundImageUrl' => './assest/finance&banking.jpeg',
+            'linkHref' => '/sizaf-php/finance-banking.php',
+          ]
+        ];
 
-      foreach ($industries as $industry) :
-      ?>
-        <div class="group relative w-full md:w-1/3 flex-shrink-0 px-2">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-[1.02] transition-transform">
-            <div class="h-48 w-full overflow-hidden">
-              <img src="<?= $industry['image'] ?>" alt="<?= $industry['title'] ?>" class="w-full h-full object-cover" loading="lazy" />
-            </div>
-            <div class="relative z-10 p-5 bg-white transition-all duration-500 ease-in-out group-hover:bg-cover group-hover:bg-center hover-text-bg"
-              style="background-image: url('<?= $industry['hoverImage'] ?>'); background-size: 0%;">
-              <h3 class="font-bold text-lg mb-2"><?= $industry['title'] ?></h3>
-              <p class="text-sm text-gray-600 mb-4"><?= $industry['description'] ?></p>
-              <a href="<?= $industry['link'] ?>" class="text-sm font-semibold text-blue-600 hover:underline">
-                Learn More →
-              </a>
+        foreach ($industrycarousel as $item): ?>
+          <div class="carousel-card w-full md:w-1/2 lg:w-1/3 flex-shrink-0 bg-white rounded-lg shadow-lg shadow-slate-400 h-[490px] group overflow-hidden transition hover:shadow-xl flex flex-col relative">
+            <!-- Top Background Image -->
+            <div class="h-60 bg-cover bg-center w-full flex items-start justify-center" style="background-image: url('<?= $item['backgroundImageUrl'] ?>');"></div>
+
+            <div class="px-6 flex flex-col justify-between flex-1 relative group">
+              <!-- Hover Gradient Overlay (inside content only) -->
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-80 pointer-events-none transition-opacity duration-300 delay-200 z-10 [background-image:linear-gradient(45deg,rgb(0,70,204)_0%,rgb(230,3,238)_100%)]"></div>
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 delay-200 z-10 bg-[url('./assest/hover-bg.png')] bg-cover bg-[position:end]"></div>
+
+              <div class="relative z-20 pt-8 pb-4">
+                <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition duration-300 delay-200"><?= $item['title'] ?></h3>
+                <p class="text-sm font-normal text-gray-600 mt-2 text-center group-hover:text-white transition duration-300 delay-200"><?= $item['description'] ?></p>
+              </div>
+
+              <div class="border-t pb-6 border-gray-300 pt-4 mt-4 group-hover:border-white transition duration-300 delay-200 relative z-20">
+                <a href="<?= $item['linkHref'] ?>" class="flex items-center justify-center gap-2 text-gray-800 group-hover:text-white transition duration-300 delay-200">
+                  <span>Learn More</span>
+                  <svg class="w-4 h-4 transform transition-transform duration-500 delay-200 opacity-0 group-hover:translate-x-1 group-hover:opacity-100 group-hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
+      </div>
     </div>
 
-    <!-- Right Arrow -->
-    <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 z-10 rounded-full hover:bg-gray-100">
-      &#8594;
+    <!-- Right Button -->
+    <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 z-50 bg-white p-2 rounded-full shadow hover:bg-gray-100">
+    <i class="fa-solid fa-arrow-right"></i>
     </button>
   </div>
+
+
 </section>
 
 <section class="bg-[#070C5A] text-white py-16 text-center px-4" role="region" aria-label="Global Network Stats">
@@ -355,6 +400,69 @@ include('header.php');
   </div>
 </section>
 
+<section>
+  <div class="relative w-full min-h-[400px] bg-white py-8 px-4 lg:px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-[url(assest/testimonial-map.png)] bg-cover"></div>
+    <div class="relative flex flex-col sm:flex-row md:ml-16 lg:ml-28 ml-2 mt-10 lg:mr-28 gap-6">
+      <div class="max-w-xs">
+        <p class="text-3xl font-bold leading-tight mb-6">THE BREAKING<br>NEWS FROM THE<br>INTERNET.</p>
+        <p class="text-gray-600 text-base mb-8 leading-relaxed">At Sizaf we like to keep you updated with the latest developments on internet Service and technology that you may use and let us know if you like us to provide any of these services to you.</p>
+        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 h-9 group text-black hover:no-underline hover:text-[#FF156E] font-medium text-lg p-0">
+            <a href="blog.php"> View All Blog</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right w-96">
+              <path d="M18 8L22 12L18 16"></path>
+              <path d="M2 12H22"></path>
+            </svg>
+        </button>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+          <?php foreach ($filteredNews as $news): ?>
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                <?php if (!empty($news['image'])): ?>
+                    <img src="<?= $news['image'] ?>" alt="<?= htmlspecialchars($news['title']) ?>" class="w-full h-48 object-cover" loading="lazy">
+                <?php else: ?>
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">No Image</div>
+                <?php endif; ?>
+                <div class="p-4 flex flex-col h-full">
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 line-clamp-2"><?= htmlspecialchars($news['title']) ?></h3>
+                    <p class="text-sm text-gray-500 mb-2"><?= date('F j, Y', strtotime($news['publishedAt'])) ?></p>
+                    <p class="text-gray-600 mb-4 line-clamp-2"><?= strip_tags($news['description']) ?></p>
+                    <?php 
+                        $slug = slugify($news['title']); 
+                        $news['slug'] = $slug;
+                        $_SESSION['news_articles'][$slug] = $news; 
+                    ?>
+                    <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded mt-auto text-center">Read More</a>
+                </div>
+              </div>
+          <?php endforeach; ?>
+      </div>
+    </div>
+    <div class="absolute top-20 right-20 w-2 h-2 rounded-full bg-red-500"></div>
+  </div>
+</section>
+
+<script>
+  const slider = document.getElementById('slider');
+  const cards = slider.querySelectorAll('.carousel-card');
+  const cardMargin = 16; // Tailwind's gap-4 = 1rem = 16px
+  let scrollAmount = 0;
+
+  function getCardWidth() {
+    return cards[0].offsetWidth + cardMargin;
+  }
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    scrollAmount += getCardWidth();
+    slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    scrollAmount -= getCardWidth();
+    if (scrollAmount < 0) scrollAmount = 0;
+    slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+  });
+</script>
 <script>
 function animateCounter(id, endValue, duration = 2000) {
   const counter = document.getElementById(id);

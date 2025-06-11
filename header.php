@@ -52,6 +52,9 @@
   <!-- AlpineJS -->
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
+  <!-- Lucide CDN -->
+ <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
 </head>
 <body>
 <?php include 'nav.php'; ?>

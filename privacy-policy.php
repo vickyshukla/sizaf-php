@@ -86,27 +86,28 @@ include('header.php');
                             <nav class="p-4 space-y-2">
                                 <?php
                                 $tableOfContents = [
-                                    ['id' => 'introduction', 'title' => "Introduction", 'icon' => 'file-text'],
-                                    ['id' => 'definitions', 'title' => "Definitions", 'icon' => 'message-square'],
-                                    ['id' => 'information', 'title' => "Information Collection", 'icon' => 'credit-card'],
-                                    ['id' => 'datatypes', 'title' => "Types Of Data", 'icon' => 'gift'],
-                                    ['id' => 'datause', 'title' => "Use Of Data", 'icon' => 'refresh-cw'],
-                                    ['id' => 'retention', 'title' => "Data Retention", 'icon' => 'clock'],
-                                    ['id' => 'transfer', 'title' => "Data Transfer", 'icon' => 'dollar-sign'],
-                                    ['id' => 'disclosure', 'title' => "Data Disclosure", 'icon' => 'rotate-ccw'],
-                                    ['id' => 'security', 'title' => "Data Security", 'icon' => 'edit'],
-                                    ['id' => 'rights', 'title' => "Your Rights", 'icon' => 'x-circle'],
-                                    ['id' => 'providers', 'title' => "Service Providers", 'icon' => 'bar-chart-3'],
-                                    ['id' => 'analytics', 'title' => "Analytics", 'icon' => 'bar-chart-3'],
-                                    ['id' => 'tools', 'title' => "CI/CD Tools", 'icon' => 'user'],
-                                    ['id' => 'advertising', 'title' => "Advertising", 'icon' => 'copyright'],
-                                    ['id' => 'remarketing', 'title' => "Behavioral Remarketing", 'icon' => 'message-circle'],
-                                    ['id' => 'payments', 'title' => "Payments", 'icon' => 'external-link'],
-                                    ['id' => 'links', 'title' => "Links To Other Sites", 'icon' => 'user'],
-                                    ['id' => 'privacy', 'title' => "Children's Privacy", 'icon' => 'copyright'],
-                                    ['id' => 'policychanges', 'title' => "Policy Changes", 'icon' => 'message-circle'],
-                                    ['id' => 'contact', 'title' => "Contact Us", 'icon' => 'external-link']
+                                                ['id' => 'introduction', 'title' => "Introduction", 'icon' => 'file-text'],
+                                                ['id' => 'definitions', 'title' => "Definitions", 'icon' => 'book'],
+                                                ['id' => 'information', 'title' => "Information Collection", 'icon' => 'database'],
+                                                ['id' => 'datatypes', 'title' => "Types Of Data", 'icon' => 'layers'],
+                                                ['id' => 'datause', 'title' => "Use Of Data", 'icon' => 'activity'],
+                                                ['id' => 'retention', 'title' => "Data Retention", 'icon' => 'clock'],
+                                                ['id' => 'transfer', 'title' => "Data Transfer", 'icon' => 'share'],
+                                                ['id' => 'disclosure', 'title' => "Data Disclosure", 'icon' => 'unlock'],
+                                                ['id' => 'security', 'title' => "Data Security", 'icon' => 'shield'],
+                                                ['id' => 'rights', 'title' => "Your Rights", 'icon' => 'check-circle'],
+                                                ['id' => 'providers', 'title' => "Service Providers", 'icon' => 'building'],
+                                                ['id' => 'analytics', 'title' => "Analytics", 'icon' => 'bar-chart'],
+                                                ['id' => 'tools', 'title' => "CI/CD Tools", 'icon' => 'terminal'],
+                                                ['id' => 'advertising', 'title' => "Advertising", 'icon' => 'megaphone'],
+                                                ['id' => 'remarketing', 'title' => "Behavioral Remarketing", 'icon' => 'repeat'],
+                                                ['id' => 'payments', 'title' => "Payments", 'icon' => 'credit-card'],
+                                                ['id' => 'links', 'title' => "Links To Other Sites", 'icon' => 'link'],
+                                                ['id' => 'privacy', 'title' => "Children's Privacy", 'icon' => 'shield-question'],
+                                                ['id' => 'policychanges', 'title' => "Policy Changes", 'icon' => 'file-pen'],
+                                                ['id' => 'contact', 'title' => "Contact Us", 'icon' => 'mail']
                                 ];
+
                                 
                                 $activeSection = isset($_GET['section']) ? $_GET['section'] : 'introduction';
                                 
@@ -117,26 +118,7 @@ include('header.php');
                                         class="w-full flex items-center gap-3 p-3 rounded-lg text-left transition-all <?= $activeSection === $item['id'] ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white' : 'hover:bg-slate-100 text-slate-700' ?>"
                                     >
                                         <span class="text-sm font-medium"><?= $index + 1 ?>.</span>
-                                        <svg class="h-4 w-4 <?= $activeSection === $item['id'] ? 'text-white' : 'text-slate-500' ?> transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?= 
-                                                $item['icon'] === 'file-text' ? 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"' : 
-                                                ($item['icon'] === 'message-square' ? 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"' : 
-                                                ($item['icon'] === 'credit-card' ? 'M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"' : 
-                                                ($item['icon'] === 'gift' ? 'M12 8v13m8-8v7a2 2 0 01-2 2H6a2 2 0 01-2-2v-7m14 0H2m12 0a2 2 0 100-4 2 2 0 000 4zM6 8a2 2 0 100-4 2 2 0 000 4z"' : 
-                                                ($item['icon'] === 'refresh-cw' ? 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"' : 
-                                                ($item['icon'] === 'clock' ? 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"' : 
-                                                ($item['icon'] === 'dollar-sign' ? 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"' : 
-                                                ($item['icon'] === 'rotate-ccw' ? 'M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"' : 
-                                                ($item['icon'] === 'edit' ? 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"' : 
-                                                ($item['icon'] === 'x-circle' ? 'M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"' : 
-                                                ($item['icon'] === 'bar-chart-3' ? 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"' : 
-                                                ($item['icon'] === 'user-x' ? 'M13 7a4 4 0 11-8 0 4 4 0 018 0zM9 14a6 6 0 00-6 6v1h12v-1a6 6 0 00-6-6zM17 8l2 2m0 0l2 2m-2-2l-2 2m2-2l2-2"' : 
-                                                ($item['icon'] === 'user' ? 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"' : 
-                                                ($item['icon'] === 'copyright' ? 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"' : 
-                                                ($item['icon'] === 'message-circle' ? 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"' : 
-                                                'M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"'))))))))))))))
-                                            ?>"></path>
-                                        </svg>
+                                        <i  data-lucide="<?= $item['icon'] ?>"  class="w-4 h-4 <?= $activeSection === $item['id'] ? 'text-white' : 'text-slate-500' ?>"></i>
                                         <span class="font-medium"><?= $item['title'] ?></span>
                                     </a>
                                 <?php endforeach; ?>
@@ -1182,3 +1164,8 @@ include('header.php');
     </main>
 </div>
 <?php include 'footer.php'; ?>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+  });
+</script>
