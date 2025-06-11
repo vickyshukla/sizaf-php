@@ -4,9 +4,13 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="SizaF Net With Tech">
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assest/sizaf-favicon.png">
 
     <!-- Dynamic Title -->
     <title><?php echo $metaTitle ?? 'Default Page Title'; ?></title>
+
 
     <!-- Meta Description -->
     <meta name="description" content="<?php echo $metaDescription ?? 'Default description for the page.'; ?>">
@@ -30,6 +34,8 @@
     <meta name="twitter:image" content="<?php echo $metaImage ?? 'https://yourdomain.com/default-twitter-image.jpg'; ?>">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- TailwindCSS -->
   <link href="./input.css" rel="stylesheet">

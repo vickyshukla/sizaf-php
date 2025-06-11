@@ -48,33 +48,57 @@ function getFeaturedImage($blog) {
 }
 ?>
 
-<main class="container mx-auto">
+<main class="max-w-[1460px] container mx-auto">
   <!-- Hero Section -->
-  <div class="relative flex items-center justify-center min-h-[80vh] md:h-screen bg-cover bg-center bg-[url('assest/bg.jpeg')]">
-    <div class="absolute inset-0 bg-[url('assest/color-bg.png')] opacity-80"></div>
-    <div class="relative text-white text-center p-6 md:p-8 rounded-lg max-w-3xl mx-auto">
-        <img src="assest/sizaflogo.png" alt="Sizaf Logo" width="200" class="mx-auto mb-4" loading="lazy"/>
-        <h1 class="text-2xl md:text-4xl font-bold mb-4 leading-relaxed">
-            Let's improve sales, revenue & build a stronger brand
-            <br />& improved customer satisfaction.
-        </h1>
-        <p class="text-pink-500 text-lg md:text-xl mb-6">PAY PER USE RM 199 / MO</p>
-        <a href="about.php">
-            <button class="border border-white text-white px-6 py-3 md:px-16 md:py-5 text-base md:text-lg hover-primary-gradient hover:text-white transition duration-300 cursor-pointer">
-                Browse Plans
-                <span class="ml-2 text-xl md:text-2xl">→</span>
-            </button>
-        </a>
-    </div>
-  </div>
-
+   <div class=" mx-auto">
+        <!-- Hero Section with SEO-rich content -->
+        <div class="relative rounded-b-3xl overflow-hidden mb-16 shadow-2xl">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90 z-10"></div>
+            <img 
+                src="./assest/bg.jpeg" 
+                alt="Technology blog hero - Latest tech insights and trends" 
+                width="1200" 
+                height="400" 
+                class="w-full h-[400px] object-cover"
+                loading="lazy"
+            />
+            <div class="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16">
+                <span class="mb-4 bg-white/10 backdrop-blur-sm text-white border-white/20 w-fit px-3 py-1 rounded-full text-sm font-medium">
+                    SIZAF Tech Blog
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                    Let's improve sales, revenue & build a 
+                    <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                        stronger brand
+                    </span>
+                </h1>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl">
+                    & improved customer satisfaction through technology insights and industry expertise.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#pricing" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg rounded-lg font-medium text-center transition-colors">
+                        PAY PER USE RM 1.99
+                    </a>
+                    <a href="#plans" class="border border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg rounded-lg font-medium text-center transition-colors backdrop-blur-sm flex items-center justify-center">
+                        Browse Plans
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
   <!-- Main Content -->
-  <div class="flex flex-col lg:flex-row bg-gray-100">
+  <div class="flex flex-col lg:flex-row">
     <?php include 'mini-sidebar.php'; ?>
 
     <!-- Blog Section -->
     <div class="flex-1 lg:max-h-[80vh] lg:overflow-y-auto p-4 sm:p-6">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">BLOGS</h2>
+      <header class="mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 text-center">BLOGS</h1>
+                    <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto">
+                        Stay updated with the latest trends, insights, and innovations in technology, security, and business solutions.
+                    </p>
+        </header>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <?php foreach ($blogs as $blog): 
           $title = $blog['title']['rendered'];
