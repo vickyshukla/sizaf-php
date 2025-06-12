@@ -1,12 +1,11 @@
 <?php
-/**
- * Template Name: Modern Business Communication
- * Description: A modern business communication page template with SEO optimization
- */
-
-include 'header.php';
+$metaTitle = "Comprehensive Technology Solutions for Diverse Industries - Sizaf";
+$metaDescription = "Maximize your business potential with Sizaf's managed IT services. Ensure seamless operations, proactive support, and optimized technology solutions for growth.";
+$metaKeywords = "Explore Sizaf's industry-specific technology services designed to enhance efficiency and innovation across sectors like healthcare, finance, education, and more.";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+include('header.php');
 ?>
-
 <!-- Hero Section -->
 <section class="relative overflow-hidden min-h-[600px] flex items-center justify-center">
     <!-- Background Image with Overlay -->
