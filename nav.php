@@ -152,8 +152,8 @@
           <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
         <?php endif; ?>
         <div class="absolute left-0  hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50 overflow-hidden transition-all duration-200 origin-top transform opacity-0 group-hover:opacity-100 group-hover:scale-100">
-          <a href="./news.php" class="block px-4 py-2 text-gray-700 <?= $currentPage === 'news.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?> transition-colors duration-150">News</a>
-          <a href="./blog.php" class="block px-4 py-2 text-gray-700 <?= $currentPage === 'blog.php' ? 'text-[#ff156e] font-medium' : 'hover:bg-blue-50 hover:text-[#ff156e]' ?> transition-colors duration-150">Blogs</a>
+          <a href="news.php" class="block px-4 py-2 <?= $currentPage === 'news.php' ? 'text-[#ff156e] font-medium' : 'text-gray-700 hover:bg-blue-50 hover:text-[#ff156e]' ?> transition-colors duration-150">News</a>
+          <a href="blog.php" class="block px-4 py-2 <?= $currentPage === 'blog.php' ? 'text-[#ff156e] font-medium' : 'text-gray-700 hover:bg-blue-50 hover:text-[#ff156e]' ?> transition-colors duration-150">Blogs</a>
         </div>
       </div>
 

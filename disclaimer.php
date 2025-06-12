@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Global Network";
-$metaDescription = "This is global network page.";
+$metaTitle = "Disclamier";
+$metaDescription = "This is the Disclamier page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
