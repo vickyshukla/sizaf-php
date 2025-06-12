@@ -152,9 +152,9 @@
       <nav aria-labelledby="company-links">
         <h3 id="company-links" class="font-bold text-lg mb-3">Company</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="about.php" class="hover:text-[#ff156e]">About Us</a></li>
-          <li><a href="industry.php" class="hover:text-[#ff156e]">Industries & Sectors</a></li>
-          <li><a href="blog.php" class="hover:text-[#ff156e]">News & Blogs</a></li>
+          <li><a href="./about.php" class="hover:text-[#ff156e]">About Us</a></li>
+          <li><a href="./industries-sectors.php" class="hover:text-[#ff156e]">Industries & Sectors</a></li>
+          <li><a href="./blog.php" class="hover:text-[#ff156e]">News & Blogs</a></li>
         </ul>
       </nav>
 
@@ -162,9 +162,9 @@
       <nav aria-labelledby="services-links">
         <h3 id="services-links" class="font-bold text-lg mb-3">Services</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="webmedia.php" class="hover:text-[#ff156e]">Technology Services</a></li>
-          <li><a href="global-network.php" class="hover:text-[#ff156e]">Global Networks</a></li>
-          <li><a href="about.php" class="hover:text-[#ff156e]">Contact Us</a></li>
+          <li><a href="./technology-services.php" class="hover:text-[#ff156e]">Technology Services</a></li>
+          <li><a href="./global-network.php" class="hover:text-[#ff156e]">Global Networks</a></li>
+          <li><a href="./about.php" class="hover:text-[#ff156e]">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -175,7 +175,7 @@
           <li><a href="./terms-conditions.php" class="hover:text-[#ff156e]">Terms & Conditions</a></li>
           <li><a href="./privacy-policy.php" class="hover:text-[#ff156e]">Privacy Policy</a></li>
           <li><a href="./disclaimer.php" class="hover:text-[#ff156e]">Disclaimer</a></li>
-          <li><a href="sitemap.php" class="hover:text-[#ff156e]">Sitemap</a></li>
+          <li><a href="./sitemap.php" class="hover:text-[#ff156e]">Sitemap</a></li>
         </ul>
       </nav>
     </div>
