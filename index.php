@@ -160,11 +160,12 @@ $filteredNews = array_slice($filteredNews, 0, 3);
 
 <section class="bg-white py-16 px-4" aria-labelledby="smart-plans-title">
   <div class="max-w-7xl mx-auto">
-    <h2 id="smart-plans-title" class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+    <h2 id="smart-plans-title" class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 ">
       SMART PLANS
     </h2>
+   
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-12 lg:grid-cols-3 gap-8">
       <!-- Card 1 -->
       <article class="rounded-xl overflow-hidden shadow-lg transition hover:shadow-2xl" data-aos="fade-up">
         <div class="relative">

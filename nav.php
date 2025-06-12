@@ -75,7 +75,7 @@
 
       <!-- Technology Dropdown - Improved Hover Version -->
       <div class="relative group">
-        <button class="flex items-center transition-colors duration-200 <?= $isTechActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
+        <a href="./technology-services.php" class="flex items-center transition-colors duration-200 <?= $isTechActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
           Technology Services
           <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" 
               fill="none" 
@@ -84,7 +84,7 @@
               viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
-        </button>
+        </a>
         <?php if ($isTechActive): ?>
           <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
         <?php endif; ?>
@@ -98,7 +98,7 @@
 
       <!-- Industry Dropdown -->
       <div class="relative group">
-        <button class="flex items-center transition-colors duration-200 <?= $isIndustryActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
+        <a href="./industries-sectors.php" class="flex items-center transition-colors duration-200 <?= $isIndustryActive ? 'text-[#ff156e]' : 'hover:text-[#ff156e]' ?>">
           Industries and Sectors
           <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" 
               fill="none" 
@@ -107,7 +107,7 @@
               viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
-        </button>
+        </a>
         <?php if ($isIndustryActive): ?>
           <div class="w-full h-0.5 bg-[#ff156e] rounded"></div>
         <?php endif; ?>
