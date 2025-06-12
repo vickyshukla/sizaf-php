@@ -23,7 +23,6 @@ function extractByKeyword($keyword, $content) {
     return trim(strip_tags($match[1] ?? 'Not specified'));
 }
 
-// News filter function
 function fetchFilteredNews()
 {
     require_once __DIR__ . '/vendor/autoload.php';
@@ -34,7 +33,8 @@ function fetchFilteredNews()
 
     $apiKey = $_ENV['GNEWS_API_KEY'] ?? null;
     if (!$apiKey) {
-        die("API key not found. Please set GNEWS_API_KEY in your .env file.");
+        error_log("API key not found. Please set GNEWS_API_KEY in your .env file.");
+        return [];
     }
 
     // Sensitive Keywords
@@ -47,9 +47,10 @@ function fetchFilteredNews()
     $apiUrl = "https://gnews.io/api/v4/search?q=IPT%20OR%20ICT%20OR%20ISP%20OR%20Broadband&in=title&lang=en&category=technology&apikey={$apiKey}&max=10";
 
     // Fetch data
-    $response = file_get_contents($apiUrl);
+    $response = @file_get_contents($apiUrl);
     if ($response === false) {
-        die("Error fetching news.");
+        error_log("Error fetching news from GNews API.");
+        return [];
     }
 
     $newsData = json_decode($response, true);

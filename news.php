@@ -64,28 +64,34 @@ $filteredNews = fetchFilteredNews();
                     Discover the latest announcements, product launches, tech updates, and company milestones. Stay informed with breaking news and expert insights from the SIZAF team.
                 </p>
             </header>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <?php foreach ($filteredNews as $news): ?>
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
-                        <?php if (!empty($news['image'])): ?>
-                            <img src="<?= $news['image'] ?>" alt="<?= htmlspecialchars($news['title']) ?>" class="w-full h-48 object-cover" loading="lazy">
-                        <?php else: ?>
-                            <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">No Image</div>
-                        <?php endif; ?>
-                        <div class="p-4 flex flex-col h-full">
-                            <h3 class="text-lg md:text-xl font-semibold mb-2"><?= htmlspecialchars($news['title']) ?></h3>
-                            <p class="text-sm text-gray-500 mb-2"><?= date('F j, Y', strtotime($news['publishedAt'])) ?></p>
-                            <p class="text-gray-600 mb-4"><?= substr(strip_tags($news['description']), 0, 100) ?>...</p>
-                            <?php 
-                                $slug = slugify($news['title']); 
-                                $news['slug'] = $slug;
-                                $_SESSION['news_articles'][$slug] = $news; 
-                            ?>
-                            <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded mt-auto text-center">Read More</a>
+            <?php if (!empty($filteredNews)): ?>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <?php foreach ($filteredNews as $news): ?>
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                            <?php if (!empty($news['image'])): ?>
+                                <img src="<?= $news['image'] ?>" alt="<?= htmlspecialchars($news['title']) ?>" class="w-full h-48 object-cover" loading="lazy">
+                            <?php else: ?>
+                                <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">No Image</div>
+                            <?php endif; ?>
+                            <div class="p-4 flex flex-col h-full">
+                                <h3 class="text-lg md:text-xl font-semibold mb-2"><?= htmlspecialchars($news['title']) ?></h3>
+                                <p class="text-sm text-gray-500 mb-2"><?= date('F j, Y', strtotime($news['publishedAt'])) ?></p>
+                                <p class="text-gray-600 mb-4"><?= substr(strip_tags($news['description']), 0, 100) ?>...</p>
+                                <?php 
+                                    $slug = slugify($news['title']); 
+                                    $news['slug'] = $slug;
+                                    $_SESSION['news_articles'][$slug] = $news; 
+                                ?>
+                                <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded mt-auto text-center">Read More</a>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php else: ?>
+                <div class="text-center text-red-600 py-8 flex-1 h-full">
+                    <p>No news articles available at the moment. Please check back later.</p>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </main>
