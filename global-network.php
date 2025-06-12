@@ -302,7 +302,7 @@ include('header.php');
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-4">
                 <a 
-                    href="/enquiry-order" 
+                    href="./about.php" 
                     class="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center"
                     aria-label="Enquire or Order our services"
                 >
@@ -312,7 +312,7 @@ include('header.php');
                     </svg>
                 </a>
                 <a 
-                    href="/learn-more" 
+                    href="./about.php" 
                     class="border border-white/30 text-white hover:bg-white/10 px-6 py-3 text-base font-semibold backdrop-blur-sm rounded-md inline-flex items-center"
                     aria-label="Learn more about our pricing"
                 >
