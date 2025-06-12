@@ -9,12 +9,12 @@ include('header.php');
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">
             <h1 class="text-lg md:text-xl lg:text-3xl font-bold uppercase tracking-wide pb-3">Tech Infrastructure Services</h1>
             <h3 class="flex items-center justify-center gap-4 text-base font-medium">
-                <a href="/sizaf-php/index.php"> <span class="hover:text-[#ff156e]">Sizaf</span> </a>
+                <a href="./index.php"> <span class="hover:text-[#ff156e]">Sizaf</span> </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                <a href="/sizaf-php/"><span class="hover:text-[#ff156e]">Technology Services</span>
+                <a href="./"><span class="hover:text-[#ff156e]">Technology Services</span>
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                <a href="/sizaf-php/tech-infra.php"><span class="hover:text-[#ff156e]">Tech Infrastructure Services</span>
+                <a href="./tech-infra.php"><span class="hover:text-[#ff156e]">Tech Infrastructure Services</span>
                 </a>
             </h3>
 </div>
