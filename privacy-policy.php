@@ -1,6 +1,6 @@
 <?php
-$metaTitle = "Global Network";
-$metaDescription = "This is global network page.";
+$metaTitle = "Privacy-Policy";
+$metaDescription = "This is the privacy policy page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
