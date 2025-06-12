@@ -55,8 +55,8 @@
       $currentPage = basename($_SERVER['PHP_SELF']);
 
       // Dropdown parent active checks
-      $isTechActive = in_array($currentPage, ['web-media.php', 'tech-infra.php', 'network.php','managed-it-services.php']);
-      $isIndustryActive = in_array($currentPage, [
+      $isTechActive = in_array($currentPage, ['technology-services.php','web-media.php', 'tech-infra.php', 'network.php','managed-it-services.php']);
+      $isIndustryActive = in_array($currentPage, ['industries-sectors.php',
         'governance-security.php', 'health-education.php', 'non-profit.php', 'travel-leisure.php',
         'construction-real-estate.php', 'media-advertising.php', 'retail-ecommerce.php',
         'production-pharma.php', 'transport-logistics.php', 'agri-climate.php', 'finance-banking.php'
