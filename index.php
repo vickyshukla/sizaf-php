@@ -394,7 +394,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
     </div>
 
     <!-- CTA Button -->
-    <a href="/sizaf-php/global-network.php" class="inline-block bg-[#F64B7B] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#e5406c] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e5406c]" role="button">
+    <a href="./global-network.php" class="inline-block bg-[#F64B7B] text-white font-semibold px-6 py-3 rounded shadow hover:bg-[#e5406c] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e5406c]" role="button">
       See Location Map →
     </a>
   </div>
