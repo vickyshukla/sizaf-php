@@ -83,8 +83,8 @@ include('header.php');
                             <p class="text-blue-100 text-sm mb-2">Comprehensive IT solutions</p>
                             <p class="text-white font-bold text-lg mb-4">STARTS FROM RM 1.99</p>
                             <a 
-                                href="/order" 
-                                class="w-full bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-none px-4 py-2 inline-flex items-center justify-center text-sm"
+                                href="./about.php" 
+                                class="w-full bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-md px-4 py-2 inline-flex items-center justify-center text-sm"
                             >
                                 Place Order / Enquiry
                                 <svg class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -278,8 +278,8 @@ include('header.php');
                     <!-- Call to Action -->
                     <div class="text-center">
                         <a 
-                            href="/order" 
-                            class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-none inline-flex items-center gap-2 text-sm font-medium"
+                            href="./about.php" 
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-md inline-flex items-center gap-2 text-sm font-medium"
                         >
                             Place Order / Enquiry
                             <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
