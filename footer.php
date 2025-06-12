@@ -106,7 +106,7 @@
   </section>
 
   <!-- Offer Section -->
-  <section class="bg-primary-gradient text-white py-10 px-4" data-aos="fade-up">
+  <section class="bg-gradient-to-r from-purple-600 to-pink-500 text-white py-10 px-4" data-aos="fade-up">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8  text-center">
       <div class="flex flex-col items-center">
         <img src="./assest/Free-30-days-white.svg" alt="30 Days Free" width=50 height="50" loading="lazy" class="w-13 h-13" />
