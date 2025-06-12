@@ -1,3 +1,10 @@
+<?php
+$metaTitle = "Blogs";
+$metaDescription = "Blogs Page.";
+$metaKeywords = "IT solutions, software development, consultancy";
+$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$canonicalURL = "https://yourdomain.com/governance"; 
+?>
 <?php 
 include 'header.php'; 
 include 'functions.php'; 

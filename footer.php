@@ -164,7 +164,7 @@
         <ul class="space-y-2 text-gray-300 text-sm">
           <li><a href="webmedia.php" class="hover:text-[#ff156e]">Technology Services</a></li>
           <li><a href="global-network.php" class="hover:text-[#ff156e]">Global Networks</a></li>
-          <li><a href="contact.php" class="hover:text-[#ff156e]">Contact Us</a></li>
+          <li><a href="about.php" class="hover:text-[#ff156e]">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -172,10 +172,10 @@
       <nav aria-labelledby="terms-links">
         <h3 id="terms-links" class="font-bold text-lg mb-3">Terms</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-          <li><a href="./terms-conditions.php" class="hover:text-white">Terms & Conditions</a></li>
-          <li><a href="./privacy-policy.php" class="hover:text-white">Privacy Policy</a></li>
-          <li><a href="./disclaimer.php" class="hover:text-white">Disclaimer</a></li>
-          <li><a href="sitemap.php" class="hover:text-white">Sitemap</a></li>
+          <li><a href="./terms-conditions.php" class="hover:text-[#ff156e]">Terms & Conditions</a></li>
+          <li><a href="./privacy-policy.php" class="hover:text-[#ff156e]">Privacy Policy</a></li>
+          <li><a href="./disclaimer.php" class="hover:text-[#ff156e]">Disclaimer</a></li>
+          <li><a href="sitemap.php" class="hover:text-[#ff156e]">Sitemap</a></li>
         </ul>
       </nav>
     </div>
