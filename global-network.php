@@ -610,7 +610,7 @@ include('header.php');
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                    href="/get-started" 
+                    href="./about.php" 
                     class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center justify-center"
                 >
                     Get Started Today
@@ -619,7 +619,7 @@ include('header.php');
                     </svg>
                 </a>
                 <a 
-                    href="./web-media.php" 
+                    href="./technology-services.php" 
                     class="border border-slate-300 text-slate-700 hover:bg-slate-100 px-8 py-4 text-lg font-semibold rounded-md inline-flex items-center justify-center"
                 >
                     Learn More About Our Services

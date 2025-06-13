@@ -63,7 +63,7 @@ include('header.php');
                     <path d="m12 5 7 7-7 7"/>
                 </svg>
             </a>
-            <a href="/demo" class="bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 inline-flex items-center">
+            <a href="./about.php" class="bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 inline-flex items-center">
                 Schedule Demo
             </a>
         </div>
