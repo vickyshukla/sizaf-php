@@ -114,12 +114,12 @@
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">Free 30 days trial for special subscribers.</p>
       </div>
       <div class="flex flex-col items-center">
-        <img src="./assest/Zero-connection-fee-white.svg" alt="No Contract" width=50 height="50" loading="lazy" class="w-13 h-13" />
+        <img src="./assest/No-contract-white.svg" alt="Zero Connection" width=50 height="50" loading="lazy"class="w-13 h-13" />
         <h3 class="font-bold text-lg mb-2 mt-2">NO CONTRACT</h3>
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">Custom service with optional contract.</p>
       </div>
       <div class="flex flex-col items-center">
-         <img src="./assest/No-contract-white.svg" alt="Zero Connection" width=50 height="50" loading="lazy"class="w-13 h-13" />
+        <img src="./assest/Zero-connection-fee-white.svg" alt="No Contract" width=50 height="50" loading="lazy" class="w-13 h-13" />
         <h3 class="font-bold text-lg mb-2 mt-2">ZERO CONNECTION</h3>
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">ZERO with 13 / 25 months Subscription.</p>
       </div>
@@ -153,8 +153,8 @@
         <h3 id="company-links" class="font-bold text-lg mb-3">Company</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
           <li><a href="./about.php" class="hover:text-[#ff156e]">About Us</a></li>
-          <li><a href="./industries-sectors.php" class="hover:text-[#ff156e]">Industries & Sectors</a></li>
           <li><a href="./blog.php" class="hover:text-[#ff156e]">News & Blogs</a></li>
+          <li><a href="./about.php" class="hover:text-[#ff156e]">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -164,7 +164,7 @@
         <ul class="space-y-2 text-gray-300 text-sm">
           <li><a href="./technology-services.php" class="hover:text-[#ff156e]">Technology Services</a></li>
           <li><a href="./global-network.php" class="hover:text-[#ff156e]">Global Networks</a></li>
-          <li><a href="./about.php" class="hover:text-[#ff156e]">Contact Us</a></li>
+          <li><a href="./industries-sectors.php" class="hover:text-[#ff156e]">Industries & Sectors</a></li>
         </ul>
       </nav>
 
@@ -182,7 +182,7 @@
 
     <!-- Copyright -->
     <div class="mt-10 border-t border-gray-600 text-center pt-4 text-sm text-gray-400">
-      &copy; <?php echo date("Y"); ?> All rights reserved. Sizaf.
+      All copyright protected by Sizaf.
     </div>
   </section>
   

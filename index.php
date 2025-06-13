@@ -75,11 +75,11 @@ $filteredNews = array_slice($filteredNews, 0, 3);
             FREE 30 DAYS
           </li>
           <li class="flex items-center gap-2">
-            <img src="./assest/Zero-connection-fee-white.svg" alt="No Contract" width=40 height="40" loading="lazy"class="w-10 h-10" />
+            <img src="./assest/No-contract-white.svg" alt="Zero Connection" width=40 height="40" loading="lazy"class="w-10 h-10" />
             NO CONTRACT
           </li>
           <li class="flex items-center gap-2">
-            <img src="./assest/No-contract-white.svg" alt="Zero Connection" width=40 height="40" loading="lazy"class="w-10 h-10" />
+            <img src="./assest/Zero-connection-fee-white.svg" alt="No Contract" width=40 height="40" loading="lazy"class="w-10 h-10" />
             ZERO CONNECTION FEE
           </li>
           <li class="flex items-center gap-2">
@@ -123,7 +123,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
           <div>
             <h3 class="text-xl font-semibold highlight-trigger">Our Belief</h3>
             <p class="text-gray-700">
-              At Sizaf, we believe internet service is a necessity in today's digital era. It enables businesses, education, farming, and healthcare access in both urban and rural areas through seamless connectivity.
+            We at Sizaf believe that internet service provider is a necessity in the new digital world. Having an internet & services means entrepreneurs in urban or rural areas can start businesses, job-seekers can apply for jobs online, students can take online courses, farmers can grow more crops with fewer resources, and rural patients can consult with their doctors via teleconference.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
           <div>
             <h3 class="text-xl font-semibold highlight-trigger">Our Strengths</h3>
             <p class="text-gray-700">
-              We help organizations grow by solving complex IT & communication challenges. Our 30+ years of expertise ensures tailored solutions for scalable, secure digital transformations.
+            Its easy to notice our performance by the increasing number of users & organizations that are coming to us to enable their growth by our tech solutions to their unpredictable work & business issues. The Team has more than 30 years of combined experience with the cutting edge IT & Communication solutions custom-made to the exceptional personal or business needs.
             </p>
           </div>
         </div>
@@ -149,7 +149,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
           <div>
             <h3 class="text-xl font-semibold highlight-trigger">Our Goals</h3>
             <p class="text-gray-700">
-              Our mission is to empower clients with agile and reliable tech solutions. We provide future-ready internet services tailored to your business innovation needs—anytime, anywhere.
+            At Sizaf, our main goal is straightforward: to meet your technology needs through imaginative innovation. With our extensive catalog of best-in-class Internet services available around the clock, we are well-positioned to provide you with adaptable, scalable, secure, and reliable solutions at all times.
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
           <div>
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Fast & Secure Business net.</h4>
             <p class="text-sm text-gray-600">
-              Sizaf Internet for home is a fast, affordable internet service offering reliable Wi-Fi for just RM 69.99/month with AutoPay.
+            Sizaf Internet for home, is a fast, affordable home internet service that lets you get everything for under RM 69.99 a month with AutoPay.
             </p>
           </div>
           <a href="plan-details.php?plan=business" class="text-sm font-medium text-pink-600 mt-4 hover:underline inline-flex items-center">
@@ -207,7 +207,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
           <div>
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Affordable Family Internet Services.</h4>
             <p class="text-sm text-gray-600">
-              Sizaf Business Internet offers customized connectivity and flexible speed plans on a pay-per-use basis for just RM 69.99/month with AutoPay.
+            Sizaf Business Internet, is your trusted partner that understands your technology needs and offers customized connectivity & technology solutions bundled on pay per use basis for under RM 69.99 a month with AutoPay.
             </p>
           </div>
           <a href="plan-details.php?plan=family" class="text-sm font-medium text-pink-600 mt-4 hover:underline inline-flex items-center">
@@ -231,7 +231,7 @@ $filteredNews = array_slice($filteredNews, 0, 3);
           <div>
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Safe & Cost effective Tech</h4>
             <p class="text-sm text-gray-600">
-              Sizaf Tech provides broadband solutions tailored to your needs. Plans start as low as RM 1.99/month with AutoPay.
+            Sizaf Tech solutions will ensure that we have a solution which will satisfy your needs now and in the future, we work closely with the businesses to identify their market & technology requirements for under RM 1.99 a month with AutoPay.
             </p>
           </div>
           <a href="plan-details.php?plan=tech" class="text-sm font-medium text-pink-600 mt-4 hover:underline inline-flex items-center">
