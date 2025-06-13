@@ -35,9 +35,9 @@ $jobs = json_decode($response);
           itemprop="image"
         >
         <div class="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16">
-          <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium mb-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 w-fit">
+          <!-- <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium mb-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 w-fit">
             Join Our Team
-          </span>
+          </span> -->
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" itemprop="name">CAREER OPPORTUNITIES</h1>
           <p class="text-lg md:text-xl text-white/90 max-w-2xl" itemprop="description">
             Build your future with a company that values innovation, collaboration, and your professional growth.
@@ -156,7 +156,7 @@ $jobs = json_decode($response);
                       Show more
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1"><polyline points="6.5 15 12 9 6 4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
                     </button>
-                    <button onclick="openForm(\'' . addslashes($title) . '\')" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-md text-sm font-medium cursor-pointer">
+                    <button onclick="openForm(\'' . addslashes($title) . '\')" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md text-sm font-medium cursor-pointer">
                       Apply Now
                     </button>
                   </div>
@@ -260,7 +260,7 @@ $jobs = json_decode($response);
           <div class="flex items-center justify-between">
               <button type="submit" 
                   id="submitButton"
-                  class="w-full py-3 mt-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-md shadow-md hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 cursor-pointer relative"
+                  class="w-full py-3 mt-4 bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-md shadow-md hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 cursor-pointer relative"
                   >
                   <span id="submitButtonText">Submit Application</span>
                   <!-- Loader Spinner-->
