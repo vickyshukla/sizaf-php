@@ -4,6 +4,7 @@ $metaDescription = "Sizaf delivers cutting-edge IT solutions tailored to your bu
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
+session_start();
 include('header.php');
 include 'functions.php';
 $filteredNews = fetchFilteredNews();
