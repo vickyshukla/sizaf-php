@@ -5,54 +5,17 @@ $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
 $canonicalURL = "https://yourdomain.com/governance"; 
 ?>
-<?php 
-include 'header.php'; 
-include 'functions.php'; 
+<?php
+include 'header.php';
+include 'functions.php';
 
-// Current page from URL ?page=, default 1
+// Get current page from URL, default is 1
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 
-// REST API URL with embedded featured media, 10 posts per page
-$apiUrl = "https://backendcms.sizaf.com/wp-json/wp/v2/posts?_embed&per_page=10&page={$page}";
-
-// Use cURL to get response and headers (for total pages)
-$curl = curl_init();
-curl_setopt_array($curl, [
-    CURLOPT_URL => $apiUrl,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_HEADER => true,
-    CURLOPT_FOLLOWLOCATION => true,
-]);
-
-$response = curl_exec($curl);
-
-if ($response === false) {
-    die("Error fetching posts: " . curl_error($curl));
-}
-
-// Separate headers and body
-$headerSize = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
-$headers = substr($response, 0, $headerSize);
-$body = substr($response, $headerSize);
-
-// Get total pages from headers
-$totalPages = 1;
-if (preg_match('/X-WP-TotalPages:\s*(\d+)/i', $headers, $matches)) {
-    $totalPages = (int)$matches[1];
-}
-
-curl_close($curl);
-
-// Decode JSON body to array
-$blogs = json_decode($body, true);
-
-// Function to get featured image or fallback
-function getFeaturedImage($blog) {
-    if (isset($blog['_embedded']['wp:featuredmedia'][0]['source_url'])) {
-        return $blog['_embedded']['wp:featuredmedia'][0]['source_url'];
-    }
-    return 'https://via.placeholder.com/500x300?text=No+Image';
-}
+// Fetch all blog posts with pagination
+$blogData = getBlogs($page);  // You can specify the number of posts per page
+$blogs = $blogData['blogs'];
+$totalPages = $blogData['totalPages'];
 ?>
 
 <main class="max-w-[1460px] container mx-auto">
@@ -106,26 +69,32 @@ function getFeaturedImage($blog) {
             Stay updated with the latest trends, insights, and innovations in technology, security, and business solutions.
         </p>
       </header>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <?php foreach ($blogs as $blog): 
-          $title = $blog['title']['rendered'];
-          $excerpt = strip_tags($blog['excerpt']['rendered']);
-          $id = $blog['id'];
-          $img = getFeaturedImage($blog);
-          $date = date('F j, Y', strtotime($blog['date']));
-          $slug = $blog['slug'];
-        ?>
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
-            <img src="<?= $img ?>" alt="<?= $title ?>" class="w-full h-48 object-cover" loading="lazy">
-            <div class="p-4 flex flex-col h-full">
-              <h3 class="text-lg md:text-xl font-semibold mb-2"><?= $title ?></h3>
-              <p class="text-sm text-gray-500 mb-2"><?= $date ?></p>
-              <p class="text-gray-600 mb-4"><?= substr($excerpt, 0, 100) ?>...</p>
-              <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded mt-auto text-center">Read More</a>
+      <?php if (!empty($blogs)): ?>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <?php foreach ($blogs as $blog): 
+            $title = $blog['title']['rendered'];
+            $excerpt = strip_tags($blog['excerpt']['rendered']);
+            $id = $blog['id'];
+            $img = getFeaturedImage($blog);
+            $date = date('F j, Y', strtotime($blog['date']));
+            $slug = $blog['slug'];
+          ?>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+              <img src="<?= $img ?>" alt="<?= $title ?>" class="w-full h-48 object-cover" loading="lazy">
+              <div class="p-4 flex flex-col h-full">
+                <h3 class="text-lg md:text-xl font-semibold mb-2"><?= $title ?></h3>
+                <p class="text-sm text-gray-500 mb-2"><?= $date ?></p>
+                <p class="text-gray-600 mb-4"><?= substr($excerpt, 0, 100) ?>...</p>
+                <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded mt-auto text-center">Read More</a>
+              </div>
             </div>
-          </div>
-        <?php endforeach; ?>
-      </div>
+          <?php endforeach; ?>
+        </div>
+      <?php else: ?>
+        <div class="text-center text-red-600 py-8 flex-1 h-full">
+            <p>No news articles available at the moment. Please check back later.</p>
+        </div>
+      <?php endif; ?>
 
       <!-- Pagination -->
       <div class="mt-10 flex flex-wrap justify-center gap-2 md:gap-3">
