@@ -23,55 +23,62 @@ function extractByKeyword($keyword, $content) {
     return trim(strip_tags($match[1] ?? 'Not specified'));
 }
 
-function fetchFilteredNews()
-{
-    require_once __DIR__ . '/vendor/autoload.php';
+// Function to fetch blogs
+function getBlogs($page = 1, $postsPerPage = 10) {
+    $apiUrl = "https://backendcms.sizaf.com/wp-json/wp/v2/posts?_embed&per_page={$postsPerPage}&page={$page}";
 
-    // Load .env variables
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-    $dotenv->load();
+    $curl = curl_init();
+    curl_setopt_array($curl, [
+        CURLOPT_URL => $apiUrl,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HEADER => true,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_TIMEOUT => 10,
+    ]);
 
-    $apiKey = $_ENV['GNEWS_API_KEY'] ?? null;
-    if (!$apiKey) {
-        error_log("API key not found. Please set GNEWS_API_KEY in your .env file.");
-        return [];
-    }
+    $response = curl_exec($curl);
 
-    // Sensitive Keywords
-    $sensitiveKeywords = [
-        "violence", "explicit", "vulgar", "controversy", "terror", "drugs",
-        "abuse", "offensive", "porn", "adult", "crime", "scandal", "murder", "death"
-    ];
-
-    // API URL
-    $apiUrl = "https://gnews.io/api/v4/search?q=IPT%20OR%20ICT%20OR%20ISP%20OR%20Broadband&in=title&lang=en&category=technology&apikey={$apiKey}&max=10";
-
-    // Fetch data
-    $response = @file_get_contents($apiUrl);
     if ($response === false) {
-        error_log("Error fetching news from GNews API.");
-        return [];
+        curl_close($curl);
+        error_log("Error fetching posts: " . curl_error($curl));
+        return [
+            'blogs' => [],
+            'totalPages' => 0
+        ];
     }
 
-    $newsData = json_decode($response, true);
-    $articles = $newsData['articles'] ?? [];
+    $headerSize = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
+    $headers = substr($response, 0, $headerSize);
+    $body = substr($response, $headerSize);
 
-    $_SESSION['news_articles'] = $articles;
+    $totalPages = 1;
+    if (preg_match('/X-WP-TotalPages:\s*(\d+)/i', $headers, $matches)) {
+        $totalPages = (int)$matches[1];
+    }
 
-    // Filter logic
-    $filteredNews = array_filter($articles, function ($article) use ($sensitiveKeywords) {
-        foreach ($sensitiveKeywords as $keyword) {
-            if (
-                stripos($article['title'], $keyword) !== false ||
-                stripos($article['description'], $keyword) !== false
-            ) {
-                return false;
-            }
-        }
-        return true;
-    });
+    curl_close($curl);
 
-    return $filteredNews;
+    $blogs = json_decode($body, true);
+
+    if (!is_array($blogs) || empty($blogs)) {
+        return [
+            'blogs' => [],
+            'totalPages' => 0
+        ];
+    }
+
+    return [
+        'blogs' => $blogs,
+        'totalPages' => $totalPages
+    ];
+}
+
+// Function to get featured image or fallback
+function getFeaturedImage($blog) {
+    if (isset($blog['_embedded']['wp:featuredmedia'][0]['source_url'])) {
+        return $blog['_embedded']['wp:featuredmedia'][0]['source_url'];
+    }
+    return 'https://via.placeholder.com/500x300?text=No+Image';
 }
 
 ?>
