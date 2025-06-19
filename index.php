@@ -3,7 +3,7 @@ $metaTitle = "Innovative IT Solutions for Your Business Needs - Sizaf";
 $metaDescription = "Sizaf delivers cutting-edge IT solutions tailored to your business goals. From software development to IT consultancy, we provide reliable and efficient services to drive growth.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com"; 
 include 'header.php';
 include 'functions.php';
 

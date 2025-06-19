@@ -3,7 +3,7 @@ $metaTitle = "Finance & Banking| SIZAF NET WITH TECH";
 $metaDescription = "Transform your finance and banking operations with Sizaf's innovative technology services. Enhance security, streamline processes, and improve customer experiences.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/finance-banking.php"; 
 include('header.php');
 ?>
 

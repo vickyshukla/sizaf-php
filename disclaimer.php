@@ -3,7 +3,7 @@ $metaTitle = "Disclamier";
 $metaDescription = "This is the Disclamier page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/disclaimer.php"; 
 include('header.php');
 ?>
 

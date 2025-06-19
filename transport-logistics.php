@@ -3,7 +3,7 @@ $metaTitle = "Transport & Logistics | SIZAF NET WITH TECH";
 $metaDescription = "Optimize your transport and logistics operations with Sizaf's advanced technology services. Improve efficiency, reduce costs, and enhance supply chain management.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/transport-logistics.php"; 
 include('header.php');
 ?>
 
