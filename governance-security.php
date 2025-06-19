@@ -3,7 +3,7 @@ $metaTitle = "Governance & Security Solutions | SIZAF NET WITH TECH";
 $metaDescription = "SIZAF NET WITH TECH provides comprehensive IT solutions for governance and security sectors with advanced network technologies and secure infrastructure.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/governance-security.php"; 
+$canonicalURL = "https://sizaf.com/governance-security.php"; 
 include('header.php');
 ?>
 

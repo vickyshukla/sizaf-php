@@ -3,7 +3,7 @@ $metaTitle = "Retail & E-Commerce | SIZAF NET WITH TECH";
 $metaDescription = "Boost your retail and e-commerce business with Sizaf's advanced technology services. Optimize operations, enhance customer experiences, and drive sales growth";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/retail-ecommerce.php"; 
+$canonicalURL = "https://sizaf.com/retail-ecommerce.php"; 
 include('header.php');
 ?>
 

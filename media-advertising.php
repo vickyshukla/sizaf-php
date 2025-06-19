@@ -3,7 +3,7 @@ $metaTitle = "Cutting-Edge Solutions for Media & Advertising - Sizaf";
 $metaDescription = "Transform your media and advertising strategies with Sizaf's innovative technology services. Enhance creativity, engagement, and campaign performance.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/media-advertising.php"; 
+$canonicalURL = "https://sizaf.com/media-advertising.php"; 
 include('header.php');
 ?>
 

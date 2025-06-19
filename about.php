@@ -3,7 +3,7 @@ $metaTitle = "Contact";
 $metaDescription = "This is contact page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/about.php"; 
+$canonicalURL = "https://sizaf.com/about.php"; 
 include('header.php');
 ?>
 <div class=' mx-auto'>

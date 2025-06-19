@@ -3,7 +3,7 @@ $metaTitle = "Technology Solutions for Nonprofit Organizations - Sizaf";
 $metaDescription = "Amplify your nonprofit's impact with Sizaf's customized technology services. Streamline operations, enhance outreach, and achieve your mission effectively.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/non-profit.php"; 
+$canonicalURL = "https://sizaf.com/non-profit.php"; 
 include('header.php');
 ?>
 

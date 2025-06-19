@@ -3,7 +3,7 @@ $metaTitle = "Smart Solutions for Travel & Leisure - Sizaf";
 $metaDescription = "Elevate customer experiences in travel and leisure with Sizaf's innovative technology services. Enhance efficiency, engagement, and satisfaction.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/travel-leisure.php"; 
+$canonicalURL = "https://sizaf.com/travel-leisure.php"; 
 include('header.php');
 ?>
 

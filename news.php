@@ -3,7 +3,7 @@ $metaTitle = "News";
 $metaDescription = "News Page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/news.php"; 
+$canonicalURL = "https://sizaf.com/news.php"; 
 session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 include 'header.php';

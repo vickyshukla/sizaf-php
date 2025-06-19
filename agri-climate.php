@@ -3,7 +3,7 @@ $metaTitle = "Agri,Fisheries & Climate| SIZAF NET WITH TECH";
 $metaDescription = "Drive innovation and sustainability in agriculture, fisheries, and climate sectors with Sizaf's technology solutions. Enhance productivity and environmental impact.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/agri-climate.php"; 
+$canonicalURL = "https://sizaf.com/agri-climate.php"; 
 include('header.php');
 ?>
 
