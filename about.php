@@ -412,7 +412,7 @@ include('header.php');
           '</button>';
         }
         ?>
-        <button onclick="clearFilters()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 border border-slate-300 rounded-full text-sm cursor-pointer transition-colors">
+        <button onclick="clearFilters()" class="px-4 py-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 rounded-full text-sm cursor-pointer transition-colors">
           View All
         </button>
       </div>
@@ -426,49 +426,49 @@ include('header.php');
           [
             'id' => 'company-about',
             'question' => 'What is your company about?',
-            'answer' => 'SIZAF is a leading technology solutions provider specializing in IT infrastructure, network services, web & media solutions, and managed IT services. We partner with businesses of all sizes to deliver tailored technology solutions that drive growth and efficiency.',
+            'answer' => 'SIZAF NET WITH TECH is a new age Tech solutions company. Its centered completely around your necessities no matter if you are getting services for yourself, your family, your office or for your business or factories located within the city or anywhere in the world. It assures you the best of services at all times. It provides globally connected network, ready to deploy technology solutions and flexible commercial models based on the customer preferences.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>',
             'category' => 'company'
           ],
           [
             'id' => 'services-offering',
             'question' => 'What kind of services is your company offering?',
-            'answer' => 'We offer a comprehensive range of services including web & media services, tech infrastructure solutions, network services, and managed IT services. Our solutions cover everything from website development and digital marketing to complete IT infrastructure setup, network management, and ongoing technical support.',
+            'answer' => 'SIZAF NET WITH TECH provides all Internet & Technology services. From delivering services such as Web & Media, Tech Infra, Network communication and Data management. SIZAF NET WITH TECH is one stop for all comprehensive IT solutions. SIZAF is a 360 degree service provider that thinks & acts like your extended internal team.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>',
             'category' => 'services'
           ],
           [
             'id' => 'terms-services',
             'question' => 'What are your terms of services?',
-            'answer' => 'Our terms of service include flexible contract options, service level agreements (SLAs) with guaranteed uptime, responsive support channels, and transparent pricing. All services come with detailed documentation and regular performance reporting. For specific terms related to individual services, please contact our sales team.',
+            'answer' => 'By accessing or using Sizaf.com (Service), you agree to the terms outlined in our Terms of Service and Privacy Policy, collectively referred to as Agreements. These govern your use of our website, purchases, subscriptions, and participation in promotions, while establishing guidelines for user content, prohibited activities, and account responsibilities. Sizaf.com reserves the right to modify its services, subscription fees, and terms without prior notice, and to terminate accounts for violations. Refunds, where applicable, adhere to agreed terms. Our Service is provided as is, disclaiming warranties, and limits liability to the amount paid for services. Governing law is Malaysian law, and unresolved issues can be addressed by contacting info@sizaf.com. By continuing to use the Service, you acknowledge acceptance of any changes to the Agreements and agree to use the Service responsibly. And you hereby confirm to agree to all the conditions at all times.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>',
             'category' => 'terms'
           ],
           [
             'id' => 'industries-benefit',
             'question' => 'Which industries can benefit from your solutions?',
-            'answer' => 'Our solutions benefit a wide range of industries including Governance & Security, Health & Education, Non-profit organizations, Travel & Leisure, Construction & Real Estate, Media & Advertising, Retail & E-Commerce, Production & Manufacturing, Transport & Logistics, Agriculture & Fisheries, and Finance & Banking.',
+            'answer' => 'SIZAF NET WITH TECH offers standard and custom solutions that can benefit all major industry players globally. They offer services to industries such as Governance & Security, Health & Education, Non Profit Organizations, Travel & Leisure, Construction & Real Estate, Media & Advertising, Retail & Ecommerce, Production, Engg & Pharma, Transport & Logistics, Agri, Fisheries & Climate & Finance & Banking.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>',
             'category' => 'industries'
           ],
           [
             'id' => 'change-services',
             'question' => 'Can customer change, upgrade or downgrade the services?',
-            'answer' => 'Yes, customers can easily change, upgrade, or downgrade their services as their business needs evolve. We offer flexible plans that can be adjusted with minimal disruption to your operations. Our team will guide you through the process and ensure a smooth transition between service levels.',
+            'answer' => 'SIZAF NET WITH TECH is a customer focused organization. Any customer can change, upgrade or downgrade the services plans. Standard & customized terms are offered to various customers per needs. At SIZAF NET WITH TECH all decisions are taken with customer in mind always.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>',
             'category' => 'services'
           ],
           [
             'id' => 'report-loss',
             'question' => 'How can customer report loss of services?',
-            'answer' => 'Customers can report any service disruptions through our 24/7 support portal, by calling our dedicated support hotline, or by emailing our technical support team. We recommend using our customer portal for the fastest response, as it automatically logs and prioritizes your issue in our system.',
+            'answer' => 'SIZAF NET WITH TECH operates 24 x 7 customer service systems. Each customer is offered a dedicated resource and communication channel through which they can report any service issues they experience. SIZAF NET WITH TECH works towards 99.99 SLA’s on its services.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>',
             'category' => 'support'
           ],
           [
             'id' => 'billing-grievances',
             'question' => 'How can customer register billing or payment grievances?',
-            'answer' => 'Customers can register billing or payment concerns through our customer portal\'s billing section, by emailing our finance department, or by contacting their account manager directly. All billing inquiries are addressed within 48 hours, and we work diligently to resolve any discrepancies promptly.',
+            'answer' => 'SIZAF NET WITH TECH operates 24 x 7 customer service systems. Each customer is offered a dedicated resource and communication channel through which they can report any billing or payment issues they experience. SIZAF NET WITH TECH payment details are provided to each customer that subscribes to respective services. All commercial information are stored and shared with customer in secure & confidential manner.',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>',
             'category' => 'billing'
           ],

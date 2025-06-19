@@ -2,8 +2,8 @@
 $metaTitle = "Comprehensive Technology Solutions for Diverse Industries - Sizaf";
 $metaDescription = "Maximize your business potential with Sizaf's managed IT services. Ensure seamless operations, proactive support, and optimized technology solutions for growth.";
 $metaKeywords = "Explore Sizaf's industry-specific technology services designed to enhance efficiency and innovation across sectors like healthcare, finance, education, and more.";
-$metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$metaImage = "https://sizaf.com/assest/sizaflogo.png";
+$canonicalURL = "https://sizaf.com/industries-sectors.php"; 
 include('header.php');
 ?>
 <!-- Hero Section -->
@@ -29,9 +29,9 @@ include('header.php');
 
     <!-- Content -->
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span class="inline-flex mb-6 bg-purple-500/20 text-purple-300 border border-purple-400/30 backdrop-blur-sm rounded-full px-4 py-1 text-sm">
+        <!-- <span class="inline-flex mb-6 bg-purple-500/20 text-purple-300 border border-purple-400/30 backdrop-blur-sm rounded-full px-4 py-1 text-sm">
             Transform Your Business Communication
-        </span>
+        </span> -->
 
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
             Increase Your Business
@@ -56,7 +56,7 @@ include('header.php');
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="./global-network.php" class="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+            <a href="./global-network.php" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
                 Browse Plans
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 w-5 h-5">
                     <path d="M5 12h14"/>
@@ -181,7 +181,7 @@ include('header.php');
                             <?php endforeach; ?>
                         </div>
 
-                        <a href="./about.php" class="inline-flex items-center bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <a href="./about.php" class="inline-flex items-center bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                             Place Order / Enquiry
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 w-5 h-5">
                                 <path d="M5 12h14"/>

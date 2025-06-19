@@ -79,10 +79,10 @@ $page_keywords = "technology services, web development, IT solutions, network se
 
         <!-- Hero Content -->
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <span class="inline-flex items-center mb-6 bg-blue-600/20 text-blue-300 border border-blue-400/30 hover:bg-blue-600/30 px-3 py-1 rounded-full text-sm font-medium">
+            <!-- <span class="inline-flex items-center mb-6 bg-blue-600/20 text-blue-300 border border-blue-400/30 hover:bg-blue-600/30 px-3 py-1 rounded-full text-sm font-medium">
                 <i data-lucide="zap" class="w-4 h-4 mr-2"></i>
                 Premium Technology Solutions
-            </span>
+            </span> -->
 
             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 At <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">SizaF</span> we deliver the
@@ -96,15 +96,15 @@ $page_keywords = "technology services, web development, IT solutions, network se
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#contact" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg group rounded-lg font-medium inline-flex items-center transition-colors duration-200">
+                <a href="#contact" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg group rounded-lg font-medium inline-flex items-center transition-colors duration-200">
                     Get Started Today
                     <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </a>
 
-                <button class="border border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg group rounded-lg inline-flex items-center transition-colors duration-200">
+                <!-- <button class="border border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg group rounded-lg inline-flex items-center transition-colors duration-200">
                     <i data-lucide="play" class="mr-2 w-5 h-5"></i>
                     Watch Demo
-                </button>
+                </button> -->
             </div>
 
             <!-- Stats -->
@@ -178,7 +178,7 @@ $page_keywords = "technology services, web development, IT solutions, network se
             <div class="flex justify-center">
                 <div class="flex items-center gap-4">
                     <div class="text-center">
-                        <a href="#services" class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg inline-flex items-center font-medium">
+                        <a href="#services" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-lg inline-flex items-center font-medium">
                             Explore All Services
                             <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
                         </a>

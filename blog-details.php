@@ -37,11 +37,45 @@
     </article>
   <?php
   } else {
-    echo "<div class='container mx-auto px-4 py-10 flex flex-col gap-4 items-center justify-center h-screen'>
-              <h1 class='text-4xl font-bold text-red-600'>404 - Page Not Found</h1>
-              <p class='text-lg text-gray-600'>Oops! The page you&apos;re looking for does not exist.</p>
-              <a href='/sizaf-php' class='px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700'>Go back home</a>
-          </div>";
+    echo '<div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center">
+            <!-- Animated 404 graphic -->
+            <div class="relative max-w-md mx-auto mb-5">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                <div class="relative flex flex-col items-center justify-center">
+                    <div class="text-9xl font-bold gradient-text animate-float">404</div>
+                    <i data-lucide="alert-circle" class="w-32 h-32 text-red-500 mt-8 animate-bounce"></i>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+                Oops! Page Not Found
+            </h1>
+            
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+                The page you are looking for does not exist or has been moved. 
+                Here are some helpful links instead:
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="./index.php" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-medium inline-flex items-center transition-colors duration-200">
+                    <i data-lucide="home" class="w-5 h-5 mr-2"></i>
+                    Return Home
+                </a>
+                
+                <a href="./technology-services.php" class="border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 px-6 py-3 rounded-lg font-medium inline-flex items-center transition-colors duration-200">
+                    <i data-lucide="server" class="w-5 h-5 mr-2"></i>
+                    Our Services
+                </a>
+                
+                <a href="./about.php" class="border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 px-6 py-3 rounded-lg font-medium inline-flex items-center transition-colors duration-200">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                    Contact Support
+                </a>
+            </div>
+            
+        </div>
+    </div>';
   }
   ?>
 </main>

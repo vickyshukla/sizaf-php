@@ -303,7 +303,7 @@ include('header.php');
             <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-4">
                 <a 
                     href="./about.php" 
-                    class="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center"
+                    class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center"
                     aria-label="Enquire or Order our services"
                 >
                     Enquiry/Order
@@ -610,8 +610,8 @@ include('header.php');
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                    href="./about.php" 
-                    class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center justify-center"
+                    href="/get-started" 
+                    class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-md inline-flex items-center justify-center"
                 >
                     Get Started Today
                     <svg class="h-5 w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
