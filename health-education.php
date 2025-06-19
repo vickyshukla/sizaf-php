@@ -3,7 +3,7 @@ $metaTitle = "Innovative Solutions for Health & Education - Sizaf";
 $metaDescription = "Transform health and education sectors with Sizaf's tailored technology services. Enhance efficiency, improve outcomes, and drive impactful change.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/health-education.php"; 
+$canonicalURL = "https://sizaf.com/health-education.php"; 
 include('header.php');
 ?>
 

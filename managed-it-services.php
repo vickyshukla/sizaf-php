@@ -3,7 +3,7 @@ $metaTitle = "Managed IT Services for Business Efficiency - Sizaf";
 $metaDescription = "Maximize your business potential with Sizaf's managed IT services. Ensure seamless operations, proactive support, and optimized technology solutions for growth.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/managed-it-services.php"; 
+$canonicalURL = "https://sizaf.com/managed-it-services.php"; 
 include('header.php');
 ?>
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">

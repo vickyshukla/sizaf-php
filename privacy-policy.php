@@ -3,7 +3,7 @@ $metaTitle = "Privacy-Policy";
 $metaDescription = "This is the privacy policy page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/privacy-policy.php"; 
+$canonicalURL = "https://sizaf.com/privacy-policy.php"; 
 include('header.php');
 ?>
 
