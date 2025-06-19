@@ -3,7 +3,7 @@ $metaTitle = "Comprehensive Technology Solutions for Diverse Industries - Sizaf"
 $metaDescription = "Maximize your business potential with Sizaf's managed IT services. Ensure seamless operations, proactive support, and optimized technology solutions for growth.";
 $metaKeywords = "Explore Sizaf's industry-specific technology services designed to enhance efficiency and innovation across sectors like healthcare, finance, education, and more.";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/industries-sectors.php"; 
 include('header.php');
 ?>
 <!-- Hero Section -->

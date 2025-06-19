@@ -3,7 +3,7 @@ $metaTitle = "Terms-Conditions";
 $metaDescription = "This is the terms and condition page .";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/terms-conditions.php"; 
 include('header.php');
 ?>
 

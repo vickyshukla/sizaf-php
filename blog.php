@@ -3,7 +3,7 @@ $metaTitle = "Blogs";
 $metaDescription = "Blogs Page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/blog.php"; 
 ?>
 <?php
 include 'header.php';
