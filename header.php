@@ -18,7 +18,7 @@
     <meta name="keywords" content="<?php echo $metaKeywords ?? 'default, keywords'; ?>">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="<?php echo $canonicalURL ?? 'https://sizaf.com/current-page'; ?>" />
+    <link rel="canonical" href="<?php echo $canonicalURL ?? 'https://sizaf.com/index.php'; ?>" />
 
    <!-- Primary Meta Tags (Open Graph - Facebook, LinkedIn, etc.) -->
 <meta property="og:url" content="https://sizaf.com">
