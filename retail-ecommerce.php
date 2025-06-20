@@ -3,7 +3,7 @@ $metaTitle = "Retail & E-Commerce | SIZAF NET WITH TECH";
 $metaDescription = "Boost your retail and e-commerce business with Sizaf's advanced technology services. Optimize operations, enhance customer experiences, and drive sales growth";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/retail-ecommerce.php"; 
+$canonicalURL = "https://sizaf.com/retail-ecommerce.php"; 
 include('header.php');
 ?>
 
@@ -129,7 +129,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector7.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    alt="modern governance technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

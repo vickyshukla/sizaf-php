@@ -3,7 +3,7 @@ $metaTitle = "Production,Engg & Pharma | SIZAF NET WITH TECH";
 $metaDescription = "Enhance efficiency and innovation in production, engineering, and pharma with Sizaf's tailored technology services. Drive progress and streamline operations.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/production-pharma.php"; 
+$canonicalURL = "https://sizaf.com/production-pharma.php"; 
 include('header.php');
 ?>
 
@@ -129,7 +129,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector8.jpeg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    alt="modern governance technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

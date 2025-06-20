@@ -3,7 +3,7 @@ $metaTitle = "Advanced Solutions for Construction & Real Estate - Sizaf";
 $metaDescription = "Drive efficiency and innovation in construction and real estate with Sizaf's tailored technology services. Streamline processes and boost project success.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/construction-real-estate.php"; 
+$canonicalURL = "https://sizaf.com/construction-real-estate.php"; 
 include('header.php');
 ?>
 
@@ -126,7 +126,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector5.jpeg" 
-                                    alt="Construction Real estate" 
+                                    alt="Bridiging ideas" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

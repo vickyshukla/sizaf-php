@@ -3,7 +3,7 @@ $metaTitle = "News";
 $metaDescription = "News Page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/news.php"; 
+$canonicalURL = "https://sizaf.com/news.php"; 
 session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 include 'header.php';
@@ -67,7 +67,7 @@ $filteredNews = array_filter($newsData['articles'], function ($article) {
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90 z-10"></div>
             <img 
                 src="./assest/bg.jpeg" 
-                alt="Technology blog hero - Latest tech insights and trends" 
+                alt="Latest tech insights" 
                 width="1200" 
                 height="400" 
                 class="w-full h-[400px] object-cover"

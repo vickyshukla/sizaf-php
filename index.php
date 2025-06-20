@@ -3,7 +3,7 @@ $metaTitle = "Innovative IT Solutions for Your Business Needs - Sizaf";
 $metaDescription = "Sizaf delivers cutting-edge IT solutions tailored to your business goals. From software development to IT consultancy, we provide reliable and efficient services to drive growth.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com"; 
+$canonicalURL = "https://sizaf.com/index.php"; 
 include 'header.php';
 include 'functions.php';
 
@@ -46,14 +46,14 @@ $blogs = $blogData['blogs'];
 <!-- Hero Section with Transparent Box -->
 <section class="relative w-full h-screen">
   <!-- Background Video -->
+  <img src="./assest/fallback.png" alt="Background preview" class="w-full h-full object-cover absolute inset-0 z-0" loading="eager" />
   <video
-    autoplay
     muted
-    loop
     playsinline
-    class="absolute inset-0 w-full h-full object-cover z-0"
-    preload="auto"
-    poster="assets/fallback.png"
+    preload="none"
+    class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-500"
+    poster="./assest/fallback.png"
+    id="bgVideo"
   >
     <source src="https://wnhq4j5mc7yjym73.public.blob.vercel-storage.com/sizaf/world-j2jEAUUa6vmMNRDhlnikI5Pm9UBHxP.mp4" type="video/mp4" />
     Your browser does not support the video tag.
@@ -451,6 +451,20 @@ $blogs = $blogData['blogs'];
     <div class="absolute top-20 right-20 w-2 h-2 rounded-full bg-red-500"></div>
   </div>
 </section>
+
+<script>
+  // Delay autoplay
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const video = document.getElementById("bgVideo");
+      video.play().then(() => {
+        video.classList.remove("opacity-0");
+      }).catch((err) => {
+        console.warn("Video play failed:", err);
+      });
+    }, 1000);
+  });
+</script>
 
 <script>
   const slider = document.getElementById('slider');

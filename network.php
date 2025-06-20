@@ -3,7 +3,7 @@ $metaTitle = "Reliable Network Services for Seamless Connectivity - Sizaf";
 $metaDescription = "Optimize your network performance with Sizaf's expert network services. Ensure reliable, secure, and scalable connectivity for your business operations.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/network.php"; 
+$canonicalURL = "https://sizaf.com/network.php"; 
 include('header.php');
 ?>
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">

@@ -3,7 +3,7 @@ $metaTitle = "Finance & Banking| SIZAF NET WITH TECH";
 $metaDescription = "Transform your finance and banking operations with Sizaf's innovative technology services. Enhance security, streamline processes, and improve customer experiences.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/finance-banking.php"; 
+$canonicalURL = "https://sizaf.com/finance-banking.php"; 
 include('header.php');
 ?>
 
@@ -130,7 +130,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector11.jpeg" 
-                                    alt="Modern digital banking interface with financial charts and secure technology" 
+                                    alt="digital banking" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

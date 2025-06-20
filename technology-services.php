@@ -3,7 +3,7 @@ $metaTitle = "Comprehensive Technology Services - Sizaf";
 $metaDescription = "Explore Sizaf's wide range of technology services designed to drive innovation, efficiency, and growth across various industries. Tailored solutions for your business needs.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/technology-services.php"; 
+$canonicalURL = "https://sizaf.com/technology-services.php"; 
 include('header.php');
 ?>
 <?php
@@ -66,7 +66,7 @@ $page_keywords = "technology services, web development, IT solutions, network se
         <div class="absolute inset-0 z-0">
             <img
                 src="./assest/Technology-services-bg.jpeg"
-                alt="Technology workspace with computers and servers"
+                alt="Technology workspace"
                 class="w-full h-full object-cover"
                 loading="lazy"
             >

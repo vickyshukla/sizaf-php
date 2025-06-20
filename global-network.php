@@ -3,7 +3,7 @@ $metaTitle = "Global Network";
 $metaDescription = "This is global network page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/global-network.php"; 
+$canonicalURL = "https://sizaf.com/global-network.php"; 
 include('header.php');
 ?>
 <?php $regions = [
@@ -158,7 +158,7 @@ include('header.php');
         <div class="absolute inset-0 opacity-20">
             <img 
                 src="./assest/global-network-main.jpeg" 
-                alt="Network connectivity background showing digital connections" 
+                alt="digital connections" 
                 class="object-cover w-full h-full"
                 loading="lazy"
                 width="1200"

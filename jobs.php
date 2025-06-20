@@ -3,7 +3,7 @@ $metaTitle = "Career";
 $metaDescription = "This is career page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/jobs.php"; 
+$canonicalURL = "https://sizaf.com/jobs.php"; 
 include('header.php');
 ?>
 <?php include 'functions.php'; ?>
@@ -29,7 +29,7 @@ $jobs = json_decode($response);
         <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-900/90 z-10"></div>
         <img 
           src="assest/industry-sector7.jpg" 
-          alt="Team collaboration at SIZAF" 
+          alt="Team collaboration" 
           class="w-full h-[400px] object-cover"
           loading="lazy"
           itemprop="image"

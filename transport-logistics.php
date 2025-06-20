@@ -3,7 +3,7 @@ $metaTitle = "Transport & Logistics | SIZAF NET WITH TECH";
 $metaDescription = "Optimize your transport and logistics operations with Sizaf's advanced technology services. Improve efficiency, reduce costs, and enhance supply chain management.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/transport-logistics.php"; 
+$canonicalURL = "https://sizaf.com/transport-logistics.php"; 
 include('header.php');
 ?>
 
@@ -129,7 +129,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector9.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    alt="modern governance technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

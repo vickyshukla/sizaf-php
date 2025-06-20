@@ -3,7 +3,7 @@ $metaTitle = "Managed IT Services for Business Efficiency - Sizaf";
 $metaDescription = "Maximize your business potential with Sizaf's managed IT services. Ensure seamless operations, proactive support, and optimized technology solutions for growth.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://sizaf-php.sizaf.com/managed-it-services.php"; 
+$canonicalURL = "https://sizaf.com/managed-it-services.php"; 
 include('header.php');
 ?>
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">
@@ -80,7 +80,7 @@ include('header.php');
         <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl transform rotate-3"></div>
         <img 
           src="./assest/managed-it1.jpeg" 
-          alt="Tech professional working with network infrastructure" 
+          alt="Tech professional working" 
           width="600" 
           height="400" 
           class="relative rounded-2xl shadow-2xl object-cover w-full h-[400px]"
