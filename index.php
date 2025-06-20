@@ -53,7 +53,7 @@ $blogs = $blogData['blogs'];
     playsinline
     class="absolute inset-0 w-full h-full object-cover z-0"
     preload="auto"
-    poster="assets/fallback.jpg"
+    poster="assets/fallback.png"
   >
     <source src="https://wnhq4j5mc7yjym73.public.blob.vercel-storage.com/sizaf/world-j2jEAUUa6vmMNRDhlnikI5Pm9UBHxP.mp4" type="video/mp4" />
     Your browser does not support the video tag.
