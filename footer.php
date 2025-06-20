@@ -139,12 +139,12 @@
         <img src="./assest/sizaf_foot_white.png" alt="Sizaf Logo" width=40 height=40 class="w-32 mb-4" />
         <p class="text-sm text-gray-300 mb-4">Sizaf Net With Tech, designed with your business in mind.</p>
         <div class="flex space-x-3 mt-4">
-          <a href="#" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="https://www.linkedin.com/company/sizafinfocomm/" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/sizafInfocomm" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/SizafInfocomm" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/sizaf_infocomm/" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@sizafinfocomm" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.pinterest.com/sizafInfocomm/" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
         </div>
       </div>
 

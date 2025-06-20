@@ -549,7 +549,7 @@ include('header.php');
             <a href="mailto:info@sizaf.com" class="bg-white text-purple-600 hover:bg-slate-100 px-6 py-3 rounded-lg font-medium inline-flex items-center justify-center transition-colors">
               Contact Support
             </a>
-            <a href="/live-chat" class="bg-transparent border border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-medium inline-flex items-center justify-center transition-colors">
+            <a onclick="startLiveChat()"   class="bg-transparent border border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-medium inline-flex items-center justify-center transition-colors">
               Start Live Chat
             </a>
           </div>
@@ -773,4 +773,14 @@ include('header.php');
   </section>
 </div>
 <script src="assest/js/about.js"></script>
+<script>
+  function startLiveChat() {
+    if (typeof Tawk_API !== "undefined") {
+      Tawk_API.maximize(); // Opens the chat widget
+    } else {
+      alert("Chat is still loading. Please try again shortly.");
+    }
+  }
+</script>
+
 <?php include 'footer.php'; ?>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="author" content="SizaF Net With Tech">
      <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assest/sizaf-favicon.png">
+     <link rel="icon" type="image/png" href="./assest/sizaf-favicon.png">
 
     <!-- Dynamic Title -->
     <title><?php echo $metaTitle ?? 'Default Page Title'; ?></title>
@@ -18,27 +18,32 @@
     <meta name="keywords" content="<?php echo $metaKeywords ?? 'default, keywords'; ?>">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="<?php echo $canonicalURL ?? 'https://yourdomain.com/current-page'; ?>" />
+    <link rel="canonical" href="<?php echo $canonicalURL ?? 'https://sizaf.com/index.php'; ?>" />
 
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="<?php echo $metaTitle ?? 'Default Page Title'; ?>">
-    <meta property="og:description" content="<?php echo $metaDescription ?? 'Default description'; ?>">
-    <meta property="og:url" content="<?php echo $canonicalURL ?? 'https://yourdomain.com'; ?>">
-    <meta property="og:image" content="<?php echo $metaImage ?? 'https://yourdomain.com/default-og-image.jpg'; ?>">
-    <meta property="og:type" content="website">
+   <!-- Primary Meta Tags (Open Graph - Facebook, LinkedIn, etc.) -->
+<meta property="og:url" content="https://sizaf.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Innovative IT Solutions for Your Business Needs - Sizaf">
+<meta property="og:description" content="Sizaf delivers cutting-edge IT solutions tailored to your business goals. From software development to IT consultancy, we provide reliable and efficient services to drive growth.">
+<meta property="og:image" content="https://sizaf.com/assest/sizaflogo.png">
+<meta property="og:image:width" content="1200"> <!-- Recommended: Specify image dimensions -->
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Sizaf"> <!-- Optional but recommended -->
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?php echo $metaTitle ?? 'Default Page Title'; ?>">
-    <meta name="twitter:description" content="<?php echo $metaDescription ?? 'Default description'; ?>">
-    <meta name="twitter:image" content="<?php echo $metaImage ?? 'https://yourdomain.com/default-twitter-image.jpg'; ?>">
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Innovative IT Solutions for Your Business Needs - Sizaf">
+<meta name="twitter:description" content="Sizaf delivers cutting-edge IT solutions tailored to your business goals. From software development to IT consultancy, we provide reliable and efficient services to drive growth.">
+<meta name="twitter:image" content="https://sizaf.com/assest/sizaflogo.png">
+<meta name="twitter:site" content="@YourTwitterHandle"> <!-- Replace with your Twitter handle -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- TailwindCSS -->
   <link href="./input.css" rel="stylesheet">
+  <link href="./assest/output.css" rel="stylesheet">
 
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

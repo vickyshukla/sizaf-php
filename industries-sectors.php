@@ -2,7 +2,7 @@
 $metaTitle = "Comprehensive Technology Solutions for Diverse Industries - Sizaf";
 $metaDescription = "Maximize your business potential with Sizaf's managed IT services. Ensure seamless operations, proactive support, and optimized technology solutions for growth.";
 $metaKeywords = "Explore Sizaf's industry-specific technology services designed to enhance efficiency and innovation across sectors like healthcare, finance, education, and more.";
-$metaImage = "https://yourdomain.com/images/og-governance.jpg";
+$metaImage = "https://sizaf.com/assest/sizaflogo.png";
 $canonicalURL = "https://sizaf.com/industries-sectors.php"; 
 include('header.php');
 ?>
@@ -56,12 +56,15 @@ include('header.php');
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/plans" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
+            <a href="./global-network.php" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center">
                 Browse Plans
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 w-5 h-5">
                     <path d="M5 12h14"/>
                     <path d="m12 5 7 7-7 7"/>
                 </svg>
+            </a>
+            <a href="./about.php" class="bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 inline-flex items-center">
+                Schedule Demo
             </a>
         </div>
     </div>
@@ -273,88 +276,111 @@ include('header.php');
         </div>
 
         <?php
-        $industries = [
-            [
-                'id' => 1,
-                'title' => "Governance & Security",
-                'description' => "It is now important to use this technology and improve governance and security capabilities.",
-                'icon' => 'shield',
-                'image' => '/assets/images/governance-security.jpg',
-                'color' => "from-purple-500 to-purple-600",
-            ],
-            [
-                'id' => 2,
-                'title' => "Health & Education",
-                'description' => "Healthcare & Education satisfies a variety of standards, including changing technology, to adapt to clients needs.",
-                'icon' => 'heart',
-                'image' => '/assets/images/health-education.jpg',
-                'color' => "from-purple-500 to-purple-600",
-            ],
-            [
-                'id' => 3,
-                'title' => "Non Profit Organizations",
-                'description' => "Non-profit enterprises with low budget but with best of technology strives for optimization and delivers best results.",
-                'icon' => 'users',
-                'image' => '/assets/images/non-profit.jpg',
-                'color' => "from-purple-500 to-purple-600",
-            ],
-            [
-                'id' => 4,
-                'title' => "Travel & Leisure",
-                'description' => "With the Covid-19 turnaround, there are many changes in travel and leisure industries, for which we provide requirement of advanced and specialized services.",
-                'icon' => 'plane',
-                'image' => '/assets/images/travel-leisure.jpg',
-                'color' => "from-purple-500 to-purple-600",
-            ],
-        ];
-        ?>
+// Define the industries array
+$industries = [
+    [
+        'id' => 1,
+        'title' => "Governance & Security",
+        'description' => "It is now important to use this technology and improve governance and security capabilities.",
+        'icon' => 'shield',
+        'image' => './assest/governance&security.jpg',
+        'color' => "from-purple-500 to-purple-600",
+    ],
+    [
+        'id' => 2,
+        'title' => "Health & Education",
+        'description' => "Healthcare & Education satisfies a variety of standards, including changing technology, to adapt to clients needs.",
+        'icon' => 'heart',
+        'image' => './assest/governance&security.jpg',
+        'color' => "from-purple-500 to-purple-600",
+    ],
+    [
+        'id' => 3,
+        'title' => "Non Profit Organizations",
+        'description' => "Non-profit enterprises with low budget but with best of technology strives for optimization and delivers best results.",
+        'icon' => 'users',
+        'image' => './assest/governance&security.jpg',
+        'color' => "from-purple-500 to-purple-600",
+    ],
+    [
+        'id' => 4,
+        'title' => "Travel & Leisure",
+        'description' => "With the Covid-19 turnaround, there are many changes in travel and leisure industries, for which we provide requirement of advanced and specialized services.",
+        'icon' => 'plane',
+        'image' => './assest/governance&security.jpg',
+        'color' => "from-purple-500 to-purple-600",
+    ],
+];
 
-        <!-- Industry Cards -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <?php foreach ($industries as $industry): ?>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-                    <div class="relative h-48 overflow-hidden">
-                        <img
-                            src="<?php echo $industry['image']; ?>"
-                            alt="<?php echo $industry['title']; ?> Industry Solution"
-                            class="w-full h-full object-cover"
-                            loading="lazy"
-                        >
-                        <div class="absolute inset-0 bg-gradient-to-br <?php echo $industry['color']; ?> opacity-80"></div>
-                        <div class="absolute top-4 left-4">
-                            <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-<?php echo $industry['icon']; ?> w-6 h-6 text-white">
-                                    <?php if ($industry['icon'] === 'shield'): ?>
-                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
-                                    <?php elseif ($industry['icon'] === 'heart'): ?>
-                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-                                    <?php elseif ($industry['icon'] === 'users'): ?>
-                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    <?php elseif ($industry['icon'] === 'plane'): ?>
-                                        <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
-                                    <?php endif; ?>
+?>
+
+<!-- Industry Cards Container -->
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <?php foreach ($industries as $industry): ?>
+        <!-- Individual Card -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+            
+            <!-- Card Image Section -->
+            <div class="relative h-48 overflow-hidden">
+                <!-- Image with fallback -->
+                <img
+                    src="<?php echo $industry['image']; ?>"
+                    alt="<?php echo htmlspecialchars($industry['title']); ?>"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="this.src='https://via.placeholder.com/300x200?text=<?php echo urlencode($industry['title']); ?>'"
+                >
+                
+                <!-- Color Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-br <?php echo $industry['color']; ?> opacity-80"></div>
+                
+                <!-- Icon Badge -->
+                <div class="absolute top-4 left-4">
+                    <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <?php switch($industry['icon']): 
+                            case 'shield': ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
                                 </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-900 mb-3"><?php echo $industry['title']; ?></h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3"><?php echo $industry['description']; ?></p>
-                        <a href="/industries/<?php echo sanitize_title($industry['title']); ?>" class="inline-flex items-center text-purple-600 hover:text-purple-700 p-0 h-auto font-semibold">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1 w-4 h-4">
-                                <path d="M5 12h14"/>
-                                <path d="m12 5 7 7-7 7"/>
-                            </svg>
-                        </a>
+                                <?php break; ?>
+                            <?php case 'heart': ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                                </svg>
+                                <?php break; ?>
+                            <?php case 'users': ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <?php break; ?>
+                            <?php case 'plane': ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+                                </svg>
+                                <?php break; ?>
+                        <?php endswitch; ?>
                     </div>
                 </div>
-            <?php endforeach; ?>
+            </div>
+            
+            <!-- Card Content Section -->
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-3"><?php echo htmlspecialchars($industry['title']); ?></h3>
+                <p class="text-gray-600 text-sm mb-4"><?php echo htmlspecialchars($industry['description']); ?></p>
+                <a href="./governance-security.php" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold">
+                    Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 w-4 h-4">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
         </div>
+    <?php endforeach; ?>
+</div>
 
         <!-- Bottom CTA -->
         <div class="text-center mt-16">
@@ -364,10 +390,10 @@ include('header.php');
                     Join thousands of businesses that trust Sizaf for their communication infrastructure needs.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/consultation" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 font-semibold rounded-full inline-flex items-center">
+                    <a href="./about.php" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 font-semibold rounded-full inline-flex items-center">
                         Get Free Consultation
                     </a>
-                    <a href="/plans" class="border border-white/30 text-white hover:bg-white/10 px-8 py-3 font-semibold rounded-full inline-flex items-center">
+                    <a href="./global-network.php" class="border border-white/30 text-white hover:bg-white/10 px-8 py-3 font-semibold rounded-full inline-flex items-center">
                         View All Plans
                     </a>
                 </div>
