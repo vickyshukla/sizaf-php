@@ -126,7 +126,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector5.jpeg" 
-                                    alt="Construction Real estate" 
+                                    alt="Bridiging ideas" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

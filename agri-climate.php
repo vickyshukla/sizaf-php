@@ -129,7 +129,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector10.jpeg" 
-                                    alt="Smart agriculture, fishing boats, and climate monitoring tech integrated in nature" 
+                                    alt="Smart agriculture" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

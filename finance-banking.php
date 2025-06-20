@@ -130,7 +130,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector11.jpeg" 
-                                    alt="Modern digital banking interface with financial charts and secure technology" 
+                                    alt="digital banking" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"

@@ -66,7 +66,7 @@ $page_keywords = "technology services, web development, IT solutions, network se
         <div class="absolute inset-0 z-0">
             <img
                 src="./assest/Technology-services-bg.jpeg"
-                alt="Technology workspace with computers and servers"
+                alt="Technology workspace"
                 class="w-full h-full object-cover"
                 loading="lazy"
             >

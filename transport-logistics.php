@@ -129,7 +129,7 @@ include('header.php');
                             <div class="relative rounded-xl overflow-hidden mb-8">
                                 <img 
                                     src="./assest/industry-sector9.jpg" 
-                                    alt="Hands holding smartphones with city skyline background representing modern governance technology" 
+                                    alt="modern governance technology" 
                                     class="w-full backdrop-blur-xs h-[300px] object-cover"
                                     loading="lazy"
                                     width="800"
