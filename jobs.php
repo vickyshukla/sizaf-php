@@ -3,7 +3,7 @@ $metaTitle = "Career";
 $metaDescription = "This is career page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/jobs.php"; 
 include('header.php');
 ?>
 <?php include 'functions.php'; ?>

@@ -3,7 +3,7 @@ $metaTitle = "Advanced Tech Infrastructure Services - Sizaf";
 $metaDescription = "Strengthen your business foundation with Sizaf's tech infrastructure services. Enhance system performance, scalability, and security for seamless operations.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/tech-infra.php"; 
 include('header.php');
 ?>
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">

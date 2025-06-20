@@ -3,7 +3,7 @@ $metaTitle = "Web & Media Services for Enhanced Digital Presence - Sizaf";
 $metaDescription = "Boost your online presence with Sizaf's web and media services. From website development to digital marketing, we provide tailored solutions to elevate your brand.";
 $metaKeywords = "governance security, public sector IT solutions, secure infrastructure, government technology, network services";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
+$canonicalURL = "https://sizaf-php.sizaf.com/web-media.php"; 
 include('header.php');
 ?>
 <div class="w-full h-36 bg-[#4d346d] text-center py-8 text-white">

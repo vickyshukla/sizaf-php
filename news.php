@@ -3,19 +3,66 @@ $metaTitle = "News";
 $metaDescription = "News Page.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
-?>
-<?php
+$canonicalURL = "https://sizaf-php.sizaf.com/news.php"; 
 session_start();
+require_once __DIR__ . '/vendor/autoload.php';
 include 'header.php';
 include 'functions.php';
-$filteredNews = fetchFilteredNews();
+
+// Load .env variables
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Define sensitive keywords
+const SENSITIVE_KEYWORDS = [
+    "violence", "explicit", "vulgar", "controversy", "terror", "drugs",
+    "abuse", "offensive", "porn", "adult", "crime", "scandal", "murder", "death"
+];
+
+// GNews API Key from .env
+$apiKey = $_ENV['GNEWS_API_KEY'] ?? null;
+if (!$apiKey) {
+    $error_message = "API key not found. Please set GNEWS_API_KEY in your .env file.";
+    $newsData = ['articles' => []];
+} else {
+    // GNews API URL (fetch 10 results)
+    $apiUrl = "https://gnews.io/api/v4/search?q=IPT%20OR%20ICT%20OR%20ISP%20OR%20Broadband&in=title&lang=en&category=technology&apikey={$apiKey}&max=10";
+
+    // Fetch news data
+    $response = @file_get_contents($apiUrl);
+    
+    if ($response === false) {
+        $error_message = "Error fetching news. Please try again later.";
+        $newsData = ['articles' => []];
+    } else {
+        $newsData = json_decode($response, true);
+    }
+}
+
+// Check if articles are available in the response
+if (empty($newsData['articles'])) {
+    $_SESSION['news_articles'] = [];
+} else {
+    $_SESSION['news_articles'] = $newsData['articles'];
+}
+
+// Filter out articles containing sensitive keywords
+$filteredNews = array_filter($newsData['articles'], function ($article) {
+    foreach (SENSITIVE_KEYWORDS as $keyword) {
+        if (
+            stripos($article['title'], $keyword) !== false ||
+            stripos($article['description'], $keyword) !== false
+        ) {
+            return false;
+        }
+    }
+    return true;
+});
 ?>
 
 <main class="max-w-[1460px] container mx-auto">
     <!-- Hero Section -->
     <div class=" mx-auto">
-        <!-- Hero Section with SEO-rich content -->
         <div class="relative rounded-b-3xl overflow-hidden mb-16 shadow-2xl">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90 z-10"></div>
             <img 

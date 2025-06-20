@@ -3,12 +3,13 @@ $metaTitle = "Innovative IT Solutions for Your Business Needs - Sizaf";
 $metaDescription = "Sizaf delivers cutting-edge IT solutions tailored to your business goals. From software development to IT consultancy, we provide reliable and efficient services to drive growth.";
 $metaKeywords = "IT solutions, software development, consultancy";
 $metaImage = "https://yourdomain.com/images/og-governance.jpg";
-$canonicalURL = "https://yourdomain.com/governance"; 
-session_start();
-include('header.php');
+$canonicalURL = "https://sizaf-php.sizaf.com"; 
+include 'header.php';
 include 'functions.php';
-$filteredNews = fetchFilteredNews();
-$filteredNews = array_slice($filteredNews, 0, 3);
+
+// Fetch only the first 3 blog posts (without pagination)
+$blogData = getBlogs($page = 1, $postsPerPage = 3);  // Fetch 3 posts
+$blogs = $blogData['blogs'];
 ?>
 <style>
   /* Highlight Styles */
@@ -406,8 +407,8 @@ $filteredNews = array_slice($filteredNews, 0, 3);
     <div class="absolute inset-0 bg-[url(assest/testimonial-map.png)] bg-cover"></div>
     <div class="relative flex flex-col sm:flex-row md:ml-16 lg:ml-28 ml-2 mt-10 lg:mr-28 gap-6">
       <div class="max-w-xs">
-        <p class="text-3xl font-bold leading-tight mb-6">THE BREAKING<br>NEWS FROM THE<br>INTERNET.</p>
-        <p class="text-gray-600 text-base mb-8 leading-relaxed">At Sizaf we like to keep you updated with the latest developments on internet Service and technology that you may use and let us know if you like us to provide any of these services to you.</p>
+        <p class="text-3xl font-bold leading-tight mb-6">YOUR GUIDE TO SMARTER<br>INTERNET & TECHNOLOGY</p>
+        <p class="text-gray-600 text-base mb-8 leading-relaxed">In today’s fast-moving digital world, keeping up with internet services and technology is key. At Sizaf, we provide practical tips and updates to help you navigate the online world with ease.</p>
         <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 h-9 group text-black hover:no-underline hover:text-[#FF156E] font-medium text-lg p-0">
             <a href="blog.php"> View All Blog</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right w-96">
@@ -416,37 +417,36 @@ $filteredNews = array_slice($filteredNews, 0, 3);
             </svg>
         </button>
       </div>
-      <?php if (!empty($filteredNews)): ?>
+      <?php if (!empty($blogs)): ?>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
-            <?php foreach ($filteredNews as $news): ?>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
-                    <?php if (!empty($news['image'])): ?>
-                        <img src="<?= $news['image'] ?>" alt="<?= htmlspecialchars($news['title']) ?>" class="w-full h-48 object-cover" loading="lazy">
-                    <?php else: ?>
-                        <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">No Image</div>
-                    <?php endif; ?>
-
-                    <div class="p-4 flex flex-col h-full">
-                        <h3 class="text-lg md:text-xl font-semibold mb-2 line-clamp-2"><?= htmlspecialchars($news['title']) ?></h3>
-                        <p class="text-sm text-gray-500 mb-2"><?= date('F j, Y', strtotime($news['publishedAt'])) ?></p>
-                        <p class="text-gray-600 mb-4 line-clamp-2"><?= strip_tags($news['description']) ?></p>
-
-                        <?php 
-                            $slug = slugify($news['title']); 
-                            $news['slug'] = $slug;
-                            $_SESSION['news_articles'][$slug] = $news; 
-                        ?>
-                        
-                        <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded mt-auto text-center">Read More</a>
-                    </div>
+          <?php foreach ($blogs as $blog): 
+            $title = $blog['title']['rendered'];
+            $excerpt = strip_tags($blog['excerpt']['rendered']);
+            $id = $blog['id'];
+            $img = getFeaturedImage($blog);
+            $date = date('F j, Y', strtotime($blog['date']));
+            $slug = $blog['slug'];
+          ?>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+              <div class="w-full h-32 overflow-hidden">
+                <img src="<?= $img ?>" alt="<?= $title ?>" class="w-full h-full object-cover" loading="lazy">
+              </div>
+              <div class="p-4 flex flex-col flex-1">
+                <div class="flex-1 flex flex-col">
+                  <h3 class="text-lg md:text-xl font-semibold mb-2 line-clamp-2"><?= $title ?></h3>
+                  <p class="text-sm text-gray-500 mb-2"><?= $date ?></p>
+                  <p class="text-gray-600 mb-4 line-clamp-2"><?= substr($excerpt, 0, 100) ?>...</p>
                 </div>
-            <?php endforeach; ?>
-          </div>
-        <?php else: ?>
-            <div class="text-center text-red-600 py-8 flex-1 h-full">
-                <p>No news articles available at the moment. Please check back later.</p>
+                <a href="<?= $slug ?>" class="bg-primary-gradient text-white w-28 py-2 rounded text-center">Read More</a>
+              </div>
             </div>
-        <?php endif; ?>
+          <?php endforeach; ?>
+        </div>
+      <?php else: ?>
+        <div class="text-center text-red-600 py-8 flex-1 h-full">
+            <p>No news articles available at the moment. Please check back later.</p>
+        </div>
+      <?php endif; ?>
     </div>
     <div class="absolute top-20 right-20 w-2 h-2 rounded-full bg-red-500"></div>
   </div>
