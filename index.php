@@ -41,27 +41,40 @@ $blogs = $blogData['blogs'];
   .gsap-animate-container {
     perspective: 1000px;
   }
+
+  .features-section{
+    margin-top:18rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .features-section{
+    margin-top:16rem;
+  }
+  }
+
 </style>
 
 <!-- Hero Section with Transparent Box -->
-<section class="relative w-full h-screen">
-  <!-- Background Video -->
-  <img src="./assest/fallback.png" alt="Background preview" class="w-full h-full object-cover absolute inset-0 z-0" loading="eager" />
-  <video
-    muted
-    playsinline
-    preload="none"
-    class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-500"
-    poster="./assest/fallback.png"
-    id="bgVideo"
-  >
-    <source src="https://wnhq4j5mc7yjym73.public.blob.vercel-storage.com/sizaf/world-j2jEAUUa6vmMNRDhlnikI5Pm9UBHxP.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Overlay Content Box -->
-  <div class="relative z-10 flex items-center justify-center h-full px-4">
-    <div class="bg-white/90 absolute -bottom-30 backdrop-blur-md rounded-xl shadow-2xl p-8 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
+<section class="w-full">
+   <div class="relative" style="height:700px;">
+    <img src="./assest/fallback.png" alt="Background preview" class="absolute inset-0 z-0 object-cover" loading="eager" style="width:100%; height:700px" />
+    <video
+      muted
+      playsinline
+      loop
+      preload="none"
+      class="w-full object-cover opacity-0 transition-opacity duration-500 absolute inset-0 z-0"
+      poster="./assest/fallback.png"
+      id="bgVideo"
+      style="height:700px;"
+      >
+        <source src="https://wnhq4j5mc7yjym73.public.blob.vercel-storage.com/sizaf/world-j2jEAUUa6vmMNRDhlnikI5Pm9UBHxP.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+   </div>
+   <!-- Overlay Content Box -->
+  <div class="relative z-10 flex items-center justify-center px-4">
+    <div class="bg-white/90 absolute -bottom-20 backdrop-blur-md rounded-xl shadow-2xl p-8 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
       <!-- Left Text Content -->
       <div>
         <h1 class="text-4xl font-extrabold text-gray-800 mb-4">
@@ -97,7 +110,7 @@ $blogs = $blogData['blogs'];
     </div>
   </div>
 </section>
-<section class="w-full py-16 mt-40">
+<section class="features-section w-full py-16">
   <div class="max-w-7xl mx-auto px-4 items-center sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
     
     <!-- Left Block (unchanged) -->
@@ -160,14 +173,14 @@ $blogs = $blogData['blogs'];
   </div>
 </section>
 
-<section class="bg-white py-16 px-4" aria-labelledby="smart-plans-title">
+<section class="bg-white py-14 px-4" aria-labelledby="smart-plans-title">
   <div class="max-w-7xl mx-auto">
     <h2 id="smart-plans-title" class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 ">
       SMART PLANS
     </h2>
    
 
-    <div class="grid grid-cols-1 md:grid-cols-2 mt-12 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-12 lg:grid-cols-3 gap-8 py-4">
       <!-- Card 1 -->
       <article class="rounded-xl overflow-hidden shadow-lg transition hover:shadow-2xl" data-aos="fade-up">
         <div class="relative">
