@@ -80,7 +80,7 @@ $totalPages = $blogData['totalPages'];
             $slug = $blog['slug'];
           ?>
             <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
-              <img src="<?= $img ?>" alt="<?= $title ?>" class="w-full h-48 object-cover" loading="lazy">
+              <img src="<?= $img ?>" alt="<?= $id?>" class="w-full h-48 object-cover" loading="lazy">
               <div class="p-4 flex flex-col h-full">
                 <h3 class="text-lg md:text-xl font-semibold mb-2"><?= $title ?></h3>
                 <p class="text-sm text-gray-500 mb-2"><?= $date ?></p>
