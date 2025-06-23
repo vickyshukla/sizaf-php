@@ -113,10 +113,10 @@ $filteredNews = array_filter($newsData['articles'], function ($article) {
             </header>
             <?php if (!empty($filteredNews)): ?>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <?php foreach ($filteredNews as $news): ?>
+                    <?php foreach ($filteredNews as $index => $news): ?>
                         <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
                             <?php if (!empty($news['image'])): ?>
-                                <img src="<?= $news['image'] ?>" alt="<?= htmlspecialchars($news['title']) ?>" class="w-full h-48 object-cover" loading="lazy">
+                                <img src="<?= $news['image'] ?>" alt="<?= $index ?>" class="w-full h-48 object-cover" loading="lazy">
                             <?php else: ?>
                                 <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">No Image</div>
                             <?php endif; ?>

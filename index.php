@@ -409,7 +409,7 @@ $blogs = $blogData['blogs'];
       <div class="max-w-xs">
         <p class="text-3xl font-bold leading-tight mb-6">YOUR GUIDE TO SMARTER<br>INTERNET & TECHNOLOGY</p>
         <p class="text-gray-600 text-base mb-8 leading-relaxed">In today’s fast-moving digital world, keeping up with internet services and technology is key. At Sizaf, we provide practical tips and updates to help you navigate the online world with ease.</p>
-        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 h-9 group text-black hover:no-underline hover:text-[#FF156E] font-medium text-lg p-0">
+        <button class="w-40 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 h-9 group text-black hover:no-underline hover:text-[#FF156E] font-medium text-lg p-0">
             <a href="blog.php"> View All Blog</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right w-96">
               <path d="M18 8L22 12L18 16"></path>
