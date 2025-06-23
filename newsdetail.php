@@ -18,8 +18,8 @@ if (!$article) {
 }
 
 function show404() {
-    header("Location: /404.php");
-    exit;
+    http_response_code(404);
+    include('404.php');
 }
 ?>
 
