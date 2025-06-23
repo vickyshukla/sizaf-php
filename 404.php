@@ -1,11 +1,10 @@
 <?php
 $metaTitle = " SizaF Net With Tech";
 $metaDescription = "The page you're looking for doesn't exist. Explore our technology services or return to the homepage.";
-include('header.php');
 ?>
 
 
-    <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="px-6 py-20">
         <div class="text-center">
             <!-- Animated 404 graphic -->
             <div class="relative max-w-md mx-auto mb-12">
@@ -49,7 +48,3 @@ include('header.php');
     <script>
         lucide.createIcons();
     </script>
-
-<?php
-include 'footer.php';
-?>
