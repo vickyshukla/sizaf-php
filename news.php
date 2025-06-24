@@ -15,7 +15,7 @@ $dotenv->load();
 
 // Define sensitive keywords
 const SENSITIVE_KEYWORDS = [
-    "violence", "explicit", "vulgar", "controversy", "terror", "drugs",
+    "violence","virgin", "explicit", "vulgar", "controversy", "terror", "drugs",
     "abuse", "offensive", "porn", "adult", "crime", "scandal", "murder", "death"
 ];
 
@@ -47,17 +47,27 @@ if (empty($newsData['articles'])) {
 }
 
 // Filter out articles containing sensitive keywords
-$filteredNews = array_filter($newsData['articles'], function ($article) {
+$seenTitles = [];
+$filteredNews = [];
+
+foreach ($newsData['articles'] as $article) {
+    $containsSensitive = false;
     foreach (SENSITIVE_KEYWORDS as $keyword) {
         if (
             stripos($article['title'], $keyword) !== false ||
             stripos($article['description'], $keyword) !== false
         ) {
-            return false;
+            $containsSensitive = true;
+            break;
         }
     }
-    return true;
-});
+    if ($containsSensitive || in_array($article['title'], $seenTitles)) {
+        continue;
+    }
+
+    $seenTitles[] = $article['title'];
+    $filteredNews[] = $article;
+}
 ?>
 
 <main class="max-w-[1460px] container mx-auto">
