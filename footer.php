@@ -60,44 +60,44 @@
       <div class="marquee-container">
         <div class="marquee-track gap-12">
             <div class="logo-strip flex items-center gap-12">
-              <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
-              <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
-              <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
-              <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
-              <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
-              <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
-              <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
-              <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
-              <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
-              <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
-              <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
-              <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
-              <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
-              <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
-              <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
-              <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
-              <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
-              <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+              <img src="./assest/acronis-logo.webp" alt="Acronis" width="96" height="64" class="object-contain" />
+              <img src="./assest/kaspersky-logo.webp" alt="Kaspersky" width="96" height="64" class="object-contain" />
+              <img src="./assest/microsoft-logo.webp" alt="Microsoft" width="96" height="64" class="object-contain" />
+              <img src="./assest/dell-logo.webp" alt="Dell" width="96" height="64" class="object-contain" />
+              <img src="./assest/amazon-logo.webp" alt="Amazon" width="96" height="64" class="object-contain" />
+              <img src="./assest/quick-heal-logo.webp" alt="Quick Heal" width="96" height="64" class="object-contain" />
+              <img src="./assest/escan-logo.webp" alt="Escan" width="96" height="64" class="object-contain" />
+              <img src="./assest/sonic-wall-logo.webp" alt="SonicWall" width="96" height="64" class="object-contain" />
+              <img src="./assest/hp-logo.webp" alt="HP" width="96" height="64" class="object-contain" />
+              <img src="./assest/fortinet-logo.webp" alt="Fortinet" width="96" height="64" class="object-contain" />
+              <img src="./assest/eset-logo.webp" alt="ESET" width="96" height="64" class="object-contain" />
+              <img src="./assest/cisco-logo.webp" alt="Cisco" width="96" height="64" class="object-contain" />
+              <img src="./assest/alibaba-cloud-logo.webp" alt="Alibaba Cloud" width="96" height="64" class="object-contain" />
+              <img src="./assest/sophos-logo.webp" alt="Sophos" width="96" height="64" class="object-contain" />
+              <img src="./assest/symantec-logo.webp" alt="Symantec" width="96" height="64" class="object-contain" />
+              <img src="./assest/trend-micro-logo.webp" alt="Trend Micro" width="96" height="64" class="object-contain" />
+              <img src="./assest/veeam-logo.webp" alt="Veeam" width="96" height="64" class="object-contain" />
+              <img src="./assest/watchguard-logo.webp" alt="Watchguard" width="96" height="64" class="object-contain" />
             </div>
             <div class="logo-strip flex items-center gap-12">
-              <img src="./assest/acronis-logo.png" alt="Acronis" class="w-24 h-16 object-contain" />
-              <img src="./assest/kaspersky-logo.png" alt="Kaspersky" class="w-24 h-16 object-contain" />
-              <img src="./assest/microsoft-logo.png" alt="Microsoft" class="w-24 h-16 object-contain" />
-              <img src="./assest/dell-logo.png" alt="Dell" class="w-24 h-16 object-contain" />
-              <img src="./assest/amazon-logo.png" alt="Amazon" class="w-24 h-16 object-contain" />
-              <img src="./assest/quick-heal-logo.png" alt="Quick Heal" class="w-24 h-16 object-contain" />
-              <img src="./assest/escan-logo.png" alt="Escan" class="w-24 h-16 object-contain" />
-              <img src="./assest/sonic-wall-logo.png" alt="SonicWall" class="w-24 h-16 object-contain" />
-              <img src="./assest/hp-logo.png" alt="HP" class="w-24 h-16 object-contain" />
-              <img src="./assest/fortinet-logo.png" alt="Fortinet" class="w-24 h-16 object-contain" />
-              <img src="./assest/eset-logo.png" alt="ESET" class="w-24 h-16 object-contain" />
-              <img src="./assest/cisco-logo.png" alt="Cisco" class="w-24 h-16 object-contain" />
-              <img src="./assest/alibaba-cloud-logo.png" alt="Alibaba Cloud" class="w-24 h-16 object-contain" />
-              <img src="./assest/sophos-logo.png" alt="Sophos" class="w-24 h-16 object-contain" />
-              <img src="./assest/symantec-logo.png" alt="Symantec" class="w-24 h-16 object-contain" />
-              <img src="./assest/trend-micro-logo.png" alt="Trend Micro" class="w-24 h-16 object-contain" />
-              <img src="./assest/veeam-logo.png" alt="Veeam" class="w-24 h-16 object-contain" />
-              <img src="./assest/watchguard-logo.png" alt="Watchguard" class="w-24 h-16 object-contain" />
+              <img src="./assest/acronis-logo.webp" alt="Acronis" width="96" height="64" class="object-contain" />
+              <img src="./assest/kaspersky-logo.webp" alt="Kaspersky" width="96" height="64" class="object-contain" />
+              <img src="./assest/microsoft-logo.webp" alt="Microsoft" width="96" height="64" class="object-contain" />
+              <img src="./assest/dell-logo.webp" alt="Dell" width="96" height="64" class="object-contain" />
+              <img src="./assest/amazon-logo.webp" alt="Amazon" width="96" height="64" class="object-contain" />
+              <img src="./assest/quick-heal-logo.webp" alt="Quick Heal" width="96" height="64" class="object-contain" />
+              <img src="./assest/escan-logo.webp" alt="Escan" width="96" height="64" class="object-contain" />
+              <img src="./assest/sonic-wall-logo.webp" alt="SonicWall" width="96" height="64" class="object-contain" />
+              <img src="./assest/hp-logo.webp" alt="HP" width="96" height="64" class="object-contain" />
+              <img src="./assest/fortinet-logo.webp" alt="Fortinet" width="96" height="64" class="object-contain" />
+              <img src="./assest/eset-logo.webp" alt="ESET" width="96" height="64" class="object-contain" />
+              <img src="./assest/cisco-logo.webp" alt="Cisco" width="96" height="64" class="object-contain" />
+              <img src="./assest/alibaba-cloud-logo.webp" alt="Alibaba Cloud" width="96" height="64" class="object-contain" />
+              <img src="./assest/sophos-logo.webp" alt="Sophos" width="96" height="64" class="object-contain" />
+              <img src="./assest/symantec-logo.webp" alt="Symantec" width="96" height="64" class="object-contain" />
+              <img src="./assest/trend-micro-logo.webp" alt="Trend Micro" width="96" height="64" class="object-contain" />
+              <img src="./assest/veeam-logo.webp" alt="Veeam" width="96" height="64" class="object-contain" />
+              <img src="./assest/watchguard-logo.webp" alt="Watchguard" width="96" height="64" class="object-contain" />
             </div>
         </div>
       </div>
@@ -109,22 +109,22 @@
   <section class="bg-gradient-to-r from-purple-600 to-pink-500 text-white py-10 px-4" data-aos="fade-up">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8  text-center">
       <div class="flex flex-col items-center">
-        <img src="./assest/Free-30-days-white.svg" alt="30 Days Free" width=50 height="50" loading="lazy" class="w-13 h-13" />
+        <img src="./assest/Free-30-days-white.webp" alt="30 Days Free" width=50 height="50" loading="lazy"/>
         <h3 class="font-bold text-lg mb-2 mt-2">FREE 30 DAYS</h3>
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">Free 30 days trial for special subscribers.</p>
       </div>
       <div class="flex flex-col items-center">
-        <img src="./assest/No-contract-white.svg" alt="Zero Connection" width=50 height="50" loading="lazy"class="w-13 h-13" />
+        <img src="./assest/No-contract-white.webp" alt="Zero Connection" width=50 height="50" loading="lazy"/>
         <h3 class="font-bold text-lg mb-2 mt-2">NO CONTRACT</h3>
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">Custom service with optional contract.</p>
       </div>
       <div class="flex flex-col items-center">
-        <img src="./assest/Zero-connection-fee-white.svg" alt="No Contract" width=50 height="50" loading="lazy" class="w-13 h-13" />
+        <img src="./assest/Zero-connection-fee-white.webp" alt="No Contract" width=50 height="50" loading="lazy"/>
         <h3 class="font-bold text-lg mb-2 mt-2">ZERO CONNECTION</h3>
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">ZERO with 13 / 25 months Subscription.</p>
       </div>
       <div class="flex flex-col items-center">
-         <img src="./assest/zero-termination-fee-white.svg" alt="Zero Termination" width=50 height="50" loading="lazy"class="w-13 h-13" />
+         <img src="./assest/zero-termination-fee-white.webp" alt="Zero Termination" width=50 height="50" loading="lazy"/>
         <h3 class="font-bold text-lg mb-2 mt-2">ZERO TERMINATION</h3>
         <p class="text-sm font-bold text-slate-50 text-center opacity-60">ZERO with 13 / 25 months Subscription.</p>
       </div>
@@ -136,7 +136,7 @@
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Logo + Description -->
       <div>
-        <img src="./assest/sizaf_foot_white.png" alt="Sizaf Logo" width=40 height=40 class="w-32 mb-4" />
+        <img src="./assest/sizaf_foot_white.webp" alt="Sizaf Logo" width=120 height=120 class="mb-4" />
         <p class="text-sm text-gray-300 mb-4">Sizaf Net With Tech, designed with your business in mind.</p>
         <div class="flex space-x-3 mt-4">
           <a href="https://www.linkedin.com/company/sizafinfocomm/" class="w-10 h-10 bg-primary-gradient flex items-center justify-center rounded-full cursor-pointer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>

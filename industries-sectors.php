@@ -11,10 +11,13 @@ include('header.php');
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0">
         <img
-            src="./assest/business-internet-main.jpg"
+            src="./assest/business-internet-main.webp"
             alt="Business Communication Solutions"
+            width="1920"
+            height="1080"
             class="w-full h-full object-cover"
             loading="lazy"
+            decoding="async"
         >
         <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/90"></div>
 
@@ -283,7 +286,7 @@ $industries = [
         'title' => "Governance & Security",
         'description' => "It is now important to use this technology and improve governance and security capabilities.",
         'icon' => 'shield',
-        'image' => './assest/governance&security.jpg',
+        'image' => './assest/governance&security.webp',
         'color' => "from-purple-500 to-purple-600",
     ],
     [
@@ -291,7 +294,7 @@ $industries = [
         'title' => "Health & Education",
         'description' => "Healthcare & Education satisfies a variety of standards, including changing technology, to adapt to clients needs.",
         'icon' => 'heart',
-        'image' => './assest/governance&security.jpg',
+        'image' => './assest/health&education.webp',
         'color' => "from-purple-500 to-purple-600",
     ],
     [
@@ -299,7 +302,7 @@ $industries = [
         'title' => "Non Profit Organizations",
         'description' => "Non-profit enterprises with low budget but with best of technology strives for optimization and delivers best results.",
         'icon' => 'users',
-        'image' => './assest/governance&security.jpg',
+        'image' => './assest/nonprofitorganization.webp',
         'color' => "from-purple-500 to-purple-600",
     ],
     [
@@ -307,7 +310,7 @@ $industries = [
         'title' => "Travel & Leisure",
         'description' => "With the Covid-19 turnaround, there are many changes in travel and leisure industries, for which we provide requirement of advanced and specialized services.",
         'icon' => 'plane',
-        'image' => './assest/governance&security.jpg',
+        'image' => './assest/travel&leisure.webp',
         'color' => "from-purple-500 to-purple-600",
     ],
 ];
@@ -326,9 +329,12 @@ $industries = [
                 <img
                     src="<?php echo $industry['image']; ?>"
                     alt="<?php echo htmlspecialchars($industry['title']); ?>"
+                    width="300"
+                    height="300"
                     class="w-full h-full object-cover"
                     loading="lazy"
                     onerror="this.src='https://via.placeholder.com/300x200?text=<?php echo urlencode($industry['title']); ?>'"
+                    decoding="async"
                 >
                 
                 <!-- Color Overlay -->

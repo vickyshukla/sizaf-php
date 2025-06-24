@@ -32,7 +32,7 @@ include('header.php');
                 <div class="bg-slate-900 rounded-md p-3 flex items-center justify-center">
                   <!-- Replace with your actual logo image -->
                   <img 
-                    src="./assest/sizaf_foot_white.png" 
+                    src="./assest/sizaf_foot_white.webp" 
                     alt="sizaf logo" 
                     class="h-8 w-auto" 
                     width="120" 
@@ -640,7 +640,7 @@ include('header.php');
                   'name' => "Cherianne G.",
                   'title' => "Operations Manager",
                   'company' => "Technoserve UK Ltd.",
-                  'avatar' => "./assest/user4.jpg",
+                  'avatar' => "./assest/user4.webp",
                   'rating' => 5,
                   'industry' => "Technology",
                   'projectType' => "Infrastructure Setup",
@@ -651,7 +651,7 @@ include('header.php');
                   'name' => "Chandra K.",
                   'title' => "Product Incharge",
                   'company' => "Pro & Gin Wholesale Pvt. Ltd.",
-                  'avatar' => "./assest/user1.jpg",
+                  'avatar' => "./assest/user1.webp",
                   'rating' => 4,
                   'industry' => "Wholesale",
                   'projectType' => "Tech Solutions",
@@ -662,7 +662,7 @@ include('header.php');
                   'name' => "Liz R.",
                   'title' => "Accounts Manager",
                   'company' => "I-Help Cosmic Foundation",
-                  'avatar' => "./assest/user2.jpg",
+                  'avatar' => "./assest/user2.webp",
                   'rating' => 5,
                   'industry' => "Non-Profit",
                   'projectType' => "Business Solutions",
@@ -673,7 +673,7 @@ include('header.php');
                   'name' => "Michael T.",
                   'title' => "IT Head",
                   'company' => "Greenfield Logistics",
-                  'avatar' => "./assest/user4.jpg",
+                  'avatar' => "./assest/user4.webp",
                   'rating' => 5,
                   'industry' => "Logistics",
                   'projectType' => "System Integration",
@@ -742,8 +742,11 @@ include('header.php');
                                   <img 
                                       src="<?= $testimonial['avatar'] ?>" 
                                       alt="clients"
-                                      class="rounded-full object-cover ring-2 ring-white shadow-md h-16 w-16"
+                                      width="64"
+                                      height="64"
+                                      class="rounded-full object-cover ring-2 ring-white shadow-md w-16 h-16"
                                       loading="lazy"
+                                      decoding="async"
                                   />
                                   <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
                                       <div class="w-2 h-2 bg-white rounded-full"></div>

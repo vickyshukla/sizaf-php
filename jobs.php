@@ -25,12 +25,14 @@ $jobs = json_decode($response);
   <section class="py-16 px-4 bg-gradient-to-br from-slate-50 to-slate-100" itemscope itemtype="https://schema.org/Organization">
     <div class="max-w-7xl mx-auto">
       <!-- Hero Section -->
-      <div class="relative rounded-3xl overflow-hidden mb-16">
+      <div class="relative h-[400px] rounded-3xl overflow-hidden mb-16">
         <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-900/90 z-10"></div>
         <img 
-          src="assest/industry-sector7.jpg" 
+          src="assest/industry-sector7.webp" 
           alt="Team collaboration" 
-          class="w-full h-[400px] object-cover"
+          width="1200"
+          height="600"
+          class="w-full h-full absolute inset-0 object-cover"
           loading="lazy"
           itemprop="image"
         >
@@ -38,7 +40,7 @@ $jobs = json_decode($response);
           <!-- <span class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium mb-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 w-fit">
             Join Our Team
           </span> -->
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" itemprop="name">CAREER OPPORTUNITIES</h1>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-6" itemprop="name">CAREER OPPORTUNITIES</h1>
           <p class="text-lg md:text-xl text-white/90 max-w-2xl" itemprop="description">
             Build your future with a company that values innovation, collaboration, and your professional growth.
           </p>

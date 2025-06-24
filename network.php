@@ -82,12 +82,13 @@ include('header.php');
       <div class="relative">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl transform rotate-3"></div>
         <img 
-          src="./assest/network1.jpeg" 
+          src="./assest/network1.webp" 
           alt=" network infrastructure" 
           width="600" 
           height="400" 
           class="relative rounded-2xl shadow-2xl object-cover w-full h-[400px]"
           loading="lazy"
+          decoding="async"
         >
       </div>
     </div>
@@ -178,7 +179,7 @@ include('header.php');
 
         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
             <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail1.webp" class="rounded-md ">
+                <img alt="SD-Wan Icon" src="./assest/service-detail1.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Wan (SD-Wan)</h3>
                 <p class="text-gray-600 text-sm ">
                    Sizaf SD-Wan solution is a very managed, flexible and easy to operate solution. Using this the software defined Wan network we will deliver a complete network access across software networks. Software defined Wide Area Network (SD-WAN) offers high-performance protected data channels that connect diverse internet access providers - such as DSL, cable, mobile phones, etc.
@@ -189,7 +190,7 @@ include('header.php');
 
         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
             <div class="p-4">
-                <img alt="SizaF Etherconnect illustration" src="./assest/service-detail2.webp" class="rounded-md">
+                <img alt="SizaF Etherconnect illustration" src="./assest/service-detail2.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Etherconnect (Metro-E / LL)</h3>
                 <p class="text-gray-600 text-sm">
                    Sizaf Etherconnect (Metro-E) service is a domestic leased line service. Its powered by high frequency network link and ultraspace access which assures using the new Ethernet technology of Dense Wave (EoDWDM) technology.
@@ -200,7 +201,7 @@ include('header.php');
 
          <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
             <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail3.webp" class="rounded-md ">
+                <img alt="SD-Wan Icon" src="./assest/service-detail3.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Globeconnect (IPLC)</h3>
                 <p class="text-gray-600 text-sm ">
                   Sizaf Globeconnect service is designed for firms that are becoming more global, they are in stronger need for prompt and efficient contact with their international offices. International communication must be extremely secure, precise, and fruitful. We have strong global teams serving in all major cities of the world. We work 24x7 all 365 days of year to deliver on SLA's and make your life & business simpler.
@@ -211,7 +212,7 @@ include('header.php');
 
         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
             <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail4.webp" class="rounded-md ">
+                <img alt="SD-Wan Icon" src="./assest/service-detail4.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Routeconnect (IP Transit)</h3>
                 <p class="text-gray-600 text-sm ">
                  Sizaf Routeconnect service is among the best in the market. Its connected with the world's most wired networks with high capacity and efficiency of bandwidth at a low cost. We urge you to review our services, and experience our quick deliveries. Many Tier 1 networks are connected & accessed by our global coverage network. A global IPv6-enabled Optical partner coverage network is our biggest strength supported by a vast partner coverage across the globe. These jointly serve as a reliable backbone of our IP transit business.
@@ -222,7 +223,7 @@ include('header.php');
 
         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
             <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail5.webp" class="rounded-md ">
+                <img alt="SD-Wan Icon" src="./assest/service-detail5.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF Dconnect (Data Centre)</h3>
                 <p class="text-gray-600 text-sm ">
                  In reality, today all companies rely heavily on Data Centres. Hence Sizaf DCconnect service allows companies to have a trusted partner that will provide them all the support for them to operate and grow big. Our DC services provide a highly reliable and effective data backup method that guarantees simultaneous access to all important information. We provide organisations efficient ways in which key information can be saved, shared and protected. With trusted data centre services companies are able to grow and run business smoothly in more than many ways.
@@ -233,7 +234,7 @@ include('header.php');
 
         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
             <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail6.webp" class="rounded-md ">
+                <img alt="SD-Wan Icon" src="./assest/service-detail6.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF IPconnect (DIA)</h3>
                 <p class="text-gray-600 text-sm ">
                 Sizaf IPConnect service offers internet capacity with maximum scalability and cost-effectiveness. We provide 24x7 support and upgrades to the customers at any point in-time. At Sizaf, you not only get internet access above reasonable standards but also a service provider that provides full solutions to all of your company requirements.
@@ -245,7 +246,7 @@ include('header.php');
 
         <div class="service-card group cursor-pointer border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white text-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg  hover:scale-[1.02]   ">
             <div class="p-4">
-                <img alt="SD-Wan Icon" src="./assest/service-detail7.webp" class="rounded-md ">
+                <img alt="SD-Wan Icon" src="./assest/service-detail7.webp" width="600" height="600" class="rounded-md " loading="lazy" decoding="async">
                 <h3 class="text-lg font-bold text-pink-600 mb-2 pt-2">SizaF BBconnect (Broadband)</h3>
                 <p class="text-gray-600 text-sm ">
                 Businesses aim for inexpensive and secure Internet connections instead of conventional cable to run efficiently. Sizaf BBconnect service is a special value proposition curated for all types of organizations. It offers business-grade connections at decent prices in comparison to a leased Internet service.
