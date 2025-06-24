@@ -157,12 +157,13 @@ include('header.php');
     <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
         <div class="absolute inset-0 opacity-20">
             <img 
-                src="./assest/global-network-main.jpeg" 
+                src="./assest/global-network-main.webp" 
                 alt="digital connections" 
                 class="object-cover w-full h-full"
                 loading="lazy"
                 width="1200"
                 height="650"
+                decoding="async"
             />
         </div>
         <!-- Animated Network Lines -->
@@ -347,7 +348,7 @@ include('header.php');
     <div id="stats-section" class="relative bg-gradient-to-br from-white via-gray-100 to-gray-50 py-16 px-6 sm:px-10 lg:px-20">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="space-y-10">
-          <img src="./assest/sizaflogo.png" alt="Sizaf Logo" width="150" height="150" class="mx-auto lg:mx-0" loading="lazy"/>
+          <img src="./assest/sizaflogo.webp" alt="Sizaf Logo" width="150" height="150" class="mx-auto lg:mx-0" loading="lazy" decoding="async"/>
           <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight text-center lg:text-left">The Power of  <span class="bg-primary-gradient text-transparent bg-clip-text">SIZAF</span> Global Partner Network Loaded With All The Tech.</h1>
           <p class="text-gray-600 text-base lg:text-lg max-w-xl text-center lg:text-left mx-auto lg:mx-0">Sizaf Tech Services are customized to fit every business situation, whether for individuals, professional groups, or large organizations.</p>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -366,7 +367,7 @@ include('header.php');
           </div>
         </div>
         <div class="flex justify-center lg:justify-end">
-          <img src="./assest/global-network-pc.png" alt="Global Network Map" class="rounded-3xl w-full max-w-xl shadow-xl" loading="lazy" />
+          <img src="./assest/global-network-pc.webp" alt="Global Network Map" width="500" height="500" class="rounded-3xl w-full max-w-xl shadow-xl" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>

@@ -79,12 +79,13 @@ include('header.php');
       <div class="relative">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl transform rotate-3"></div>
         <img 
-          src="./assest/managed-it1.jpeg" 
+          src="./assest/managed-it1.webp" 
           alt="Tech professional working" 
           width="600" 
           height="400" 
           class="relative rounded-2xl shadow-2xl object-cover w-full h-[400px]"
           loading="lazy"
+          decoding="async"
         >
       </div>
     </div>
