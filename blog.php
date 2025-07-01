@@ -25,12 +25,13 @@ $totalPages = $blogData['totalPages'];
         <div class="relative rounded-b-3xl overflow-hidden mb-16 shadow-2xl">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90 z-10"></div>
             <img 
-                src="./assest/bg.jpeg" 
+                src="./assest/bg.webp" 
                 alt="Technology blog hero " 
                 width="1200" 
                 height="400" 
                 class="w-full h-[400px] object-cover"
                 loading="lazy"
+                decoding="async"
             />
             <div class="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16">
                 <span class="mb-4 bg-white/10 backdrop-blur-sm text-white border-white/20 w-fit px-3 py-1 rounded-full text-sm font-medium">

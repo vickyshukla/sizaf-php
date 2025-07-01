@@ -34,7 +34,7 @@
   <!-- Main Navigation -->
   <div class="max-w-[1480px] mx-auto px-4 py-4 flex items-center justify-between relative">
     <a href="index.php" class="text-xl font-bold">
-      <img src="./assest/sizaflogo.png" alt="SIZAF Logo" width="120" height="120" loading="lazy">
+      <img src="./assest/sizaflogo.webp" alt="SIZAF Logo" width="120" height="120" loading="lazy" decoding="async">
     </a>
 
     <!-- Mobile Toggle Button -->
@@ -214,7 +214,7 @@
       <!-- Iframe Area -->
       <div class="relative w-full h-[70vh] sm:h-[400px] mt-4 rounded-md overflow-hidden">
         <div id="speedTestLogo" class="hidden absolute bottom-7 left-1/2 -translate-x-1/2 sm:top-1 sm:left-1/2 z-10">
-          <img src="./assest/sizaflogo.png" alt="Sizaf Logo" class="sm:w-16 w-24 h-auto" width="96" height="96">
+          <img src="./assest/sizaflogo.webp" alt="Sizaf Logo" class="sm:w-16 w-24 h-auto" width="96" height="96" decoding="async">
         </div>
         <iframe
           id="speedTestIframe"
@@ -254,44 +254,6 @@
     </div>
   </div>
 </header>
-<script>
-  const openBtn = document.getElementById('openSpeedTest');
-  const dialog = document.getElementById('speedTestDialog');
-  const closeBtn = document.getElementById('closeSpeedTest');
-  const iframe = document.getElementById('speedTestIframe');
-  const logo = document.getElementById('speedTestLogo');
-
-  let iframeTimeout;
-
-  openBtn.addEventListener('click', () => {
-    // Reset iframe
-    iframe.src = "https://openspeedtest.com/Get-widget.php";
-    logo.classList.add('hidden');
-    dialog.classList.remove('hidden');
-    dialog.classList.add('flex');
-
-    // Wait for iframe to load
-    iframe.onload = () => {
-      clearTimeout(iframeTimeout);
-      logo.classList.remove('hidden');
-    };
-
-    // Set fallback timeout (10s)
-    iframeTimeout = setTimeout(() => {
-      if (!logo.classList.contains('hidden')) return;
-      logo.innerHTML = `<p class="text-center text-red-600 font-semibold">Failed to load. Please try again.</p>`;
-      logo.classList.remove('hidden');
-    }, 10000);
-  });
-
-  closeBtn.addEventListener('click', () => {
-    dialog.classList.add('hidden');
-    iframe.src = ""; // Clear iframe
-    logo.classList.add('hidden');
-    clearTimeout(iframeTimeout);
-  });
-  
-</script>
 <script>
   const trigger = document.getElementById('searchTrigger');
   const popover = document.getElementById('searchPopover');
@@ -346,5 +308,44 @@
       console.error(error);
     });
   }
+</script>
+<script>
+  const openBtn = document.getElementById('openSpeedTest');
+  const dialog = document.getElementById('speedTestDialog');
+  const closeBtn = document.getElementById('closeSpeedTest');
+  const iframe = document.getElementById('speedTestIframe');
+  const logo = document.getElementById('speedTestLogo');
+
+  let iframeTimeout;
+
+  openBtn.addEventListener('click', () => {
+    // Reset iframe
+    iframe.src = "https://openspeedtest.com/Get-widget.php";
+    logo.classList.add('hidden');
+    dialog.classList.remove('hidden');
+    dialog.classList.add('flex');
+
+    // Wait for iframe to load
+    iframe.onload = () => {
+      clearTimeout(iframeTimeout);
+      logo.classList.remove('hidden');
+    };
+
+    // Set fallback timeout (10s)
+    iframeTimeout = setTimeout(() => {
+      if (!logo.classList.contains('hidden')) return;
+      logo.innerHTML = `<p class="text-center text-red-600 font-semibold">Failed to load. Please try again.</p>`;
+      logo.classList.remove('hidden');
+    }, 10000);
+  });
+
+  closeBtn.addEventListener('click', () => {
+    dialog.classList.add('hidden');
+    iframe.src = ""; // Clear iframe
+    logo.classList.add('hidden');
+    clearTimeout(iframeTimeout);
+  });
+  
+  
 </script>
 

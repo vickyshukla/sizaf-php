@@ -19,7 +19,7 @@ $services = [
             "Animation, VFX, Adverts",
             "Creative Content & Production",
         ],
-        'image' => "./assest/gallery1.jpg?height=300&width=400",
+        'image' => "./assest/gallery1.webp?height=300&width=400",
     ],
     [
         'icon' => 'Server',
@@ -32,7 +32,7 @@ $services = [
             "Cloud Infrastructure",
             "System Integration",
         ],
-        'image' => "./assest/gallery2.jpeg?height=300&width=400",
+        'image' => "./assest/gallery2.webp?height=300&width=400",
     ],
     [
         'icon' => 'Network',
@@ -45,14 +45,14 @@ $services = [
             "Network Security",
             "Performance Monitoring",
         ],
-        'image' => "/placeholder.svg?height=300&width=400",
+        'image' => "./assest/gallery3.webp?height=300&width=400",
     ],
     [
         'icon' => 'Settings',
         'title' => "MANAGED IT SERVICES",
         'color' => "from-orange-600 to-red-600",
         'features' => ["24/7 IT Support", "System Maintenance", "Backup Solutions", "IT Consulting", "Remote Monitoring"],
-        'image' => "/placeholder.svg?height=300&width=400",
+        'image' => "./assest/gallery4.webp?height=300&width=400",
     ],
 ];
 
@@ -65,10 +65,13 @@ $page_keywords = "technology services, web development, IT solutions, network se
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
             <img
-                src="./assest/Technology-services-bg.jpeg"
+                src="./assest/Technology-services-bg.webp"
                 alt="Technology workspace"
+                width="1920"
+                height="1080"
                 class="w-full h-full object-cover"
                 loading="lazy"
+                decoding="async"
             >
             <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-800/80 to-transparent"></div>
         </div>
@@ -217,8 +220,11 @@ $page_keywords = "technology services, web development, IT solutions, network se
                         <img
                             src="<?php echo $service['image']; ?>"
                             alt="<?php echo $service['title']; ?> service"
+                            width="800"
+                            height="600"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy"
+                            decoding="async"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t <?php echo $service['color']; ?> opacity-80"></div>
 

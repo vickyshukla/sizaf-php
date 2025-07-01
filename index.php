@@ -43,12 +43,12 @@ $blogs = $blogData['blogs'];
   }
 
   .features-section{
-    margin-top:18rem;
+    margin-top:12rem;
   }
 
   @media screen and (min-width: 768px) {
     .features-section{
-    margin-top:16rem;
+    margin-top:14rem;
   }
   }
 
@@ -56,17 +56,18 @@ $blogs = $blogData['blogs'];
 
 <!-- Hero Section with Transparent Box -->
 <section class="w-full">
-   <div class="relative" style="height:700px;">
-    <img src="./assest/fallback.png" alt="Background preview" class="absolute inset-0 z-0 object-cover" loading="eager" style="width:100%; height:700px" />
+   <div class="relative h-[700px]">
+    <img src="./assest/fallback.webp" alt="Background preview" class="absolute inset-0 z-0 object-cover w-full h-[700px]" loading="eager" width="1920" height="700"/>
     <video
       muted
       playsinline
       loop
       preload="none"
-      class="w-full object-cover opacity-0 transition-opacity duration-500 absolute inset-0 z-0"
-      poster="./assest/fallback.png"
+      class="w-full h-[700px] object-cover opacity-0 transition-opacity duration-500 absolute inset-0 z-0 aspect-video"
+      poster="./assest/fallback.webp"
       id="bgVideo"
-      style="height:700px;"
+      width="1920"
+      height="700"
       >
         <source src="https://wnhq4j5mc7yjym73.public.blob.vercel-storage.com/sizaf/world-j2jEAUUa6vmMNRDhlnikI5Pm9UBHxP.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -74,7 +75,7 @@ $blogs = $blogData['blogs'];
    </div>
    <!-- Overlay Content Box -->
   <div class="relative z-10 flex items-center justify-center px-4">
-    <div class="bg-white/90 absolute -bottom-20 backdrop-blur-md rounded-xl shadow-2xl p-8 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
+    <div class="bg-white/90 absolute -bottom-48 sm:-bottom-44 backdrop-blur-md rounded-xl shadow-2xl p-8 max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
       <!-- Left Text Content -->
       <div>
         <h1 class="text-4xl font-extrabold text-gray-800 mb-4">
@@ -85,19 +86,19 @@ $blogs = $blogData['blogs'];
         </p>
         <ul class="grid grid-cols-2 gap-4 text-sm font-bold text-gray-800">
           <li class="flex items-center gap-2">
-            <img src="./assest/Free-30-days-white.svg" alt="30 Days Free" width=40 height="40" loading="lazy"class="w-10 h-10" />
+            <img src="./assest/Free-30-days-white.webp" alt="30 Days Free" width=40 height="40" loading="lazy"class="w-10 h-10" />
             FREE 30 DAYS
           </li>
           <li class="flex items-center gap-2">
-            <img src="./assest/No-contract-white.svg" alt="Zero Connection" width=40 height="40" loading="lazy"class="w-10 h-10" />
+            <img src="./assest/No-contract-white.webp" alt="Zero Connection" width=40 height="40" loading="lazy"class="w-10 h-10" />
             NO CONTRACT
           </li>
           <li class="flex items-center gap-2">
-            <img src="./assest/Zero-connection-fee-white.svg" alt="No Contract" width=40 height="40" loading="lazy"class="w-10 h-10" />
+            <img src="./assest/Zero-connection-fee-white.webp" alt="No Contract" width=40 height="40" loading="lazy"class="w-10 h-10" />
             ZERO CONNECTION FEE
           </li>
           <li class="flex items-center gap-2">
-            <img src="./assest/zero-termination-fee-white.svg" alt="Zero Termination" width=40 height="40" loading="lazy"class="w-10 h-10" />
+            <img src="./assest/zero-termination-fee-white.webp" alt="Zero Termination" width=40 height="40" loading="lazy"class="w-10 h-10" />
             ZERO TERMINATION FEE
           </li>
         </ul>
@@ -105,7 +106,7 @@ $blogs = $blogData['blogs'];
 
       <!-- Logo Image -->
       <div class="flex justify-center">
-        <img src="./assest/sizaflogo.png" alt="Sizaf Logo" class="w-[80%] max-w-md" />
+        <img src="./assest/sizaflogo.webp" width="300" height="300" alt="Sizaf Logo" class="w-[80%] max-w-md" />
       </div>
     </div>
   </div>
@@ -184,8 +185,8 @@ $blogs = $blogData['blogs'];
       <!-- Card 1 -->
       <article class="rounded-xl overflow-hidden shadow-lg transition hover:shadow-2xl" data-aos="fade-up">
         <div class="relative">
-          <img src="./assest/Net-for-Family-1.jpeg" alt="Internet for Business" class="w-full h-56 object-cover" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent px-5 pt-10">
+          <img src="./assest/Net-for-Family-1.webp" alt="Internet for Business" width="700" height="600" class="w-full h-auto object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent px-5 pt-14">
             <h3 class="text-xl font-bold text-white">
               <span class="text-blue-400">  Internet</span>
             <br>for Business
@@ -209,8 +210,8 @@ $blogs = $blogData['blogs'];
       <!-- Card 2 -->
       <article class="rounded-xl overflow-hidden shadow-lg transition hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
         <div class="relative">
-          <img src="./assest/Net-for-Business.jpeg" alt="Business Internet Services" class="w-full h-56 object-cover" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-purple-700/70 to-transparent px-5 pt-10">
+          <img src="./assest/Net-for-Business.webp" alt="Business Internet Services" width="700" height="600" class="w-full h-auto object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-purple-700/70 to-transparent px-5 pt-14">
             <h3 class="text-xl font-bold text-white">
                <span class="text-blue-400">Business</span> <br>Internet
             </h3>
@@ -233,8 +234,8 @@ $blogs = $blogData['blogs'];
       <!-- Card 3 -->
       <article class="rounded-xl overflow-hidden shadow-lg transition hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
         <div class="relative">
-          <img src="./assest/Technology-solution.jpg" alt="Technology Solution" class="w-full h-56 object-cover" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-blue-700/70 to-transparent px-5 pt-10">
+          <img src="./assest/Technology-solution.webp" alt="Technology Solution" width="700" height="600" class="w-full h-auto object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-blue-700/70 to-transparent px-5 pt-14">
             <h3 class="text-xl font-bold text-white">
               <span class="text-blue-400">Technology</span> <br>Solution
             </h3>
@@ -275,67 +276,67 @@ $blogs = $blogData['blogs'];
           [
             'title' => 'Governance & Security',
             'description' => 'It is now important to use this technology and improve governance and security capabilities.',
-            'backgroundImageUrl' => './assest/governance&security.jpg',
+            'backgroundImageUrl' => './assest/governance&security.webp',
             'linkHref' => './governance-security.php',
           ],
           [
             'title' => 'Health & Education',
             'description' => 'Healthcare & Education satisfies a variety of standards, including changing technology, to adapt to clients needs.',
-            'backgroundImageUrl' => './assest/health&education.jpeg',
+            'backgroundImageUrl' => './assest/health&education.webp',
             'linkHref' => './health-education.php',
           ],
           [
             'title' => 'Non Profit Organizations',
             'description' => 'Non-profit enterprises with low budget but with best of technology strives for optimization and delivers best results.',
-            'backgroundImageUrl' => './assest/nonprofitorganization.jpeg',
+            'backgroundImageUrl' => './assest/nonprofitorganization.webp',
             'linkHref' => './non-profit.php',
           ],
           [
             'title' => 'Travel & Leisure',
             'description' => 'With the Covid-19 turnaround, there will be rise in travel and leisure industries, for which there will be requirement of advanced and specialized set of tech services.',
-            'backgroundImageUrl' => './assest/travel&leisure.jpeg',
+            'backgroundImageUrl' => './assest/travel&leisure.webp',
             'linkHref' => './travel-leisure.php',
           ],
           [
             'title' => 'Construction & Real Estate',
             'description' => 'Construction & real estate is a diverse field having its own management and technological issues.',
-            'backgroundImageUrl' => './assest/construction&realestate.jpeg',
+            'backgroundImageUrl' => './assest/construction&realestate.webp',
             'linkHref' => './non-profit.php',
           ],
           [
             'title' => 'Media & Advertising',
             'description' => 'Media & advertising companies are always welcome to use new technologies to improve the production, distribution and monetization of content.',
-            'backgroundImageUrl' => './assest/media&advertising.jpeg',
+            'backgroundImageUrl' => './assest/media&advertising.webp',
             'linkHref' => './media-advertising.php',
           ],
           [
             'title' => 'Retail & E-Commerce',
             'description' => 'Advanced technology transforms customer performance by efficiency and cost savings by selling premium goods and services by retailers.',
-            'backgroundImageUrl' => './assest/retail&ecommerce.jpg',
+            'backgroundImageUrl' => './assest/retail&ecommerce.webp',
             'linkHref' => './retail-ecommerce.php',
           ],
           [
             'title' => 'Production, Engg & Pharma',
             'description' => 'With advancement Net with Tech, All production, engineering and pharmaceutical industries have been improved with smart and strongest network units.',
-            'backgroundImageUrl' => './assest/protection&pharma.jpeg',
+            'backgroundImageUrl' => './assest/protection&pharma.webp',
             'linkHref' => './production-pharma.php',
           ],
           [
             'title' => 'Transport & Logistics',
             'description' => 'The productivity of the supply chain & transportation industry is continuously being strengthened by  networking,  communications & digital solutions.',
-            'backgroundImageUrl' => './assest/transport&logistics.jpeg',
+            'backgroundImageUrl' => './assest/transport&logistics.webp',
             'linkHref' => './transport-logistics.php',
           ],
           [
             'title' => 'Agri, Fisheries & Climate',
             'description' => 'Agriculture and the food system as a whole are changing dramatically through digital technologies. They also play an important role in climate improvement.',
-            'backgroundImageUrl' => './assest/agri&climate.jpeg',
+            'backgroundImageUrl' => './assest/agri&climate.webp',
             'linkHref' => './agri-climate.php',
           ],
           [
             'title' => 'Finance & Banking',
             'description' => 'Finance & Banking is one of the early recipients of the internet and smart technology platforms.',
-            'backgroundImageUrl' => './assest/finance&banking.jpeg',
+            'backgroundImageUrl' => './assest/finance&banking.webp',
             'linkHref' => './finance-banking.php',
           ]
         ];
@@ -374,16 +375,14 @@ $blogs = $blogData['blogs'];
     <i class="fa-solid fa-arrow-right"></i>
     </button>
   </div>
-
-
 </section>
 
 <section class="bg-[#070C5A] text-white py-16 text-center px-4" role="region" aria-label="Global Network Stats">
   <div class="max-w-6xl mx-auto">
 
     <!-- Logo with aspect ratio and lazy loading -->
-    <div class="mx-auto mb-6 w-80 aspect-[3/1] relative">
-      <img src="./assest/sizaf_foot_white.png" alt="SIZAF - Net with Tech Logo" class="absolute inset-0 w-full h-full object-contain" loading="lazy" decoding="async" />
+    <div class="mx-auto mb-16 w-58 aspect-[3/1] relative">
+      <img src="./assest/sizaf_foot_white.webp" alt="SIZAF - Net with Tech Logo" width="300" height="100" class="absolute inset-0 object-contain" loading="lazy" decoding="async" />
     </div>
 
     <!-- SEO Heading -->
