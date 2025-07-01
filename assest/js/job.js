@@ -9,6 +9,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Show More (Job Modal) Popup
+    const jobButtons = document.querySelectorAll('.job-title');
+    const modal = document.getElementById('jobModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const closeModal = document.getElementById('closeModal');
+
+    jobButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const title = btn.getAttribute('data-title');
+            const content = btn.getAttribute('data-content');
+
+            modalTitle.textContent = title;
+            modalContent.innerHTML = content;
+            modal.classList.remove('hidden');
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.classList.add('hidden');
+    });
+
+    // Optional: click outside to close modal
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.add('hidden');
+        }
+    });
+
     // Open Apply Now Form
     window.openForm = function(jobTitle) {
         document.getElementById("apply-now-form").style.display = "flex";

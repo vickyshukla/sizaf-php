@@ -153,7 +153,7 @@ $jobs = json_decode($response);
                   <div class="flex-grow mt-4">
                     <p class="text-slate-600 text-sm mb-4" itemprop="description">'.htmlspecialchars($description).'</p>
                   </div>
-                  <div class="px-6 pb-3 flex justify-between items-center mt-auto">
+                  <div class="pb-3 flex justify-between items-center mt-auto">
                     <button class="text-slate-500 hover:text-slate-700 text-sm inline-flex items-center cursor-pointer job-title focus:outline-0" data-title="'.htmlspecialchars($title).'" data-content="'.htmlspecialchars($content).'">
                       Show more
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1"><polyline points="6.5 15 12 9 6 4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
@@ -256,7 +256,7 @@ $jobs = json_decode($response);
           </div>
 
           <!-- reCAPTCHA -->
-          <div class="g-recaptcha" data-sitekey="6Lc2U54qAAAAAFsBPXTgNlTYB01rYDG8Y1ejCtJY"></div>
+          <div class="g-recaptcha" data-sitekey="6LdL7HMrAAAAAJlwD8_SDpu1fJQhZjYldxy0aFIM"></div>
 
           <!-- Submit Button -->
           <div class="flex items-center justify-between">

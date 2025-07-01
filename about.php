@@ -402,17 +402,19 @@ include('header.php');
         </div>
       </div>
 
-      <!-- FAQ Categories -->
       <div class="flex flex-wrap justify-center gap-3 mb-12">
         <?php
         $faqCategories = ['company', 'services', 'terms', 'industries', 'support', 'billing', 'plans'];
         foreach ($faqCategories as $category) {
-          echo '<button onclick="filterByCategory(\''.$category.'\')" class="px-4 py-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-full text-sm cursor-pointer transition-colors">'
-            .ucfirst($category).
-          '</button>';
+          echo '<button 
+                  onclick="filterByCategory(\''.$category.'\')" 
+                  data-category-btn="'.$category.'" 
+                  class="faq-category-button px-4 py-2 hover:bg-slate-200 text-slate-700 border border-slate-200 rounded-full text-sm cursor-pointer transition-colors">'
+                  .ucfirst($category).
+                '</button>';
         }
         ?>
-        <button onclick="clearFilters()" class="px-4 py-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 rounded-full text-sm cursor-pointer transition-colors">
+        <button onclick="clearFilters()" class="faq-category-button px-4 py-2 hover:bg-slate-200 text-slate-700 border border-slate-300 rounded-full text-sm cursor-pointer transition-colors">
           View All
         </button>
       </div>

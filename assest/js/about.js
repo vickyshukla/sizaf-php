@@ -46,30 +46,38 @@ window.filterFAQs= function() {
 }
 
 // Filter by category
-window.filterByCategory= function(category) {
+window.filterByCategory = function(category) {
   const faqItems = document.querySelectorAll('[data-category]');
-  
   faqItems.forEach(item => {
-    if (item.getAttribute('data-category') === category) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
+    item.style.display = item.getAttribute('data-category') === category ? 'block' : 'none';
   });
-  
+
+  // Clear search input and hide results
   document.getElementById('faq-search').value = '';
   document.getElementById('search-results').classList.add('hidden');
+
+  // Handle button active state
+  const buttons = document.querySelectorAll('.faq-category-button');
+  buttons.forEach(btn => btn.classList.remove('bg-slate-200', 'font-semibold'));
+
+  const activeButton = document.querySelector(`button[data-category-btn="${category}"]`);
+  if (activeButton) {
+    activeButton.classList.add('bg-slate-200', 'font-semibold'); // Example styles
+  }
 }
 
-// Clear all filters
-window.clearFilters= function() {
+window.clearFilters = function() {
   const faqItems = document.querySelectorAll('[data-category]');
   faqItems.forEach(item => {
     item.style.display = 'block';
   });
-  
+
   document.getElementById('faq-search').value = '';
   document.getElementById('search-results').classList.add('hidden');
+
+  // Remove active state from all buttons
+  const buttons = document.querySelectorAll('.faq-category-button');
+  buttons.forEach(btn => btn.classList.remove('bg-slate-200', 'font-semibold'));
 }
 
 // Initialize all FAQs to be closed on page load
