@@ -126,11 +126,11 @@ include('header.php');
                             <h2 class="text-3xl font-bold text-slate-900 mb-6 text-center">WE ARE READY</h2>
 
                             <!-- Hero Image -->
-                            <div class="relative rounded-xl overflow-hidden mb-8">
+                            <div class="relative rounded-xl overflow-hidden mb-8 h-[300px]">
                                 <img 
                                     src="./assest/industry-sector8.webp" 
                                     alt="modern governance technology" 
-                                    class="w-full backdrop-blur-xs h-[300px] object-cover"
+                                    class="w-full backdrop-blur-xs h-full object-cover"
                                     loading="lazy"
                                     width="800"
                                     height="300"

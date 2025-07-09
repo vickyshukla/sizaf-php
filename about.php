@@ -34,7 +34,7 @@ include('header.php');
                   <img 
                     src="./assest/sizaf_foot_white.webp" 
                     alt="sizaf logo" 
-                    class="h-8 w-auto" 
+                    class="w-20 h-auto" 
                     width="120" 
                     height="32"
                     loading="lazy"
@@ -686,7 +686,7 @@ include('header.php');
                   'name' => "Aria P.",
                   'title' => "Chief Strategy Officer",
                   'company' => "UrbanNest Co.",
-                  'avatar' => "./assest/user3.jpg",
+                  'avatar' => "./assest/user3.webp",
                   'rating' => 4,
                   'industry' => "Real Estate",
                   'projectType' => "Custom Software Development",
@@ -746,7 +746,7 @@ include('header.php');
                                       alt="clients"
                                       width="64"
                                       height="64"
-                                      class="rounded-full object-cover ring-2 ring-white shadow-md w-16 h-16"
+                                      class="rounded-full object-cover ring-2 ring-white shadow-md w-12 h-12 md:w-16 md:h-16"
                                       loading="lazy"
                                       decoding="async"
                                   />
@@ -778,14 +778,5 @@ include('header.php');
   </section>
 </div>
 <script src="assest/js/about.js"></script>
-<script>
-  function startLiveChat() {
-    if (typeof Tawk_API !== "undefined") {
-      Tawk_API.maximize(); // Opens the chat widget
-    } else {
-      alert("Chat is still loading. Please try again shortly.");
-    }
-  }
-</script>
 
 <?php include 'footer.php'; ?>
