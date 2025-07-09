@@ -260,4 +260,12 @@ window.clearFilters = function() {
     });
     this.classList.add("border-2", "border-pink-500");
   });
-});
+ });
+
+function startLiveChat() {
+  if (typeof Tawk_API !== "undefined") {
+    Tawk_API.maximize(); // Opens the chat widget
+  } else {
+    alert("Chat is still loading. Please try again shortly.");
+  }
+}

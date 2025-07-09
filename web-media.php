@@ -302,39 +302,7 @@ include('header.php');
             
   </div>
 </section>
-
-
-
-<script>
-// Animation Scripts
-document.addEventListener('DOMContentLoaded', function() {
-  // Scroll animation for service cards
-  const serviceCards = document.querySelectorAll('.service-card');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-fadeInUp');
-      }
-    });
-  }, { threshold: 0.1 });
-
-  serviceCards.forEach(card => {
-    card.classList.add('opacity-0', 'translate-y-6');
-    observer.observe(card);
-  });
-
-  // Hover animation for CTA buttons
-  const ctaButtons = document.querySelectorAll('.cta-button');
-  ctaButtons.forEach(button => {
-    button.addEventListener('mouseenter', () => {
-      button.classList.add('shadow-lg', 'scale-105');
-    });
-    button.addEventListener('mouseleave', () => {
-      button.classList.remove('shadow-lg', 'scale-105');
-    });
-  });
-});
-</script>
+<script src="assest/js/main.js"></script>
 
 <style>
 /* Animation Styles */
@@ -363,32 +331,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 }
 </style>
-
-<script>
-// Add any JavaScript for animations here
-document.addEventListener('DOMContentLoaded', function() {
-  // Example animation - fade in elements on scroll
-  const observerOptions = {
-    threshold: 0.1
-  };
-
-  const observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-fadeIn');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  // Observe all elements you want to animate
-  document.querySelectorAll('.service-card, .cta-section').forEach(card => {
-    card.classList.add('opacity-0', 'transition-opacity', 'duration-500');
-    observer.observe(card);
-  });
-});
-</script>
-
 <style>
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }

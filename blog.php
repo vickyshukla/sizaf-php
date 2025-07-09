@@ -22,14 +22,14 @@ $totalPages = $blogData['totalPages'];
   <!-- Hero Section -->
    <div class=" mx-auto">
         <!-- Hero Section with SEO-rich content -->
-        <div class="relative rounded-b-3xl overflow-hidden mb-16 shadow-2xl">
+        <div class="relative rounded-b-3xl overflow-hidden mb-16 shadow-2xl h-[700px] sm:h-[400px] w-full">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90 z-10"></div>
             <img 
                 src="./assest/bg.webp" 
                 alt="Technology blog hero " 
                 width="1200" 
                 height="400" 
-                class="w-full h-[400px] object-cover"
+                class="w-full h-full object-cover block"
                 loading="lazy"
                 decoding="async"
             />
